@@ -1,6 +1,7 @@
 import { HTML5Backend } from 'react-dnd-html5-backend'
 import { DndProvider } from 'react-dnd'
 import NavWrap2 from "../../components/PageThree/NavWrap2";
+import { TouchBackend } from 'react-dnd-touch-backend'
 import Config from '../../components/PageThree/Games/Config/Config';
 import { useEffect, useState } from 'react';
 

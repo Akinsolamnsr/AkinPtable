@@ -19,7 +19,7 @@ export default function ConList({count}){
     const ArrayConfg=data[3].split(',')
    
     return(
-        <div className="w-full h-full  flex flex-col">
+        <div className="w-full h-full  flex flex-col" key={`label`}>
             <div className="h-[80%] flex flex-col text-white border-4 border-white">
             <div className={`bg-cyan-700 text-center  font-bold ${MaxSize?"text-[1rem]":"text-[2rem]"}`}>{data[0]}</div>
             <div className={` bg-cyan-700 text-center font-bold ${MaxSize?"text-[4.5rem]":"text-[9rem]"}`}>{data[1]}</div>
@@ -29,7 +29,7 @@ export default function ConList({count}){
            
       <div className="flex w-full ">
       <div className=" flex mt-2">
-      <Mid data={ArrayConfg} count={count} List={nList} />
+      <Mid data={ArrayConfg} count={count} List={nList}  />
       </div>
 
       </div>
