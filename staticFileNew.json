@@ -1,0 +1,5096 @@
+ [
+    {
+      "General": {
+        "name": "Hydrogen",
+        "symbol": "H",
+        "number": "1",
+        "neutron": "0",
+        "mass": "1.0080 u",
+        "config1": "1",
+        "config2": "1s¹",
+        "pictures": "s,A1",
+        "family": "Other non metals",
+        "radioActive": "",
+        "groupPeriod": "1,1",
+        "year": "1766",
+        "density": "0.00008988 g/cm³"
+      },
+      "Physical": {
+        "phase": "gas",
+        "melting": "13.99",
+        "boiling": "20.28 ",
+        "classification": "non Metal",
+        "allotropes": "Dihydrogen"
+      },
+      "Reactive": {
+        "Ionization": "13.598 ,1,312.0",
+        "radius": "53",
+        "afinity": "0.754,72.8",
+        "negativity": "2.2",
+        "covalentRadius": "37",
+        "vandalForces": "120",
+        "valence": "1",
+        "oxidation": "\t+1, -1"
+      },
+      "isotopes": [
+        {
+          "list": "2 ,0.0151 ,13.136"
+        }
+      ],
+      "ids":0,
+      "id": 1
+    },
+    {
+      "ids":17,
+      "General": {
+        "name": "Helium",
+        "symbol": "He",
+        "number": "2",
+        "neutron": "2",
+        "mass": "\t4.00260 u",
+        "config1": "2",
+        "config2": "1s²",
+        "pictures": "s,F1",
+        "family": "Noble gas",
+        "radioActive": "",
+        "groupPeriod": "1,18",
+        "year": "\t1868",
+        "density": "\t0.0001785 g/cm³"
+      },
+      "Physical": {
+        "phase": "gas",
+        "melting": "0.95",
+        "boiling": "4.216",
+        "classification": "Non metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "2,372.3,600",
+        "radius": "31",
+        "afinity": "",
+        "negativity": "",
+        "covalentRadius": "32",
+        "vandalForces": "140",
+        "valence": "8",
+        "oxidation": "0"
+      },
+      "isotopes": [
+        {
+          "list": " 4,99.999863,2.425 "
+        }
+      ],
+      "id": 2
+    },
+    {
+      "ids":18,
+      "General": {
+        "name": "Lithium",
+        "symbol": "Li",
+        "number": "3",
+        "neutron": "4",
+        "mass": "\t7.0 u",
+        "config1": "2,1",
+        "config2": "1s² 2s¹,[He] 2s¹",
+        "pictures": "s,A3",
+        "family": "Alkaline metal",
+        "radioActive": "",
+        "groupPeriod": "2,1",
+        "year": "1817",
+        "density": "0.534 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "453.7",
+        "boiling": "1615",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "5.392,520.2",
+        "radius": "167",
+        "afinity": "\t0.618,59.6",
+        "negativity": "0.98",
+        "covalentRadius": "134",
+        "vandalForces": "182",
+        "valence": "1",
+        "oxidation": "\t+1"
+      },
+      "isotopes": [
+        {
+          "list": "7,92.41,14.908 "
+        }
+      ],
+      "id": 3
+    },
+    {
+      "ids":19,
+      "General": {
+        "name": "Beryllium",
+        "symbol": "Be",
+        "number": "4",
+        "neutron": "5",
+        "mass": "9.012183 u",
+        "config1": "2,2",
+        "config2": "1s² 2s²,[He] 2s²",
+        "pictures": "s,A4",
+        "family": "Alkaline earth metal",
+        "radioActive": "",
+        "groupPeriod": "2,2",
+        "year": "\t1798",
+        "density": "1.85 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1560",
+        "boiling": "2742",
+        "classification": "metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "9.323,899.5",
+        "radius": "112",
+        "afinity": "",
+        "negativity": "1.57",
+        "covalentRadius": "90",
+        "vandalForces": "153",
+        "valence": "\t2",
+        "oxidation": "\t+2"
+      },
+      "isotopes": [],
+      "id": 4
+    },
+    {
+      "ids":30,
+      "General": {
+        "name": "Boron",
+        "symbol": "B",
+        "number": "5",
+        "neutron": "5",
+        "mass": "10.81 u",
+        "config1": "2,3",
+        "config2": "1s² 2s² 2p¹,[He] 2s² 2p¹",
+        "pictures": "p,E1",
+        "family": "Metalloid",
+        "radioActive": "",
+        "groupPeriod": "2,13",
+        "year": "1808",
+        "density": "2.37 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "2349",
+        "boiling": "4273",
+        "classification": "Metalloid",
+        "allotropes": "AlphaRhombohedralBoron, BetaRhombohedralBoron, AlphaTetragonalBoron"
+      },
+      "Reactive": {
+        "Ionization": "8.298,800.6",
+        "radius": "87",
+        "afinity": "0.277,26.7",
+        "negativity": "2.04",
+        "covalentRadius": "82",
+        "vandalForces": "192",
+        "valence": "3",
+        "oxidation": "\t+3"
+      },
+      "isotopes": [
+        {
+          "list": " 11,80.1,8.668 "
+        }
+      ],
+      "id": 5
+    },
+    {
+      "ids":31,
+      "General": {
+        "name": "Carbon",
+        "symbol": "C",
+        "number": "6",
+        "neutron": "6",
+        "mass": "\t12.011 u",
+        "config1": "2,4",
+        "config2": "1s² 2s² 2p²,[He] 2s² 2p²",
+        "pictures": "p,E2",
+        "family": "Other non metals",
+        "radioActive": "",
+        "groupPeriod": "2,14",
+        "year": "Ancient",
+        "density": "2.2670 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "3823 ",
+        "boiling": "4098",
+        "classification": "Non metal",
+        "allotropes": "\tGraphite, Diamond, AmorphousCarbon, Lonsdaleite, Fullerene, CarbonNanotube"
+      },
+      "Reactive": {
+        "Ionization": "11.260",
+        "radius": "67",
+        "afinity": "\t1.263 ,153.9",
+        "negativity": "2.55",
+        "covalentRadius": "77",
+        "vandalForces": "170",
+        "valence": "4",
+        "oxidation": "+4, +2, -4"
+      },
+      "isotopes": [
+        {
+          "list": " 13,1.07,3.125 "
+        }
+      ],
+      "id": 6
+    },
+    {
+      "ids":32,
+      "General": {
+        "name": "Nitrogen",
+        "symbol": "N",
+        "number": "7",
+        "neutron": "7",
+        "mass": "\t14.007 u",
+        "config1": "2, 5",
+        "config2": "1s² 2s² 2p³,[He] 2s² 2p³",
+        "pictures": "p,E4",
+        "family": "Other non metals",
+        "radioActive": "",
+        "groupPeriod": "2,15",
+        "year": "\t1772",
+        "density": "0.0012506 g/cm³"
+      },
+      "Physical": {
+        "phase": "Gas",
+        "melting": "63.15",
+        "boiling": "77.36 ",
+        "classification": "non Metal",
+        "allotropes": "Dinitrogen"
+      },
+      "Reactive": {
+        "Ionization": "14.534,1,402.3",
+        "radius": "56",
+        "afinity": "",
+        "negativity": "3.04",
+        "covalentRadius": "75",
+        "vandalForces": "155",
+        "valence": "5",
+        "oxidation": "\t+5, +4, +3, +2, +1, -1, -2, -3"
+      },
+      "isotopes": [
+        {
+          "list": "15,0.368,0.101"
+        }
+      ],
+      "id": 7
+    },
+    {
+      "ids":33,
+      "General": {
+        "name": "Oxygen",
+        "symbol": "O",
+        "number": "8",
+        "neutron": "7",
+        "mass": "\t15.999 u",
+        "config1": "2, 6",
+        "config2": "1s² 2s² 2p⁴,[He] 2s² 2p⁴",
+        "pictures": "p,E4",
+        "family": "Other non metals",
+        "radioActive": "",
+        "groupPeriod": "2,16",
+        "year": "\t1774",
+        "density": "\t0.001429 g/cm³"
+      },
+      "Physical": {
+        "phase": "Gas",
+        "melting": "54.36 ",
+        "boiling": "90.188",
+        "classification": "Non metal",
+        "allotropes": "Dioxygen, Ozone, Tetraoxygen"
+      },
+      "Reactive": {
+        "Ionization": "\t13.618,1,313.9",
+        "radius": "48",
+        "afinity": "1.461,141",
+        "negativity": "3.44",
+        "covalentRadius": "73",
+        "vandalForces": "152",
+        "valence": "6",
+        "oxidation": "\t-2"
+      },
+      "isotopes": [
+        {
+          "list": "18,0.205 ,−0.782 "
+        },
+        {
+          "list": " 16,99.757,−4.737 "
+        }
+      ],
+      "id": 8
+    },
+    {
+      "ids":34,
+      "General": {
+        "name": "Fluorine",
+        "symbol": "F",
+        "number": "9",
+        "neutron": "9",
+        "mass": "\t18.99840316 u",
+        "config1": "2, 7",
+        "config2": "1s² 2s² 2p⁵",
+        "pictures": "p,E5",
+        "family": "Halogen",
+        "radioActive": "",
+        "groupPeriod": "2,17",
+        "year": "1670",
+        "density": "\t0.001696 g/cm³"
+      },
+      "Physical": {
+        "phase": "Gas",
+        "melting": "53.55",
+        "boiling": "85.04 ",
+        "classification": "Non metal",
+        "allotropes": "\tDifluorine"
+      },
+      "Reactive": {
+        "Ionization": "17.423,1,681.0",
+        "radius": "42",
+        "afinity": "3.339,328",
+        "negativity": "3.98",
+        "covalentRadius": "71",
+        "vandalForces": "147",
+        "valence": "7",
+        "oxidation": "\t-1"
+      },
+      "isotopes": [],
+      "id": 9
+    },
+    {
+      "ids":35,
+      "General": {
+        "name": "Neon ",
+        "symbol": "Ne",
+        "number": "10",
+        "neutron": "10",
+        "mass": "\t20.180 u",
+        "config1": "2,8",
+        "config2": "1s² 2s² 2p⁶",
+        "pictures": "p,E6",
+        "family": "Noble gas",
+        "radioActive": "",
+        "groupPeriod": "2,18",
+        "year": "\t1898",
+        "density": "\t0.0008999 g/cm³"
+      },
+      "Physical": {
+        "phase": "gas",
+        "melting": "24.56",
+        "boiling": "27.1 ",
+        "classification": "non Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "21.565,2,080.7",
+        "radius": "38",
+        "afinity": "",
+        "negativity": "",
+        "covalentRadius": "69",
+        "vandalForces": "154",
+        "valence": "0",
+        "oxidation": "0"
+      },
+      "isotopes": [
+        {
+          "list": " 22 ,9.25 ,−8.024 "
+        }
+      ],
+      "id": 10
+    },
+    {
+      "ids":36,
+      "General": {
+        "name": "Sodium",
+        "symbol": "Na",
+        "number": "11",
+        "neutron": "11",
+        "mass": "22.9897693 u",
+        "config1": "2,81",
+        "config2": "1s² 2s² 2p⁶ 3s¹,[Ne] 3s¹",
+        "pictures": "s,A5",
+        "family": "Alkaline metal",
+        "radioActive": "",
+        "groupPeriod": "3,1",
+        "year": "1807",
+        "density": "\t0.97 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "371",
+        "boiling": "1156",
+        "classification": "metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "5.139,495.8",
+        "radius": "190",
+        "afinity": "0.548,52.8",
+        "negativity": "0.93",
+        "covalentRadius": "\t154",
+        "vandalForces": "227",
+        "valence": "1",
+        "oxidation": "+1"
+      },
+      "isotopes": [],
+      "id": 11
+    },
+    {
+      "ids":37,
+      "General": {
+        "name": "Magnesium",
+        "symbol": "Mg",
+        "number": "12",
+        "neutron": "12",
+        "mass": "\t24.305 u",
+        "config1": "2,8,2",
+        "config2": "1s² 2s² 2p⁶ 3s²,[Ne]3s2",
+        "pictures": "s,A6",
+        "family": "Alkaline earth metal",
+        "radioActive": "",
+        "groupPeriod": "3,2",
+        "year": "1808",
+        "density": "1.74 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "922",
+        "boiling": "1380 ",
+        "classification": "metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "7.646",
+        "radius": "145",
+        "afinity": "",
+        "negativity": "1.31",
+        "covalentRadius": "130",
+        "vandalForces": "173",
+        "valence": "2",
+        "oxidation": "\t+2"
+      },
+      "isotopes": [
+        {
+          "list": "25,10.00,−13.193 "
+        },
+        {
+          "list": " 26,11.01,−16.214 "
+        }
+      ],
+      "id": 12
+    },
+    {
+      "ids":48,
+      "General": {
+        "name": "Aluminium",
+        "symbol": "Al",
+        "number": "13",
+        "neutron": "13",
+        "mass": "\t26.981538 u",
+        "config1": "2,8,3",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p¹,[Ne] 3s² 3p¹",
+        "pictures": "p,E7",
+        "family": "Post-transition metal",
+        "radioActive": "",
+        "groupPeriod": "3,13",
+        "year": "Ancient",
+        "density": "2.70 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "933.5",
+        "boiling": "2740 ",
+        "classification": "metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "5.986,577.5",
+        "radius": "118",
+        "afinity": "0.441",
+        "negativity": "1.61",
+        "covalentRadius": "118",
+        "vandalForces": "184",
+        "valence": "3",
+        "oxidation": "\t+3"
+      },
+      "isotopes": [],
+      "id": 13
+    },
+    {
+      "ids":49,
+      "General": {
+        "name": "Silicon",
+        "symbol": "Si",
+        "number": "14",
+        "neutron": "14",
+        "mass": "28.085 u",
+        "config1": "2, 8, 4",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p²,[Ne] 3s² 3p²",
+        "pictures": "p,E8",
+        "family": "Metalloid",
+        "radioActive": "",
+        "groupPeriod": "3,14",
+        "year": "1854",
+        "density": "2.3296 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1683 ",
+        "boiling": "2630",
+        "classification": "metalloid",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "8.152,786.5",
+        "radius": "111",
+        "afinity": "1.385,133.6",
+        "negativity": "1.90",
+        "covalentRadius": "111",
+        "vandalForces": "210",
+        "valence": "4",
+        "oxidation": "+4, +2, -4"
+      },
+      "isotopes": [
+        {
+          "list": "29,4.6832,−21.895 "
+        },
+        {
+          "list": "30,3.0872,−24.433"
+        }
+      ],
+      "id": 14
+    },
+    {
+      "ids":50,
+      "General": {
+        "name": "Phosphorus",
+        "symbol": "P",
+        "number": "15",
+        "neutron": "15",
+        "mass": "30.97376200 u",
+        "config1": "2, 8, 5",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p³,[Ne] 3s² 3p³",
+        "pictures": "p,E9",
+        "family": "Other non metals",
+        "radioActive": "",
+        "groupPeriod": "3,15",
+        "year": "\t1669 ",
+        "density": "1.82 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "317.3 ",
+        "boiling": "553",
+        "classification": "non metal",
+        "allotropes": "WhitePhosphorus, RedPhosphorus, BlackPhosphorus"
+      },
+      "Reactive": {
+        "Ionization": "10.487,1,011.8",
+        "radius": "98",
+        "afinity": "0.746,72",
+        "negativity": "2.19",
+        "covalentRadius": "106",
+        "vandalForces": "180",
+        "valence": "5",
+        "oxidation": "\t+5, +3, -3"
+      },
+      "isotopes": [],
+      "id": 15
+    },
+    {
+      "ids":51,
+      "General": {
+        "name": "Sulfur",
+        "symbol": "S",
+        "number": "16",
+        "neutron": "16",
+        "mass": "32.06",
+        "config1": "2, 8, 6",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁴,[Ne] 3s² 3p⁴",
+        "pictures": "p,E10",
+        "family": "Other non metals",
+        "radioActive": "",
+        "groupPeriod": "3,16",
+        "year": "Ancient",
+        "density": "2.067 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "392.2",
+        "boiling": "717.82",
+        "classification": "non metal",
+        "allotropes": "RhombicSulphur, MonoclinicSulphur, AmorphousSulphur"
+      },
+      "Reactive": {
+        "Ionization": "10.360,999.6",
+        "radius": "88",
+        "afinity": "2.077,200",
+        "negativity": "2.58",
+        "covalentRadius": "102",
+        "vandalForces": "180",
+        "valence": "6",
+        "oxidation": "\t+6, +4, -2"
+      },
+      "isotopes": [
+        {
+          "list": "33,0.76 ,−26.586 "
+        },
+        {
+          "list": " 34,4.29 ,−29.932"
+        },
+        {
+          "list": "36,0.02 ,−30.664 "
+        }
+      ],
+      "id": 16
+    },
+    {
+      "ids":52,
+      "General": {
+        "name": "Chlorine",
+        "symbol": "Cl",
+        "number": "17",
+        "neutron": "17",
+        "mass": "\t35.45 u",
+        "config1": "2,8,7",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁵,[Ne]3s23p5",
+        "pictures": "p,E11",
+        "family": "Halogen",
+        "radioActive": "",
+        "groupPeriod": "3,17",
+        "year": "1774",
+        "density": " 0.003214 g/cm³"
+      },
+      "Physical": {
+        "phase": "Gas",
+        "melting": "172.17",
+        "boiling": "239.18 ",
+        "classification": "Non metal",
+        "allotropes": "Dichlorine"
+      },
+      "Reactive": {
+        "Ionization": "\t12.968",
+        "radius": "79",
+        "afinity": "3.617 ",
+        "negativity": "3.16",
+        "covalentRadius": "99",
+        "vandalForces": "175",
+        "valence": "7",
+        "oxidation": "+7, +5, +1, -1"
+      },
+      "isotopes": [
+        {
+          "list": "37,24.22,−31.762 "
+        }
+      ],
+      "id": 17
+    },
+    {
+      "ids":17,
+      "General": {
+        "name": "Argon",
+        "symbol": "Ar",
+        "number": "18",
+        "neutron": "17",
+        "mass": "35.45 u",
+        "config1": "2,8,8",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶,[Ne] 3s² 3p⁶",
+        "pictures": "p,E12",
+        "family": "Noble gas",
+        "radioActive": "",
+        "groupPeriod": "3,18",
+        "year": "\t1774",
+        "density": "\t0.003214 g/cm³"
+      },
+      "Physical": {
+        "phase": "Gas",
+        "melting": "83.95",
+        "boiling": "87.45 ",
+        "classification": "non metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "15.760,1,520.6",
+        "radius": "71",
+        "afinity": "",
+        "negativity": "",
+        "covalentRadius": "97",
+        "vandalForces": "188",
+        "valence": "0",
+        "oxidation": "0"
+      },
+      "isotopes": [
+        {
+          "list": " 38,0.0632,−34.715 "
+        },
+        {
+          "list": "40,99.6003,−35.040 "
+        }
+      ],
+      "id": 18
+    },
+    {
+      "ids":54,
+      "General": {
+        "name": "Potassium",
+        "symbol": "K",
+        "number": "19",
+        "neutron": "20",
+        "mass": "\t39.0983 u",
+        "config1": "2,8,8,1",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹,[Ar]4s1",
+        "pictures": "s,A7",
+        "family": "Alkaline metal",
+        "radioActive": "",
+        "groupPeriod": "4,1",
+        "year": "1807",
+        "density": "\t0.89 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "336.8",
+        "boiling": "1033",
+        "classification": "metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "\t4.341,418.8",
+        "radius": "243",
+        "afinity": "0.501 ,48.4",
+        "negativity": "0.82",
+        "covalentRadius": "196",
+        "vandalForces": "275",
+        "valence": "1",
+        "oxidation": "\t+1"
+      },
+      "id": 19
+    },
+    {
+      "ids":55,
+      "General": {
+        "name": "Calcium",
+        "symbol": "Ca",
+        "number": "20",
+        "neutron": "20",
+        "mass": "\t40.08 u",
+        "config1": "2,8,8,2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s²,[Ar] 4s²",
+        "pictures": "s,A8",
+        "family": "Alkaline earth metal",
+        "radioActive": "",
+        "groupPeriod": "4,2",
+        "year": "\tAncient",
+        "density": "1.54 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1112",
+        "boiling": "1757",
+        "classification": "metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "6.113,589.8",
+        "radius": "194",
+        "afinity": "0.0246,2.37",
+        "negativity": "1",
+        "covalentRadius": "174",
+        "vandalForces": "231",
+        "valence": "2",
+        "oxidation": "\t+2"
+      },
+      "isotopes": [
+        {
+          "list": "40,96.941,−34.846"
+        },
+        {
+          "list": "42,0.647,−38.547"
+        },
+        {
+          "list": "44,2.086,−41.469"
+        },
+        {
+          "list": " 46,0.004,−43.135 "
+        },
+        {
+          "list": " 48,0.187,−44.215 "
+        }
+      ],
+      "id": 20
+    },
+    {
+      "ids":56,
+      "General": {
+        "name": "Scandium",
+        "symbol": "Sc",
+        "number": "21",
+        "neutron": "23",
+        "mass": "44.95591 u",
+        "config1": "2, 8, 9, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹,[Ar]4s23d1",
+        "pictures": "d,C1",
+        "family": "Transition metal",
+        "radioActive": "",
+        "groupPeriod": "4,3",
+        "year": "1879",
+        "density": "\t2.99 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1814",
+        "boiling": "3109",
+        "classification": "metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "6.561,633.1",
+        "radius": "184",
+        "afinity": "\t0.188,18.1",
+        "negativity": "1.36",
+        "covalentRadius": "144",
+        "vandalForces": "211",
+        "valence": "2",
+        "oxidation": "+3"
+      },
+      "isotopes": [],
+      "id": 21
+    },
+    {
+      "ids":57,
+      "General": {
+        "name": "Titanium",
+        "symbol": "Ti",
+        "number": "22",
+        "neutron": "26",
+        "mass": "47.867 u",
+        "config1": "2, 8, 10, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d²,[Ar] 4s² 3d²",
+        "pictures": "d,C2",
+        "family": "Transition metal",
+        "radioActive": "",
+        "groupPeriod": "4,4",
+        "year": "1791",
+        "density": "\t4.5 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1945",
+        "boiling": "3560",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "6.828,658.8",
+        "radius": "176",
+        "afinity": "0.079,7.6",
+        "negativity": "1.54",
+        "covalentRadius": "136",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "+4, +3, +2"
+      },
+      "isotopes": [
+        {
+          "list": " 47,7.44,−44.932 "
+        },
+        {
+          "list": " 48,73.72,−48.487"
+        },
+        {
+          "list": " 49,5.41,−48.558 "
+        },
+        {
+          "list": "50,5.18,−51.426 "
+        }
+      ],
+      "id": 22
+    },
+    {
+      "ids":58,
+      "General": {
+        "name": "Vanadium",
+        "symbol": "V",
+        "number": "23",
+        "neutron": "28",
+        "mass": "\t50.9415 u",
+        "config1": "2, 8, 11, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d³",
+        "pictures": "d,C3",
+        "family": "Transition metal",
+        "radioActive": "",
+        "groupPeriod": "4,5",
+        "year": "1801",
+        "density": "\t6.0 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "2163",
+        "boiling": "3650",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "6.746,650.9",
+        "radius": "171",
+        "afinity": "0.525,50.6",
+        "negativity": "1.63",
+        "covalentRadius": "125",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "+5, +4, +3, +2"
+      },
+      "isotopes": [
+        {
+          "list": "51,99.750,−52.198 "
+        }
+      ],
+      "id": 23
+    },
+    {
+      "ids":59,
+      "General": {
+        "name": "Chromium",
+        "symbol": "Cr",
+        "number": "24",
+        "neutron": "28",
+        "mass": "\t51.996 u",
+        "config1": "2, 8, 13, 1",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹ 3d⁵,[Ar] 4s¹ 3d⁵",
+        "pictures": "d,C4",
+        "family": "Transition metal",
+        "radioActive": "",
+        "groupPeriod": "4,6",
+        "year": "1797",
+        "density": "7.15 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "2130",
+        "boiling": "2945",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "6.767 ,652.9",
+        "radius": "166",
+        "afinity": "0.666,64.3",
+        "negativity": "1.66",
+        "covalentRadius": "127",
+        "vandalForces": "Null",
+        "valence": "1",
+        "oxidation": "\t+6, +3, +2"
+      },
+      "isotopes": [
+        {
+          "list": "52,83.789 ,−55.413"
+        },
+        {
+          "list": " 53,9.501,−55.281 "
+        },
+        {
+          "list": " 54,2.365,−56.928 "
+        }
+      ],
+      "id": 24
+    },
+    {
+      "ids":60,
+      "General": {
+        "name": "Manganese",
+        "symbol": "Mn",
+        "number": "25",
+        "neutron": "30",
+        "mass": "54.93804 u",
+        "config1": "2, 8, 13, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d⁵,[Ar] 4s² 3d⁵",
+        "pictures": "d,C5",
+        "family": "Transition metal",
+        "radioActive": "",
+        "groupPeriod": "4,7",
+        "year": "\t1774",
+        "density": "7.3 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1518",
+        "boiling": "2335",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "7.434 ,717.3",
+        "radius": "161",
+        "afinity": "",
+        "negativity": "1.55",
+        "covalentRadius": "139",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "+7, +4, +3, +2"
+      },
+      "isotopes": [],
+      "id": 25
+    },
+    {
+      "ids":61,
+      "General": {
+        "name": "Iron",
+        "symbol": "Fe",
+        "number": "26",
+        "neutron": "30",
+        "mass": "\t55.84 u",
+        "config1": "2, 8, 13, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d⁵,[Ar] 4s² 3d⁵",
+        "pictures": "d,C6",
+        "family": "Transition metal",
+        "radioActive": "",
+        "groupPeriod": "4,8",
+        "year": "Ancient",
+        "density": "7.874 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1808",
+        "boiling": "3023",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "7.902,717.3",
+        "radius": "156",
+        "afinity": "",
+        "negativity": "\t1.83",
+        "covalentRadius": "125",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "+3, +2"
+      },
+      "isotopes": [
+        {
+          "list": "54,5.845,−56.248 "
+        },
+        {
+          "list": "57,2.119 ,−60.176 "
+        },
+        {
+          "list": " 58,0.282 ,−62.149"
+        }
+      ],
+      "id": 26
+    },
+    {
+      "ids":62,
+      "General": {
+        "name": "Cobalt",
+        "symbol": "Co",
+        "number": "27",
+        "neutron": "32",
+        "mass": "58.93319 u",
+        "config1": "2, 8, 15, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d⁷,[Ar] 4s² 3d⁷",
+        "pictures": "d,C7",
+        "family": "Transition metal",
+        "radioActive": "",
+        "groupPeriod": "4,9",
+        "year": "1735",
+        "density": "\t8.86 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1768",
+        "boiling": "3143",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "\t7.881,760.4",
+        "radius": "152",
+        "afinity": "0.661,63.7",
+        "negativity": "\t1.88",
+        "covalentRadius": "126",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "\t+3, +2"
+      },
+      "isotopes": [],
+      "id": 27
+    },
+    {
+      "ids":63,
+      "General": {
+        "name": "Nickel",
+        "symbol": "Ni",
+        "number": "28",
+        "neutron": "31",
+        "mass": "58.693 u",
+        "config1": "2, 8, 16, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d⁸,[Ar] 4s² 3d⁸",
+        "pictures": "d,C8",
+        "family": "Transition metal",
+        "radioActive": "",
+        "groupPeriod": "4,10",
+        "year": "\t1751",
+        "density": "\t8.912 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1726 ",
+        "boiling": "3005",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "\t7.640,737.1",
+        "radius": "149",
+        "afinity": "1.156 ,112",
+        "negativity": "1.91",
+        "covalentRadius": "121",
+        "vandalForces": "163",
+        "valence": "2",
+        "oxidation": "+3, +2"
+      },
+      "isotopes": [
+        {
+          "list": "60,26.2231,−64.468 "
+        },
+        {
+          "list": "61,1.1399,−64.217 "
+        },
+        {
+          "list": "62,3.6345,−66.743"
+        },
+        {
+          "list": "64,0.9256,−67.096 "
+        }
+      ],
+      "id": 28
+    },
+    {
+      "ids":64,
+      "General": {
+        "name": "Copper",
+        "symbol": "Cu",
+        "number": "29",
+        "neutron": "37",
+        "mass": "63.55 u",
+        "config1": "2, 8, 18, 1",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹ 3d¹⁰",
+        "pictures": "d,C9",
+        "family": "Transition metal",
+        "radioActive": "",
+        "groupPeriod": "4,11",
+        "year": "Ancient",
+        "density": "\t8.933 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1356.6",
+        "boiling": "2840",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "\t7.726,745.5",
+        "radius": "145",
+        "afinity": "1.228,118.4",
+        "negativity": "1.9",
+        "covalentRadius": "138",
+        "vandalForces": "140",
+        "valence": "1",
+        "oxidation": "+2, +1"
+      },
+      "isotopes": [
+        {
+          "list": "63,69.17,−65.576 "
+        },
+        {
+          "list": " 65,30.83,−67.260 "
+        }
+      ],
+      "id": 29
+    },
+    {
+      "ids":65,
+      "General": {
+        "name": "Zinc",
+        "symbol": "Zn",
+        "number": "30",
+        "neutron": "35",
+        "mass": "\t65.4 u",
+        "config1": "2, 8, 18, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰,[Ar] 4s² 3d¹⁰",
+        "pictures": "d,C10",
+        "family": "Transition metal",
+        "radioActive": "",
+        "groupPeriod": "4,12",
+        "year": "1746",
+        "density": "\t7.134 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "692.73",
+        "boiling": "1180",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "9.394 ,906.4",
+        "radius": "142",
+        "afinity": "",
+        "negativity": "1.65",
+        "covalentRadius": "131",
+        "vandalForces": "139",
+        "valence": "2",
+        "oxidation": "+2"
+      },
+      "isotopes": [
+        {
+          "list": "64,48.63,−66.000 "
+        },
+        {
+          "list": "66,27.90,−68.896 "
+        },
+        {
+          "list": "67,4.10,−67.877 "
+        },
+        {
+          "list": "68 ,18.75,−70.004 "
+        },
+        {
+          "list": "70,0.62 ,−69.559 "
+        }
+      ],
+      "id": 30
+    },
+    {
+      "ids":66,
+      "General": {
+        "name": "Gallium",
+        "symbol": "Ga",
+        "number": "31",
+        "neutron": "39",
+        "mass": "\t69.723 u",
+        "config1": "2, 8, 18, 3",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p¹,[Ar] 4s² 3d¹⁰ 4p¹",
+        "pictures": "p,D1",
+        "family": "Post-transition metal",
+        "radioActive": "",
+        "groupPeriod": "4,13",
+        "year": "\t1875",
+        "density": "5.91 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "302.92",
+        "boiling": "2478",
+        "classification": " Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "5.999,578.8",
+        "radius": "136",
+        "afinity": "\t0.3,28.9",
+        "negativity": "1.81",
+        "covalentRadius": "122",
+        "vandalForces": "187",
+        "valence": "3",
+        "oxidation": "\t+3"
+      },
+      "isotopes": [
+        {
+          "list": "71,39.892,−70.137"
+        }
+      ],
+      "id": 31
+    },
+    {
+      "ids":67,
+      "General": {
+        "name": "Germanium",
+        "symbol": "Ge",
+        "number": "32",
+        "neutron": "41",
+        "mass": "72.63 u",
+        "config1": "2, 8, 18, 3",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p¹,[Ar] 4s² 3d¹⁰ 4p¹",
+        "pictures": "p,D2",
+        "family": "Metalloid",
+        "radioActive": "",
+        "groupPeriod": "4,14",
+        "year": "\t1886 ",
+        "density": "\t5.323 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1211.5 ",
+        "boiling": "3107 ",
+        "classification": "Metalloid",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "\t7.900 ,578.8",
+        "radius": "125",
+        "afinity": "\t1.35 ,28.9",
+        "negativity": "1.81",
+        "covalentRadius": "\t122",
+        "vandalForces": "211",
+        "valence": "3",
+        "oxidation": "\t+4, +2"
+      },
+      "isotopes": [
+        {
+          "list": "70,20.84,−70.560 "
+        },
+        {
+          "list": "72,27.54,−72.586 "
+        },
+        {
+          "list": "73,7.73,−71.299"
+        },
+        {
+          "list": "74,36.28,−73.422"
+        },
+        {
+          "list": "76,7.61,−73.213 "
+        }
+      ],
+      "id": 32
+    },
+    {
+      "ids":68,
+      "General": {
+        "name": "Arsenic",
+        "symbol": "As",
+        "number": "33",
+        "neutron": "42",
+        "mass": "\t74.92159 u",
+        "config1": "2, 8, 18, 5",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p³,[Ar] 4s² 3d¹⁰ 4p³",
+        "pictures": "p,D3",
+        "family": "Metalloid",
+        "radioActive": "",
+        "groupPeriod": "4,15",
+        "year": "Ancient",
+        "density": "\t5.776 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "876 ",
+        "boiling": "1090 ",
+        "classification": "Metalloid",
+        "allotropes": "\tYellowArsenic, BlackArsenic, GrayArsenic"
+      },
+      "Reactive": {
+        "Ionization": "9.815 ,578.8",
+        "radius": "114",
+        "afinity": "\t0.81,28.9",
+        "negativity": "1.81",
+        "covalentRadius": "119",
+        "vandalForces": "185",
+        "valence": "5",
+        "oxidation": "+5, +3, -3"
+      },
+      "isotopes": [],
+      "id": 33
+    },
+    {
+      "ids":69,
+      "General": {
+        "name": "Selenium",
+        "symbol": "Se",
+        "number": "34",
+        "neutron": "45",
+        "mass": "78.97 u",
+        "config1": "2, 8, 18, 6",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁴,[Ar] 4s² 3d¹⁰ 4p⁴",
+        "pictures": "p,D4",
+        "family": "Other non metals",
+        "radioActive": "",
+        "groupPeriod": "4,16",
+        "year": "1817",
+        "density": "\t4.809 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "494 ",
+        "boiling": "958",
+        "classification": "Reactive non metal",
+        "allotropes": "AmorphousRedSelenium, AmorphousBlackSelenium, MonoclinicSelenium, HexagonalSelenium"
+      },
+      "Reactive": {
+        "Ionization": "9.752,941.0",
+        "radius": "103",
+        "afinity": "\t2.021,195",
+        "negativity": "2.55",
+        "covalentRadius": "116",
+        "vandalForces": "190",
+        "valence": "6",
+        "oxidation": "\t+6, +4, -2"
+      },
+      "isotopes": [
+        {
+          "list": " 76,9.37,−75.252"
+        },
+        {
+          "list": " 77,7.63,−74.599 "
+        },
+        {
+          "list": " 78,23.77,−77.026 "
+        },
+        {
+          "list": "80,49.61,−77.759 "
+        },
+        {
+          "list": " 82,8.73,−77.593 "
+        }
+      ],
+      "id": 34
+    },
+    {
+      "ids":70,
+      "General": {
+        "name": "Bromine",
+        "symbol": "Br",
+        "number": "35",
+        "neutron": "40",
+        "mass": "79.90 u",
+        "config1": "2, 8, 18, 7",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁵,[Ar] 4s² 3d¹⁰ 4p⁵",
+        "pictures": "p,D5",
+        "family": "Halogen",
+        "radioActive": "",
+        "groupPeriod": "4,17",
+        "year": "1826",
+        "density": "\t3.11 g/cm³"
+      },
+      "Physical": {
+        "phase": "Liquid",
+        "melting": "265.95",
+        "boiling": "331.85 ",
+        "classification": "Non metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "\t11.814 ,1,139.9",
+        "radius": "94",
+        "afinity": "\t3.365,324.6",
+        "negativity": "2.96",
+        "covalentRadius": "114",
+        "vandalForces": "185",
+        "valence": "7",
+        "oxidation": "\t+5, +1, -1"
+      },
+      "isotopes": [
+        {
+          "list": "81,49.31,−77.974 "
+        }
+      ],
+      "id": 35
+    },
+    {
+      "ids":71,
+      "General": {
+        "name": "Krypton",
+        "symbol": "Kr",
+        "number": "36",
+        "neutron": "48",
+        "mass": "\t83.80 u",
+        "config1": "2, 8, 18, 7",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶,[Ar] 4s² 3d¹⁰ 4p⁶",
+        "pictures": "p,D6",
+        "family": "Noble gas",
+        "radioActive": "",
+        "groupPeriod": "4,18",
+        "year": "1898",
+        "density": "0.003733 g/cm³"
+      },
+      "Physical": {
+        "phase": "Gas",
+        "melting": "116",
+        "boiling": "120.85",
+        "classification": "Non metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "14.000,1,350.8",
+        "radius": "88",
+        "afinity": "",
+        "negativity": "\t3",
+        "covalentRadius": "110",
+        "vandalForces": "202",
+        "valence": "0",
+        "oxidation": "0"
+      },
+      "isotopes": [
+        {
+          "list": "80,2.28,−77.893"
+        },
+        {
+          "list": "82,11.58,−80.589 "
+        },
+        {
+          "list": "83,11.49,−79.982 "
+        },
+        {
+          "list": "84,57.00,−82.431 "
+        },
+        {
+          "list": "86,17.30,−83.266 "
+        }
+      ],
+      "id": 36
+    },
+    {
+      "ids":72,
+      "General": {
+        "name": "Rubidium",
+        "symbol": "Rb",
+        "number": "37",
+        "neutron": "48",
+        "mass": "85.468 u",
+        "config1": "2, 8, 18, 8, 1",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s¹,[Kr] 5s¹",
+        "pictures": "s,B1",
+        "family": "Alkaline metal",
+        "radioActive": "",
+        "groupPeriod": "5,1",
+        "year": "1861",
+        "density": "\t1.53 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "312.63 ",
+        "boiling": "961 ",
+        "classification": "metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "4.177 ,403.0",
+        "radius": "265",
+        "afinity": "0.468 ,46.9",
+        "negativity": "0.82",
+        "covalentRadius": "211",
+        "vandalForces": "303",
+        "valence": "1",
+        "oxidation": "\t+1"
+      },
+      "isotopes": [
+        {
+          "list": "87,27.83,−84.595 "
+        }
+      ],
+      "id": 37
+    },
+    {
+      "ids":73,
+      "General": {
+        "name": "Strontium",
+        "symbol": "Sr",
+        "number": "38",
+        "neutron": "50",
+        "mass": "87.62 u",
+        "config1": "2, 8, 18, 8, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s²,[Kr] 5s²",
+        "pictures": "s,B2",
+        "family": "Alkaline earth metal",
+        "radioActive": "",
+        "groupPeriod": "5,2",
+        "year": "\t1790",
+        "density": "2.64 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1042 ",
+        "boiling": "1655",
+        "classification": "metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "5.695 ,549.5",
+        "radius": "219",
+        "afinity": "",
+        "negativity": "\t0.95",
+        "covalentRadius": "192",
+        "vandalForces": "249",
+        "valence": "2",
+        "oxidation": "\t+2"
+      },
+      "isotopes": [
+        {
+          "list": "87,7.00,−84.878 "
+        },
+        {
+          "list": "88,82.58 ,−87.920"
+        }
+      ],
+      "id": 38
+    },
+    {
+      "ids":74,
+      "General": {
+        "name": "Yttrium",
+        "symbol": "Y",
+        "number": "39",
+        "neutron": "50",
+        "mass": "88.90584 u",
+        "config1": "2, 8, 18, 9, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4,p⁶ 5s² 4d¹,[Kr] 5s² 4d¹",
+        "pictures": "d,C11",
+        "family": "Transition metal",
+        "radioActive": "",
+        "groupPeriod": "5,3",
+        "year": "1794",
+        "density": "\t4.47 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1795",
+        "boiling": "3611",
+        "classification": "3345, 6053, 3618 ",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "\t6.217,600",
+        "radius": "212",
+        "afinity": "0.307 ,29.6",
+        "negativity": "1.22",
+        "covalentRadius": "162",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "+3"
+      },
+      "isotopes": [],
+      "id": 39
+    },
+    {
+      "ids":75,
+      "General": {
+        "name": "Zirconium",
+        "symbol": "Zr",
+        "number": "40",
+        "neutron": "51",
+        "mass": "91.22 u",
+        "config1": "2, 8, 18, 10, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d²",
+        "pictures": "d,C12",
+        "family": "Transition metal",
+        "radioActive": "",
+        "groupPeriod": "5,4",
+        "year": "\t1789",
+        "density": "\t6.52 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "2128 ",
+        "boiling": "4682 ",
+        "classification": "metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "6.634 ,640.1",
+        "radius": "206",
+        "afinity": "0.426,41.1",
+        "negativity": "1.33",
+        "covalentRadius": "148",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "+4"
+      },
+      "isotopes": [
+        {
+          "list": "91,11.22,−87.891 "
+        },
+        {
+          "list": "92,17.15,−88.455"
+        },
+        {
+          "list": "94,17.38,−87.266 "
+        },
+        {
+          "list": "96,2.80,−85.441 "
+        }
+      ],
+      "id": 40
+    },
+    {
+      "ids":76,
+      "General": {
+        "name": "Niobium",
+        "symbol": "Nb",
+        "number": "41",
+        "neutron": "52",
+        "mass": "\t92.90637 u",
+        "config1": "2, 8, 18, 12, 1",
+        "config2": "s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶,[Kr] 5s¹ 4d⁴ 5s¹ 4d⁴, ",
+        "pictures": "d,C13",
+        "family": "Transition metal",
+        "radioActive": "",
+        "groupPeriod": "5,5",
+        "year": "\t1801",
+        "density": "\t8.57 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "2742",
+        "boiling": "5015",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "6.759 ,652.1",
+        "radius": "198",
+        "afinity": "0.893,86.1",
+        "negativity": "1.6",
+        "covalentRadius": "137",
+        "vandalForces": "Null",
+        "valence": "1",
+        "oxidation": "\t+5, +3"
+      },
+      "isotopes": [],
+      "id": 41
+    },
+    {
+      "ids":77,
+      "General": {
+        "name": "Molybdenum",
+        "symbol": "Mo",
+        "number": "42",
+        "neutron": "54",
+        "mass": "\t95.95 u",
+        "config1": "2, 8, 18, 13, 1",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s¹ 4d⁵, [Kr] 5s¹ 4d⁵",
+        "pictures": "d,C14",
+        "family": "Transition metal",
+        "radioActive": "",
+        "groupPeriod": "5,6",
+        "year": "\t1778",
+        "density": "\t10.2 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "2896 ",
+        "boiling": "4912",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "7.092,684.3",
+        "radius": "190",
+        "afinity": "0.746,71.9",
+        "negativity": "2.16",
+        "covalentRadius": "145",
+        "vandalForces": "Null",
+        "valence": "1",
+        "oxidation": "+6"
+      },
+      "isotopes": [
+        {
+          "list": "94,9.25,−88.410 "
+        },
+        {
+          "list": "95,15.92,−87.708 "
+        },
+        {
+          "list": "96,16.68,−88.791"
+        },
+        {
+          "list": "97,9.55,−87.541 "
+        },
+        {
+          "list": "98,24.13,−88.112 "
+        },
+        {
+          "list": "100,9.63,−86.184 "
+        }
+      ],
+      "id": 42
+    },
+    {
+      "ids":78,
+      "General": {
+        "name": "Technetium",
+        "symbol": "Tc",
+        "number": "43",
+        "neutron": "54",
+        "mass": "96.90636 u",
+        "config1": "2, 8, 18, 13, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d⁵, [Kr] 5s² 4d⁵",
+        "pictures": "d,C15",
+        "family": "Transition metal",
+        "radioActive": "Tc-97",
+        "groupPeriod": "5,7",
+        "year": "1937",
+        "density": "\t11 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "2477",
+        "boiling": "4538",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "7.28 ,702",
+        "radius": "183",
+        "afinity": "0.55,53",
+        "negativity": "1.9",
+        "covalentRadius": "156",
+        "vandalForces": "",
+        "valence": "2",
+        "oxidation": "+7, +6, +4"
+      },
+      "isotopes": [],
+      "id": 43
+    },
+    {
+      "ids":79,
+      "General": {
+        "name": "Ruthenium",
+        "symbol": "Ru",
+        "number": "44",
+        "neutron": "57",
+        "mass": "101.1 u",
+        "config1": "2, 8, 18, 15, 1",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s¹ 4d⁷, [Kr] 5s¹ 4d⁷",
+        "pictures": "d,C16",
+        "family": "Transition metal",
+        "radioActive": "",
+        "groupPeriod": "5,8",
+        "year": "1827",
+        "density": "12.1 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "2610",
+        "boiling": "4425",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "7.361,710.2",
+        "radius": "178",
+        "afinity": "1.05,101.3",
+        "negativity": "2.2",
+        "covalentRadius": "126",
+        "vandalForces": "Null",
+        "valence": "1",
+        "oxidation": "\t+3"
+      },
+      "isotopes": [
+        {
+          "list": "98,1.87,−88.224 "
+        },
+        {
+          "list": "99,12.76,−87.617 "
+        },
+        {
+          "list": "100,12.60,−89.219"
+        },
+        {
+          "list": " 101,17.06,−87.950 "
+        },
+        {
+          "list": "102,31.55,−89.098 "
+        },
+        {
+          "list": "104,18.62,−88.091 "
+        }
+      ],
+      "id": 44
+    },
+    {
+      "ids":80,
+      "General": {
+        "name": "Rhodium",
+        "symbol": "Rh",
+        "number": "45",
+        "neutron": "58",
+        "mass": "102.9055 u",
+        "config1": "2, 8, 18, 16, 1",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s¹ 4d⁸, [Kr] 5s¹ 4d⁸",
+        "pictures": "d,C17",
+        "family": "Transition metal",
+        "radioActive": "",
+        "groupPeriod": "5,9",
+        "year": "\t1803",
+        "density": "12.4 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "2236 ",
+        "boiling": "3970 ",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "7.459,719.7",
+        "radius": "173",
+        "afinity": "\t1.137,109.7",
+        "negativity": "2.28",
+        "covalentRadius": "135",
+        "vandalForces": "Null",
+        "valence": "1",
+        "oxidation": "+3"
+      },
+      "isotopes": [],
+      "id": 45
+    },
+    {
+      "ids":81,
+      "General": {
+        "name": "Palladium",
+        "symbol": "Pd",
+        "number": "46",
+        "neutron": "60",
+        "mass": "106.42 u",
+        "config1": "2, 8, 18, 18",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 4d¹⁰, [Kr] 4d¹⁰",
+        "pictures": "d,C18",
+        "family": "Transition metal",
+        "radioActive": "",
+        "groupPeriod": "5,10",
+        "year": "1803",
+        "density": "12.0 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1825",
+        "boiling": "3240 ",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "\t8.337,804.4",
+        "radius": "169",
+        "afinity": "\t0.557 ,53.7",
+        "negativity": "2.20",
+        "covalentRadius": "131",
+        "vandalForces": "163",
+        "valence": "18",
+        "oxidation": "\t+3, +2"
+      },
+      "isotopes": [
+        {
+          "list": " 104,11.14,−89.391 "
+        },
+        {
+          "list": "105,22.33,−88.414 "
+        },
+        {
+          "list": "106,27.33,−89.905 "
+        },
+        {
+          "list": " 108,26.46,−89.522 "
+        },
+        {
+          "list": "110,11.72,−88.350 "
+        }
+      ],
+      "id": 46
+    },
+    {
+      "ids":82,
+      "General": {
+        "name": "Silver",
+        "symbol": "Ag",
+        "number": "47",
+        "neutron": "61",
+        "mass": "107.868 u",
+        "config1": "2, 8, 18, 18, 1",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s¹ 4d¹⁰, [Kr] 5s¹ 4d¹⁰",
+        "pictures": "d,C19",
+        "family": "Transition metal",
+        "radioActive": "",
+        "groupPeriod": "5,11",
+        "year": "Ancient",
+        "density": "10.501 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1235.08",
+        "boiling": "2436 ",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "7.576,731.0",
+        "radius": "165",
+        "afinity": "1.302,125.6",
+        "negativity": "1.93",
+        "covalentRadius": "153",
+        "vandalForces": "172",
+        "valence": "1",
+        "oxidation": "+1"
+      },
+      "isotopes": [
+        {
+          "list": "109,48.1608,−88.720 "
+        }
+      ],
+      "id": 47
+    },
+    {
+      "ids":83,
+      "General": {
+        "name": "Cadmium",
+        "symbol": "Cd",
+        "number": "48",
+        "neutron": "64",
+        "mass": "112.41 u",
+        "config1": "2, 8, 18, 18, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰, [Kr] 5s² 4d¹⁰",
+        "pictures": "d,C20",
+        "family": "Transition metal",
+        "radioActive": "",
+        "groupPeriod": "5,12",
+        "year": "1817",
+        "density": "\t8.69 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "594.26",
+        "boiling": "1040 ",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "8.994 ,867.8",
+        "radius": "161",
+        "afinity": "",
+        "negativity": "1.69",
+        "covalentRadius": "148",
+        "vandalForces": "158",
+        "valence": "2",
+        "oxidation": "+2"
+      },
+      "isotopes": [
+        {
+          "list": "108,0.89,−89.253 "
+        },
+        {
+          "list": "110,12.49,−90.350 "
+        },
+        {
+          "list": "111,12.80,−89.254"
+        },
+        {
+          "list": "112,24.13,−90.581 "
+        },
+        {
+          "list": "113,12.22,−89.050 "
+        },
+        {
+          "list": "114,28.73,−90.021"
+        },
+        {
+          "list": " 116,7.49 ,−88.720 "
+        }
+      ],
+      "id": 48
+    },
+    {
+      "ids":84,
+      "General": {
+        "name": "Indium",
+        "symbol": "In",
+        "number": "49",
+        "neutron": "66",
+        "mass": "114.818 u",
+        "config1": "2, 8, 18, 18, 3",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p¹, [Kr] 5s² 4d¹⁰ 5p¹",
+        "pictures": "p,D7",
+        "family": "Post-transition metal",
+        "radioActive": "",
+        "groupPeriod": "5,13",
+        "year": "1863",
+        "density": "7.31 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "429.78",
+        "boiling": "2350",
+        "classification": "Metalloid",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "5.786 ,558.3",
+        "radius": "156",
+        "afinity": "0.3,28.9",
+        "negativity": "1.78",
+        "covalentRadius": "144",
+        "vandalForces": "193",
+        "valence": "3",
+        "oxidation": "\t+3"
+      },
+      "isotopes": [
+        {
+          "list": "115,95.712,−89.537 "
+        }
+      ],
+      "id": 49
+    },
+    {
+      "ids":85,
+      "General": {
+        "name": "Tin",
+        "symbol": "Sn",
+        "number": "50",
+        "neutron": "69",
+        "mass": "118.71 u",
+        "config1": "2, 8, 18, 18, 4",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p²,[Kr] 5s² 4d¹⁰ 5p²",
+        "pictures": "p,D8",
+        "family": "Post-transition metal",
+        "radioActive": "",
+        "groupPeriod": "5,14",
+        "year": "\tAncient",
+        "density": "7.287 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "505.12 ",
+        "boiling": "2876 ",
+        "classification": "Metal",
+        "allotropes": "White Tin, Gray Tin"
+      },
+      "Reactive": {
+        "Ionization": "7.344,708.6",
+        "radius": "145",
+        "afinity": "\t1.2 ,107.3",
+        "negativity": "1.96",
+        "covalentRadius": "141",
+        "vandalForces": "217",
+        "valence": "4",
+        "oxidation": "+4, +2"
+      },
+      "isotopes": [
+        {
+          "list": " 116,14.536,−91.525 "
+        },
+        {
+          "list": "115,0.339,−90.033"
+        },
+        {
+          "list": " 117,7.676,−90.398 "
+        },
+        {
+          "list": "118,24.223,−91.653 "
+        },
+        {
+          "list": "119,8.585,−90.067 "
+        },
+        {
+          "list": "120,32.593,−91.103 "
+        },
+        {
+          "list": "122,4.629,−89.944 "
+        },
+        {
+          "list": "124,5.789,−88.236 "
+        }
+      ],
+      "id": 50
+    },
+    {
+      "ids":86,
+      "General": {
+        "name": "Antimony",
+        "symbol": "Sb",
+        "number": "51",
+        "neutron": "71",
+        "mass": "\t121.760 u",
+        "config1": "2, 8, 18, 18, 5",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p³, [Kr] 5s² 4d¹⁰ 5p³",
+        "pictures": "p,D9",
+        "family": "Metalloid",
+        "radioActive": "",
+        "groupPeriod": "5,15",
+        "year": "\tAncient",
+        "density": "6.685 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "903.91",
+        "boiling": "1860 ",
+        "classification": "Metalloid",
+        "allotropes": "White Antimony, Yellow Antimony, Black Antimony"
+      },
+      "Reactive": {
+        "Ionization": "8.64 ,834",
+        "radius": "133",
+        "afinity": "1.07,103.2",
+        "negativity": "2.05",
+        "covalentRadius": "138",
+        "vandalForces": "206",
+        "valence": "5",
+        "oxidation": "+5, +3, -3"
+      },
+      "isotopes": [
+        {
+          "list": "123,42.787,−89.222 "
+        }
+      ],
+      "id": 51
+    },
+    {
+      "ids":87,
+      "General": {
+        "name": "Tellurium",
+        "symbol": "Te",
+        "number": "52",
+        "neutron": "76",
+        "mass": "127.6 u",
+        "config1": "2, 8, 18, 18, 6",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁴, [Kr] 5s² 4d¹⁰ 5p⁴",
+        "pictures": "p,D10",
+        "family": "Metalloid",
+        "radioActive": "",
+        "groupPeriod": "5,16",
+        "year": "\t1782",
+        "density": "\t6.232 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "722.72",
+        "boiling": "1261",
+        "classification": "Metalloid",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "9.010 ,869.3",
+        "radius": "123",
+        "afinity": "1.971,190.2",
+        "negativity": "2.1",
+        "covalentRadius": "135",
+        "vandalForces": "206",
+        "valence": "6",
+        "oxidation": "+6, +4, -2"
+      },
+      "isotopes": [
+        {
+          "list": "122,2.603,−90.311 "
+        },
+        {
+          "list": "123,0.908,−89.169 "
+        },
+        {
+          "list": "124,4.816,−90.523 "
+        },
+        {
+          "list": "125,7.139,−89.028 "
+        },
+        {
+          "list": "126,18.952,−90.070"
+        },
+        {
+          "list": "128,31.687,−88.994 "
+        },
+        {
+          "list": "130,33.799,−87.353 "
+        }
+      ],
+      "id": 52
+    },
+    {
+      "ids":88,
+      "General": {
+        "name": "Iodine",
+        "symbol": "I",
+        "number": "53",
+        "neutron": "74",
+        "mass": "\t126.9045 u",
+        "config1": "2, 8, 18, 18, 7",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁵, [Kr] 5s² 4d¹⁰ 5p⁵",
+        "pictures": "p,D11",
+        "family": "Halogen",
+        "radioActive": "",
+        "groupPeriod": "5,17",
+        "year": "\t1811",
+        "density": "\t4.93 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "386.7 ",
+        "boiling": "457.5 ",
+        "classification": "Non metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "10.451 ,1,008.4",
+        "radius": "115",
+        "afinity": "3.059 ,295.2",
+        "negativity": "2.66",
+        "covalentRadius": "133",
+        "vandalForces": "198",
+        "valence": "7",
+        "oxidation": "\t+7, +5, +1, -1"
+      },
+      "isotopes": [],
+      "id": 53
+    },
+    {
+      "ids":89,
+      "General": {
+        "name": "Xenon",
+        "symbol": "Xe",
+        "number": "54",
+        "neutron": "77",
+        "mass": "\t131.29 u",
+        "config1": "2, 8, 18, 18, 8",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶",
+        "pictures": "p,D12",
+        "family": "Noble gas",
+        "radioActive": "",
+        "groupPeriod": "5,18",
+        "year": "1898",
+        "density": "0.005887 g/cm³"
+      },
+      "Physical": {
+        "phase": "Gas",
+        "melting": "161.39",
+        "boiling": "165.1",
+        "classification": "non Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "12.130,1170.4",
+        "radius": "108",
+        "afinity": "",
+        "negativity": "2.6",
+        "covalentRadius": "\t130",
+        "vandalForces": "216",
+        "valence": "0",
+        "oxidation": "0"
+      },
+      "isotopes": [
+        {
+          "list": "126,0.08880,−89.173"
+        },
+        {
+          "list": "128,1.91732,−89.861 "
+        },
+        {
+          "list": "129,26.43964,−89.697 "
+        },
+        {
+          "list": "130,4.08271,−89.881 "
+        },
+        {
+          "list": "131,21.17961,−88.416 "
+        },
+        {
+          "list": "132,26.89157,−89.280"
+        },
+        {
+          "list": "134,10.44232,−88.124 "
+        },
+        {
+          "list": "136,8.86590,−86.424 "
+        }
+      ],
+      "id": 54
+    },
+    {
+      "ids":90,
+      "General": {
+        "name": "Cesium",
+        "symbol": "Cs",
+        "number": "55",
+        "neutron": "78",
+        "mass": "\t132.9054520 u",
+        "config1": "2, 8, 18, 18, 8, 1",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s¹,[Xe] 6s¹",
+        "pictures": "s,B3",
+        "family": "Alkaline metal",
+        "radioActive": "",
+        "groupPeriod": "6,1",
+        "year": "\t1860",
+        "density": "\t1.93 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "301.54",
+        "boiling": "944 ",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "3.894 ,375.7",
+        "radius": "298",
+        "afinity": "0.472,45.5",
+        "negativity": "0.79",
+        "covalentRadius": "225",
+        "vandalForces": "343",
+        "valence": "1",
+        "oxidation": "+1"
+      },
+      "isotopes": [],
+      "id": 55
+    },
+    {
+      "ids":91,
+      "General": {
+        "name": "Barium",
+        "symbol": "Ba",
+        "number": "56",
+        "neutron": "81",
+        "mass": "\t137.33 u",
+        "config1": "2, 8, 18, 18, 8, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s², [Xe] 6s²",
+        "pictures": "s,B4",
+        "family": "Alkaline earth metal",
+        "radioActive": "",
+        "groupPeriod": "6,2",
+        "year": "1808",
+        "density": "3.62 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1002 ",
+        "boiling": "2078 ",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "\t5.212 ,502.9",
+        "radius": "253",
+        "afinity": "",
+        "negativity": "0.89",
+        "covalentRadius": "198",
+        "vandalForces": "268",
+        "valence": "2",
+        "oxidation": "+2"
+      },
+      "isotopes": [
+        {
+          "list": "130,0.1058,−87.271"
+        },
+        {
+          "list": "132,0.1012,−88.440 "
+        },
+        {
+          "list": "134,2.417,−88.954 "
+        },
+        {
+          "list": "135,6.592,−87.856 "
+        },
+        {
+          "list": "136,7.853,−88.892 "
+        },
+        {
+          "list": "137,11.232,−87.727 "
+        },
+        {
+          "list": "138,71.699,−88.267 "
+        }
+      ],
+      "id": 56
+    },
+    {
+      "ids":"61A",
+      "General": {
+        "name": "Lanthanum",
+        "symbol": "La",
+        "number": "57",
+        "neutron": "82",
+        "mass": "\t138.9055 u",
+        "config1": "2, 8, 18, 18, 9, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 5d¹,[Xe] 6s² 5d¹",
+        "pictures": "f,L1",
+        "family": "Lanthanide",
+        "radioActive": "",
+        "groupPeriod": "6,1A",
+        "year": "1839",
+        "density": "6.15 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1191 ",
+        "boiling": "3737 ",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "5.577,538.1",
+        "radius": "195",
+        "afinity": "0.5,48",
+        "negativity": "1.1",
+        "covalentRadius": "169",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "\t+3"
+      },
+      "isotopes": [
+        {
+          "list": "138,0.09017,−86.529 "
+        }
+      ],
+      "id": 57
+    },
+    {
+      "ids":"62A",
+      "General": {
+        "name": "Cerium",
+        "symbol": "Ce",
+        "number": "58",
+        "neutron": "82",
+        "mass": "140.116 u",
+        "config1": "2, 8, 18, 19, 9, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹ 5d¹, [Xe] 6s² 4f¹ 5d¹",
+        "pictures": "f,L2",
+        "family": "Lanthanide",
+        "radioActive": "",
+        "groupPeriod": "6,2A",
+        "year": "\t1803",
+        "density": "6.770 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1071 ",
+        "boiling": "3715 ",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "5.539,534.4",
+        "radius": "298",
+        "afinity": "0.5,50",
+        "negativity": "1.12",
+        "covalentRadius": "",
+        "vandalForces": "",
+        "valence": "2",
+        "oxidation": "+4, +3"
+      },
+      "isotopes": [
+        {
+          "list": "138,0.251,−87.574 "
+        },
+        {
+          "list": "140,88.449,−88.088"
+        },
+        {
+          "list": "142,11.114,−84.543 "
+        }
+      ],
+      "id": 58
+    },
+    {
+      "ids":"63A",
+      "General": {
+        "name": "Praseodymium",
+        "symbol": "Pr",
+        "number": "59",
+        "neutron": "82",
+        "mass": "\t140.90766 u",
+        "config1": "2, 8, 18, 21, 8, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f³, [Xe] 6s² 4f³",
+        "pictures": "f,L3",
+        "family": "Lanthanide",
+        "radioActive": "",
+        "groupPeriod": "6,3A",
+        "year": "1885",
+        "density": "6.77 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1204 ",
+        "boiling": "3785 ",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "5.464,527",
+        "radius": "247",
+        "afinity": "0.52,50",
+        "negativity": "1.13",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "+3"
+      },
+      "isotopes": [],
+      "id": 59
+    },
+    {
+      "ids":"64A",
+      "General": {
+        "name": "Neodymium",
+        "symbol": "Nd",
+        "number": "60",
+        "neutron": "85",
+        "mass": "\t144.24 u",
+        "config1": "2, 8, 18, 22, 8, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f⁴, [Xe] 6s² 4f⁴",
+        "pictures": "f,L4",
+        "family": "Lanthanide",
+        "radioActive": "",
+        "groupPeriod": "6,4A",
+        "year": "\t1885",
+        "density": "7.01 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1294",
+        "boiling": "3347 ",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "5.525,533.1",
+        "radius": "206",
+        "afinity": "0.52,50",
+        "negativity": "1.14",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "+3"
+      },
+      "isotopes": [
+        {
+          "list": "143,12.18,−84.012 "
+        },
+        {
+          "list": "144,23.83,−83.758 "
+        },
+        {
+          "list": "145,8.30,−81.442 "
+        },
+        {
+          "list": "146,17.17,−80.936 "
+        },
+        {
+          "list": "148,5.74,−77.418 "
+        },
+        {
+          "list": "150,5.62,−73.694 "
+        }
+      ],
+      "id": 60
+    },
+    {
+      "ids":"65A",
+      "General": {
+        "name": "Promethium",
+        "symbol": "Pm",
+        "number": "61",
+        "neutron": "84",
+        "mass": "\t144.91276 u",
+        "config1": "2, 8, 18, 23, 8, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f⁵, [Xe] 6s² 4f⁵",
+        "pictures": "f,L5",
+        "family": "Lanthanide",
+        "radioActive": "Pm-145",
+        "groupPeriod": "6,5A",
+        "year": "\t7.26 g/cm³",
+        "density": "1945"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1315 ",
+        "boiling": "3273 ",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "5.55,533.1",
+        "radius": "205",
+        "afinity": "0.52,50",
+        "negativity": "1.14",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "\t+3"
+      },
+      "id": 61
+    },
+    {
+      "ids":"66A",
+      "General": {
+        "name": "Samarium",
+        "symbol": "Sm",
+        "number": "62",
+        "neutron": "88",
+        "mass": "150.4 u",
+        "config1": "2, 8, 18, 24, 8, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f⁶, [Xe] 6s² 4f⁶",
+        "pictures": "f,L6",
+        "family": "Lanthanide",
+        "radioActive": "",
+        "groupPeriod": "6,6A",
+        "year": "1879",
+        "density": "\t7.52 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1347 ",
+        "boiling": "2067 ",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "5.644,544.5",
+        "radius": "238",
+        "afinity": "0.52,50",
+        "negativity": "1.17",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "+3, +2"
+      },
+      "isotopes": [
+        {
+          "list": "144,3.0734,−81.976 "
+        },
+        {
+          "list": "147,14.9934,−79.276"
+        },
+        {
+          "list": "148,11.2406,−79.347 "
+        },
+        {
+          "list": "149,13.8189,−77.147"
+        },
+        {
+          "list": "150,7.3796,−77.061 "
+        },
+        {
+          "list": "152 ,26.7421,−74.773 "
+        },
+        {
+          "list": "154,22.7520,−72.465 "
+        }
+      ],
+      "id": 62
+    },
+    {
+      "ids":"67A",
+      "General": {
+        "name": "Europium",
+        "symbol": "Eu",
+        "number": "63",
+        "neutron": "89",
+        "mass": "\t151.964 u",
+        "config1": "2, 8, 18, 25, 8, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f, [Xe] 6s² 4f⁷",
+        "pictures": "f,L7",
+        "family": "Lanthanide",
+        "radioActive": "",
+        "groupPeriod": "6,7A",
+        "year": "\t1901",
+        "density": "\t5.24 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1095 ",
+        "boiling": "1800",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "5.670,547.1",
+        "radius": "231",
+        "afinity": "0.52,50",
+        "negativity": "",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "+3, +2"
+      },
+      "isotopes": [
+        {
+          "list": "153,52.190,−73.377 "
+        }
+      ],
+      "id": 63
+    },
+    {
+      "ids":"68A",
+      "General": {
+        "name": "Gadolinium",
+        "symbol": "Gd",
+        "number": "64",
+        "neutron": "93",
+        "mass": "\t157.2 u",
+        "config1": "2, 8, 18, 25, 9, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f⁷ 5d¹,[Xe] 6s² 4f⁷ 5d¹",
+        "pictures": "f,L8",
+        "family": "Lanthanide",
+        "radioActive": "",
+        "groupPeriod": "6,8A",
+        "year": "\t1880",
+        "density": "7.90 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1585",
+        "boiling": "3545",
+        "classification": "metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "6.150,593.4",
+        "radius": "233",
+        "afinity": "0.52,50",
+        "negativity": "1.2",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "+3"
+      },
+      "isotopes": [
+        {
+          "list": "154,2.1809,−73.716 "
+        },
+        {
+          "list": "155,14.7998,−72.080 "
+        },
+        {
+          "list": "156,20.4664,−72.545 "
+        },
+        {
+          "list": "157,15.6518,−70.834 "
+        },
+        {
+          "list": "158,24.8347,−0.700 "
+        },
+        {
+          "list": "160,21.8635,−67.952"
+        }
+      ],
+      "id": 64
+    },
+    {
+      "ids":"69A",
+      "General": {
+        "name": "Terbium",
+        "symbol": "Tb",
+        "number": "65",
+        "neutron": "94",
+        "mass": "158.92535",
+        "config1": "2, 8, 18, 27, 8, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f⁹,[Xe] 6s² 4f⁹",
+        "pictures": "f,L9",
+        "family": "Lanthanide",
+        "radioActive": "",
+        "groupPeriod": "6,9A",
+        "year": "\t1843",
+        "density": "\t8.23 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1629 ",
+        "boiling": "3500",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "5.864,565.8",
+        "radius": "225",
+        "afinity": "0.52,50",
+        "negativity": "",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "+3"
+      },
+      "isotopes": [],
+      "id": 65
+    },
+    {
+      "ids":"610A",
+      "General": {
+        "name": "Dysprosium",
+        "symbol": "Dy",
+        "number": "66",
+        "neutron": "97",
+        "mass": "\t162.500 u",
+        "config1": "2, 8, 18, 28, 8, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁰,[Xe] 6s² 4f¹⁰",
+        "pictures": "f,L10",
+        "family": "Lanthanide",
+        "radioActive": "",
+        "groupPeriod": "6,10A",
+        "year": "\t1886",
+        "density": "8.55 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1685 ",
+        "boiling": "2840",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "5.939,573.0",
+        "radius": "228",
+        "afinity": "0.52,50",
+        "negativity": "1.22",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "+3"
+      },
+      "isotopes": [
+        {
+          "list": "158,0.096,−70.417 "
+        },
+        {
+          "list": "160,2.34,−69.682 "
+        },
+        {
+          "list": "161,18.91,−68.065 "
+        },
+        {
+          "list": "162,25.51,−68.190 "
+        },
+        {
+          "list": "163,24.90,−66.390 "
+        },
+        {
+          "list": "164,28.19,−65.977 "
+        }
+      ],
+      "id": 66
+    },
+    {
+      "ids":"611A",
+      "General": {
+        "name": "Holmium",
+        "symbol": "Ho",
+        "number": "67",
+        "neutron": "98",
+        "mass": "\t164.93033 u",
+        "config1": "2, 8, 18, 29, 8, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹¹,[Xe] 6s² 4f¹¹",
+        "pictures": "f,L11",
+        "family": "Lanthanide",
+        "radioActive": "",
+        "groupPeriod": "6,11A",
+        "year": "1878",
+        "density": "\t8.80 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1747",
+        "boiling": "2968 ",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "6.022,581.0",
+        "radius": "226",
+        "afinity": "0.52,50",
+        "negativity": "1.23",
+        "covalentRadius": "",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "+3"
+      },
+      "isotopes": [],
+      "id": 67
+    },
+    {
+      "ids":"612A",
+      "General": {
+        "name": "Erbium",
+        "symbol": "Er",
+        "number": "68",
+        "neutron": "99",
+        "mass": "167.26 u",
+        "config1": "2, 8, 18, 30, 8, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹²,[Xe] 6s² 4f¹²",
+        "pictures": "f,L12",
+        "family": "Lanthanide",
+        "radioActive": "",
+        "groupPeriod": "6,12A",
+        "year": "\t1843",
+        "density": "9.07 g/cm³ "
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1802",
+        "boiling": "3140 ",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "6.022,581.0",
+        "radius": "226",
+        "afinity": "0.52,50",
+        "negativity": "1.24",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "\t+3"
+      },
+      "isotopes": [
+        {
+          "list": "162,0.137,−66.346 "
+        },
+        {
+          "list": "166,33.61,−64.934 "
+        },
+        {
+          "list": "167,22.93,−63.299"
+        },
+        {
+          "list": "168,26.79,−62.999 "
+        },
+        {
+          "list": "170,14.93,−60.118 "
+        }
+      ],
+      "id": 68
+    },
+    {
+      "ids":"613A",
+      "General": {
+        "name": "Thulium",
+        "symbol": "Tm",
+        "number": "69",
+        "neutron": "100",
+        "mass": "\t168.93422 u",
+        "config1": "2, 8, 18, 31, 8, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹³,[Xe] 6s² 4f¹³",
+        "pictures": "f,L13",
+        "family": "Lanthanide",
+        "radioActive": "",
+        "groupPeriod": "6,13A",
+        "year": "1879",
+        "density": "\t9.32 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1818 ",
+        "boiling": "2223 ",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "6.184,596.7",
+        "radius": "222",
+        "afinity": "0.52,50",
+        "negativity": "1.25",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "+3"
+      },
+      "isotopes": [],
+      "id": 69
+    },
+    {
+      "ids":"614A",
+      "General": {
+        "name": "Ytterbium",
+        "symbol": "Yb",
+        "number": "70",
+        "neutron": "103",
+        "mass": "173.05 u",
+        "config1": "2, 8, 18, 32, 8, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴,[Xe] 6s² 4f¹⁴",
+        "pictures": "f,L14",
+        "family": "Lanthanide",
+        "radioActive": "",
+        "groupPeriod": "6,14A",
+        "year": "1878",
+        "density": "6.90 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1092 ",
+        "boiling": "1469 ",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "6.254,603.4",
+        "radius": "222",
+        "afinity": "0.52,50",
+        "negativity": "1.25",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "\t+3, +2"
+      },
+      "isotopes": [
+        {
+          "list": "170,3.04,−60.772 "
+        },
+        {
+          "list": "171,14.28,−59.315 "
+        },
+        {
+          "list": "172,21.83,−59.264 "
+        },
+        {
+          "list": "173,16.13,−57.560 "
+        },
+        {
+          "list": "174,31.83,−56.953"
+        }
+      ],
+      "id": 70
+    },
+    {
+      "ids":"615A",
+      "General": {
+        "name": "Lutetium",
+        "symbol": "Lu",
+        "number": "71",
+        "neutron": "104",
+        "mass": "174.9668 u",
+        "config1": "2, 8, 18, 32, 9, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹,[Xe] 6s² 4f¹⁴ 5d¹",
+        "pictures": "f,L15",
+        "family": "Lanthanide",
+        "radioActive": "",
+        "groupPeriod": "6,15A",
+        "year": "1907",
+        "density": "9.84 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1936",
+        "boiling": "3668",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "5.426,523.5",
+        "radius": "217",
+        "afinity": "0.52,50",
+        "negativity": "1.27",
+        "covalentRadius": "160",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "+3"
+      },
+      "isotopes": [
+        {
+          "list": "175,97.416,−55.174 "
+        }
+      ],
+      "id": 71
+    },
+    {
+      "ids":93,
+      "General": {
+        "name": "Hafnium",
+        "symbol": "Hf",
+        "number": "72",
+        "neutron": "107",
+        "mass": "\t178.49 u",
+        "config1": "2, 8, 18, 32, 10, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d²,[Xe] 6s² 4f¹⁴ 5d²",
+        "pictures": "d,C22",
+        "family": "Transition metal",
+        "radioActive": "",
+        "groupPeriod": "6,4",
+        "year": "\t1923",
+        "density": "13.3 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "2504 ",
+        "boiling": "4875",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "6.825,658.5",
+        "radius": "208",
+        "afinity": "",
+        "negativity": "1.3",
+        "covalentRadius": "150",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "+4"
+      },
+      "isotopes": [
+        {
+          "list": "176,5.604,−54.584 "
+        },
+        {
+          "list": "177,18.5953,−52.890 "
+        },
+        {
+          "list": "178,27.811,−52.445"
+        },
+        {
+          "list": "179,13.6210,−50.473 "
+        },
+        {
+          "list": "180,35.0802,−49.790 "
+        }
+      ],
+      "id": 72
+    },
+    {
+      "ids":94,
+      "General": {
+        "name": "Tantalum",
+        "symbol": "Ta",
+        "number": "73",
+        "neutron": "108",
+        "mass": "180.9479 u",
+        "config1": "2, 8, 18, 32, 11, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d³,[Xe] 6s² 4f¹⁴ 5d³",
+        "pictures": "d,C23",
+        "family": "Transition metal",
+        "radioActive": "",
+        "groupPeriod": "6,5",
+        "year": "\t1802",
+        "density": "16.4 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "3293 ",
+        "boiling": "5730 ",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "7.89,761",
+        "radius": "200",
+        "afinity": "0.32,31",
+        "negativity": "1.5",
+        "covalentRadius": "138",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "+5"
+      },
+      "isotopes": [
+        {
+          "list": "181,99.9877,−48.441"
+        }
+      ],
+      "id": 73
+    },
+    {
+      "ids":95,
+      "General": {
+        "name": "Tungsten",
+        "symbol": "T",
+        "number": "74",
+        "neutron": "110",
+        "mass": "183.84 u",
+        "config1": "2, 8, 18, 32, 12, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d⁴,[Xe] 6s² 4f¹⁴ 5d⁴",
+        "pictures": "d,C24",
+        "family": "Transition metal",
+        "radioActive": "",
+        "groupPeriod": "6,6",
+        "year": "1783",
+        "density": "19.3 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "3695",
+        "boiling": "5825",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "7.98,770",
+        "radius": "193",
+        "afinity": "0.815,78.6",
+        "negativity": "2.36",
+        "covalentRadius": "146",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "\t+6"
+      },
+      "isotopes": [
+        {
+          "list": "182,26.4985,−48.246"
+        },
+        {
+          "list": " 183,14.3136,−46.366 "
+        },
+        {
+          "list": "184,30.6422,−45.706 "
+        },
+        {
+          "list": "186,28.4259,−42.511 "
+        }
+      ],
+      "id": 74
+    },
+    {
+      "ids":96,
+      "General": {
+        "name": "Rhenium",
+        "symbol": "Re",
+        "number": "75",
+        "neutron": "111",
+        "mass": "186.207 u",
+        "config1": "2, 8, 18, 32, 13, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d⁵,[Xe] 6s² 4f¹⁴ 5d⁵",
+        "pictures": "d,C25",
+        "family": "Transition metal",
+        "radioActive": "",
+        "groupPeriod": "6,7",
+        "year": "1925",
+        "density": "\t20.8 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "3455 ",
+        "boiling": "5870",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "7.88,760",
+        "radius": "188",
+        "afinity": "0.150,14.5",
+        "negativity": "1.9",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "+7, +6, +4"
+      },
+      "isotopes": [
+        {
+          "list": "185,37.398,−43.821"
+        }
+      ],
+      "id": 75
+    },
+    {
+      "ids":97,
+      "General": {
+        "name": "Osmium",
+        "symbol": "Os",
+        "number": "76",
+        "neutron": "114",
+        "mass": "\t190.2 u",
+        "config1": "2, 8, 18, 32, 14, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d⁶,[Xe] 6s² 4f¹⁴ 5d⁶",
+        "pictures": "d,C26",
+        "family": "Transition metal",
+        "radioActive": "",
+        "groupPeriod": "6,8",
+        "year": "\t1803",
+        "density": "22.57 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "3300 ",
+        "boiling": "5300",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "8.71,840",
+        "radius": "185",
+        "afinity": "1.100,106.1",
+        "negativity": "2.2",
+        "covalentRadius": "128",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "\t+4, +3"
+      },
+      "isotopes": [
+        {
+          "list": "186,1.5859,−42.999"
+        },
+        {
+          "list": "187,1.9644,−41.220 "
+        },
+        {
+          "list": "188,13.2434,−41.138 "
+        },
+        {
+          "list": "189,16.1466,−38.988"
+        },
+        {
+          "list": "189,16.1466,−38.988"
+        },
+        {
+          "list": "190,26.2584,−38.708 "
+        },
+        {
+          "list": "192,40.7815,−35.882"
+        }
+      ],
+      "id": 76
+    },
+    {
+      "ids":98,
+      "General": {
+        "name": "Iridium",
+        "symbol": "Ir",
+        "number": "77",
+        "neutron": "115",
+        "mass": "192.22 u",
+        "config1": "2, 8, 18, 32, 15, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d⁷,[Xe] 6s² 4f¹⁴ 5d⁷",
+        "pictures": "d,C27",
+        "family": "Transition metal",
+        "radioActive": "",
+        "groupPeriod": "6,9",
+        "year": "1803",
+        "density": "22.42 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "2720 ",
+        "boiling": "4700",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "9.12,880",
+        "radius": "180",
+        "afinity": "1.57,151",
+        "negativity": "2.2",
+        "covalentRadius": "137",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "\t+4, +3"
+      },
+      "isotopes": [
+        {
+          "list": "193,62.728,−34.536"
+        }
+      ],
+      "id": 77
+    },
+    
+    {
+      "ids":99,
+      "General": {
+        "name": "Platinum",
+        "symbol": "Pt",
+        "number": "78",
+        "neutron": "117",
+        "mass": "\t195.08 u",
+        "config1": "2, 8, 18, 32, 17, 1",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s¹ 4f¹⁴ 5d⁹,[Xe] 6s¹ 4f¹⁴ 5d⁹",
+        "pictures": "d,C28",
+        "family": "Transition metal",
+        "radioActive": "",
+        "groupPeriod": "6,10",
+        "year": "\t1735",
+        "density": "\t21.46 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "2042.1",
+        "boiling": "4100 ",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "9.02,870",
+        "radius": "177",
+        "afinity": "2.128,205.3",
+        "negativity": "\t2.28",
+        "covalentRadius": "128",
+        "vandalForces": "175",
+        "valence": "1",
+        "oxidation": "\t+4, +2"
+      },
+      "isotopes": [
+        {
+          "list": "192,0.782659,−36.296"
+        },
+        {
+          "list": "194,32.96700,−34.779 "
+        },
+        {
+          "list": " 195,33.831557,−32.812 "
+        },
+        {
+          "list": "196,25.24166,−32.663 "
+        },
+        {
+          "list": "198,7.16349,−29.923 "
+        }
+      ],
+      "id": 78
+    },
+    {
+      "ids":100,
+      "General": {
+        "name": "Gold",
+        "symbol": "Au",
+        "number": "79",
+        "neutron": "118",
+        "mass": "196.967 u",
+        "config1": "2, 8, 18, 32, 18, 1",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s¹ 4f¹⁴ 5d¹⁰, [Xe] 6s¹ 4f¹⁴ 5d¹⁰",
+        "pictures": "d,C29",
+        "family": "Transition metal",
+        "radioActive": "",
+        "groupPeriod": "6,11",
+        "year": "Ancient",
+        "density": "19.3gcm−3"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1337.58",
+        "boiling": "3080",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "9.225,890.1",
+        "radius": "174",
+        "afinity": "2.309,222.8",
+        "negativity": "2.54",
+        "covalentRadius": "Null",
+        "vandalForces": "166",
+        "valence": "1",
+        "oxidation": "-1, 1, 2, 3, 5"
+      },
+      "id": 79
+    },
+    {
+      "ids":101,
+      "General": {
+        "name": "Mercury",
+        "symbol": "Hg",
+        "number": "80",
+        "neutron": "120",
+        "mass": "200.59 u",
+        "config1": "2, 8, 18, 32, 18, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰,[Xe] 6s² 4f¹⁴ 5d¹⁰",
+        "pictures": "d,C30",
+        "family": "Transition metal",
+        "radioActive": "",
+        "groupPeriod": "6,12",
+        "year": "Ancient",
+        "density": "13.5336 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "234.31 ",
+        "boiling": "629.88",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "10.438,1,007.1",
+        "radius": "171",
+        "afinity": "",
+        "negativity": "2.0",
+        "covalentRadius": "\t149",
+        "vandalForces": "166",
+        "valence": "2",
+        "oxidation": "\t+2, +1"
+      },
+      "id": 80
+    },
+    {
+      "ids":102,
+      "General": {
+        "name": "Thallium",
+        "symbol": "Tl",
+        "number": "81",
+        "neutron": "123",
+        "mass": "\t204.383 u",
+        "config1": "2, 8, 18, 32, 18, 3",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p¹,[Xe] 6s² 4f¹⁴ 5d¹⁰ 6p¹",
+        "pictures": "p,D13",
+        "family": "Post-transition metal",
+        "radioActive": "",
+        "groupPeriod": "6,13",
+        "year": "\t1861",
+        "density": "\t11.8 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "577 ",
+        "boiling": "1746 ",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "6.109,589.4",
+        "radius": "156",
+        "afinity": "0.199,19.2",
+        "negativity": "1.62",
+        "covalentRadius": "148",
+        "vandalForces": "196",
+        "valence": "3",
+        "oxidation": "+3, +1"
+      },
+      "isotopes": [
+        {
+          "list": "205,70.476,−23.834 "
+        }
+      ],
+      "id": 81
+    },
+    {
+      "ids":103,
+      "General": {
+        "name": "Lead",
+        "symbol": "Pb",
+        "number": "82",
+        "neutron": "125",
+        "mass": "\t207 u",
+        "config1": "2, 8, 18, 32, 18, 4",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p²,[Xe] 6s² 4f¹⁴ 5d¹⁰ 6p²",
+        "pictures": "p,D14",
+        "family": "Post-transition metal",
+        "radioActive": "",
+        "groupPeriod": "6,14",
+        "year": "Ancient",
+        "density": "11.342 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "600.65",
+        "boiling": "2023 ",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "7.417,715.6",
+        "radius": "154",
+        "afinity": "0.364,35.1",
+        "negativity": "2.33",
+        "covalentRadius": "147",
+        "vandalForces": "202",
+        "valence": "5",
+        "oxidation": "+4, +2"
+      },
+      "isotopes": [
+        {
+          "list": "206,24.1447,−23.801 "
+        },
+        {
+          "list": "207,22.0827,−22.467 "
+        },
+        {
+          "list": "208,52.3481,−21.764 "
+        }
+      ],
+      "id": 82
+    },
+    {
+      "ids":104,
+      "General": {
+        "name": "Bismuth",
+        "symbol": "Bi",
+        "number": "83",
+        "neutron": "126",
+        "mass": "208.98040 u",
+        "config1": "2, 8, 18, 32, 18, 5",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p³,[Xe] 6s² 4f¹⁴ 5d¹⁰ 6p³",
+        "pictures": "p,D15",
+        "family": "Post-transition metal",
+        "radioActive": "",
+        "groupPeriod": "6,15",
+        "year": "1753",
+        "density": "9.807 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "544.59 ",
+        "boiling": "1837 ",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "7.29,703",
+        "radius": "143",
+        "afinity": "0.945,91.2",
+        "negativity": "2.02",
+        "covalentRadius": "146",
+        "vandalForces": "207",
+        "valence": "6",
+        "oxidation": "+5, +3"
+      },
+      "isotopes": [],
+      "id": 83
+    },
+    {
+      "ids":105,
+      "General": {
+        "name": "Polonium",
+        "symbol": "Po",
+        "number": "84",
+        "neutron": "125",
+        "mass": "208.98243 u",
+        "config1": "2, 8, 18, 32, 18, 6",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁴,[Xe] 6s² 4f¹⁴ 5d¹⁰ 6p⁴",
+        "pictures": "p,D16",
+        "family": "Post-transition metal",
+        "radioActive": "Po-209",
+        "groupPeriod": "6,16",
+        "year": "\t1898",
+        "density": "9.32 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "527",
+        "boiling": "1235",
+        "classification": "Metalloid",
+        "allotropes": "\tAlpha Polonium, Beta Polonium"
+      },
+      "Reactive": {
+        "Ionization": "8.417,812.1",
+        "radius": "135",
+        "afinity": "1.900,183.3",
+        "negativity": "2.0",
+        "covalentRadius": "145",
+        "vandalForces": "197",
+        "valence": "6",
+        "oxidation": "+4, +2"
+      },
+      "id": 84
+    },
+    {
+      "ids":106,
+      "General": {
+        "name": "Astatine",
+        "symbol": "At",
+        "number": "85",
+        "neutron": "125",
+        "mass": "209.98715 u",
+        "config1": "2, 8, 18, 32, 18, 7",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁵,[Xe] 6s² 4f¹⁴ 5d¹⁰ 6p⁵",
+        "pictures": "p,D17",
+        "family": "Metalloid",
+        "radioActive": "At-210",
+        "groupPeriod": "6,17",
+        "year": "\t1940",
+        "density": "7 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "575 ",
+        "boiling": "610 ",
+        "classification": "Non Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "9.22,890",
+        "radius": "127",
+        "afinity": "2.799,270.1",
+        "negativity": "2.2",
+        "covalentRadius": "147",
+        "vandalForces": "202",
+        "valence": "7",
+        "oxidation": "\t7, 5, 3, 1, -1"
+      },
+      "id": 85
+    },
+    {
+      "ids":107,
+      "General": {
+        "name": "Radon",
+        "symbol": "Rn",
+        "number": "86",
+        "neutron": "136",
+        "mass": "\t222.01758 u",
+        "config1": "2, 8, 18, 32, 18, 8",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶,[Xe] 6s² 4f¹⁴ 5d¹⁰ 6p⁶",
+        "pictures": "p,D18",
+        "family": "Noble gas",
+        "radioActive": "Rn-222",
+        "groupPeriod": "6,18",
+        "year": "1900",
+        "density": "0.00973 g/cm³"
+      },
+      "Physical": {
+        "phase": "Gas",
+        "melting": "202",
+        "boiling": "211.4 ",
+        "classification": "Non Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "10.75,1,037",
+        "radius": "120",
+        "afinity": "",
+        "negativity": "",
+        "covalentRadius": "145",
+        "vandalForces": "220",
+        "valence": "8",
+        "oxidation": ""
+      },
+      "id": 86
+    },
+    {
+      "ids":108,
+      "General": {
+        "name": "Francium",
+        "symbol": "Fr",
+        "number": "87",
+        "neutron": "136",
+        "mass": "\t223.01973 u",
+        "config1": "2, 8, 18, 32, 18, 8, 1",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s¹,[Rn]7s1",
+        "pictures": "s,B5",
+        "family": "Alkaline metal",
+        "radioActive": "Fr-223",
+        "groupPeriod": "7,1",
+        "year": "\t1939",
+        "density": ""
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "300 ",
+        "boiling": "950 ",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "3.94,380",
+        "radius": "Null",
+        "afinity": "",
+        "negativity": "0.7",
+        "covalentRadius": "Null",
+        "vandalForces": "348",
+        "valence": "1",
+        "oxidation": "\t+1"
+      },
+      "id": 87
+    },
+    {
+      "ids":109,
+      "General": {
+        "name": "Radium",
+        "symbol": "Ra",
+        "number": "88",
+        "neutron": "138",
+        "mass": "\t226.02541 u",
+        "config1": "2, 8, 18, 32, 18, 8, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s²,[Rn] 7s²",
+        "pictures": "s,B6",
+        "family": "Alkaline earth metal",
+        "radioActive": "Ra-226",
+        "groupPeriod": "7,2",
+        "year": "\t1898",
+        "density": "\t5 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "973",
+        "boiling": "1413",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "5.279,509.3",
+        "radius": "Null",
+        "afinity": "",
+        "negativity": "0.9",
+        "covalentRadius": "Null",
+        "vandalForces": "283",
+        "valence": "2",
+        "oxidation": "+2"
+      },
+      "id": 88
+    },
+    {
+      "ids":"71A",
+      "General": {
+        "name": "Actinium",
+        "symbol": "Ac",
+        "number": "89",
+        "neutron": "142",
+        "mass": "227.02775 u",
+        "config1": "2, 8, 18, 32, 18, 9, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s² 6d¹,[Rn] 7s² 6d¹",
+        "pictures": "f,L16",
+        "family": "Actinide",
+        "radioActive": "\tAc-227",
+        "groupPeriod": "7,1B",
+        "year": "\t1899",
+        "density": "\t10.07 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1323  ",
+        "boiling": "3473 ",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "5.17,499",
+        "radius": "195",
+        "afinity": "",
+        "negativity": "1.1",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "\t+3"
+      },
+      "id": 89
+    },
+    {
+      "ids":"72A",
+      "General": {
+        "name": "Thorium",
+        "symbol": "Th",
+        "number": "90",
+        "neutron": "142",
+        "mass": "232.038 u",
+        "config1": "2, 8, 18, 32, 18, 10, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s² 6d²,[Rn] 7s² 6d²",
+        "pictures": "f,L17",
+        "family": "Actinide",
+        "radioActive": "Th-232",
+        "groupPeriod": "7,2B",
+        "year": "",
+        "density": "11.72 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "2028",
+        "boiling": "5060",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "6.08,587",
+        "radius": "180",
+        "afinity": "",
+        "negativity": "1.3",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "+4"
+      },
+      "isotopes": [],
+      "id": 90
+    },
+    {
+      "ids":"73A",
+      "General": {
+        "name": "Protactinium",
+        "symbol": "Pa",
+        "number": "91",
+        "neutron": "140",
+        "mass": "231.03588 u",
+        "config1": "2, 8, 18, 32, 20, 9, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s² 5f² 6d¹,[Rn] 7s² 5f² 6d¹",
+        "pictures": "f,L18",
+        "family": "Actinide",
+        "radioActive": "Pa-231",
+        "groupPeriod": "7,3B",
+        "year": "1913",
+        "density": "\t15.37 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1845 ",
+        "boiling": "4300",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "5.89,568",
+        "radius": "180",
+        "afinity": "",
+        "negativity": "1.5",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "+5, +4"
+      },
+      "id": 91
+    },
+    {
+      "ids":"74A",
+      "General": {
+        "name": "Uranium",
+        "symbol": "U",
+        "number": "92",
+        "neutron": "146",
+        "mass": "\t238.0289 u",
+        "config1": "2, 8, 18, 32, 21, 9, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s² 5f³ 6d¹,[Rn] 7s² 5f³ 6d¹",
+        "pictures": "f,L19",
+        "family": "Actinide",
+        "radioActive": "\tU-235",
+        "groupPeriod": "7,4B",
+        "year": "\t1789",
+        "density": "18.95 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1408 ",
+        "boiling": "4407",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "6.194,597.6",
+        "radius": "175",
+        "afinity": "",
+        "negativity": "1.38",
+        "covalentRadius": "Null",
+        "vandalForces": "\t186",
+        "valence": "2",
+        "oxidation": "\t+6, +5, +4, +3"
+      },
+      "isotopes": [
+        {
+          "list": "235,0.7200,40.914"
+        },
+        {
+          "list": "238,99.2745,47.304 "
+        }
+      ],
+      "id": 92
+    },
+    {
+      "ids":"75A",
+      "General": {
+        "name": "Neptunium",
+        "symbol": "Np",
+        "number": "93",
+        "neutron": "144",
+        "mass": "\t237.048172 u",
+        "config1": "2, 8, 18, 32, 22, 9, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s² 5f⁴ 6d¹,[Rn] 7s² 5f⁴ 6d¹",
+        "pictures": "f,L20",
+        "family": "Actinide",
+        "radioActive": "\tNp-237",
+        "groupPeriod": "7,5B",
+        "year": "\t1940",
+        "density": "\t20.25 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "912 ",
+        "boiling": "4175 ",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "6.265,604.5",
+        "radius": "175",
+        "afinity": "",
+        "negativity": "",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "\t+6, +5, +4, +3"
+      },
+      "id": 93
+    },
+    {
+      "ids":"76A",
+      "General": {
+        "name": "Plutonium",
+        "symbol": "Pu",
+        "number": "94",
+        "neutron": "150",
+        "mass": "244.06420 u",
+        "config1": "2, 8, 18, 32, 24, 8, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s² 5f⁶,[Rn] 7s² 5f⁶",
+        "pictures": "f,L21",
+        "family": "Actinide",
+        "radioActive": "Pu-244",
+        "groupPeriod": "7,6B",
+        "year": "\t1940",
+        "density": "19.84 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "913 ",
+        "boiling": "3505",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "6.060,584.7",
+        "radius": "175",
+        "afinity": "",
+        "negativity": "\t1.28",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "\t+6, +5, +4, +3"
+      },
+      "id": 94
+    },
+    {
+      "ids":"77A",
+      "General": {
+        "name": "Americium",
+        "symbol": "Am",
+        "number": "95",
+        "neutron": "148",
+        "mass": "\t243.061380 u",
+        "config1": "2, 8, 18, 32, 25, 8, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s² 5f⁷,[Rn] 7s² 5f⁷",
+        "pictures": "f,L22",
+        "family": "Actinide",
+        "radioActive": "\tAm-243",
+        "groupPeriod": "7,7B",
+        "year": "1944",
+        "density": "\t13.69 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1449 ",
+        "boiling": "2880",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "5.99,578",
+        "radius": "175",
+        "afinity": "",
+        "negativity": "1.3",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "+6, +5, +4, +3"
+      },
+      "id": 95
+    },
+    {
+      "ids":"78A",
+      "General": {
+        "name": "Curium",
+        "symbol": "Cm",
+        "number": "96",
+        "neutron": "151",
+        "mass": "247.07035 u",
+        "config1": "2, 8, 18, 32, 25, 9, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s² 5f⁷ 6d¹,[Rn] 7s² 5f⁷ 6d¹",
+        "pictures": "f,L23",
+        "family": "Actinide",
+        "radioActive": "Cm-248",
+        "groupPeriod": "7,8B",
+        "year": "\t1944",
+        "density": "13.51 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1613 ",
+        "boiling": "3383",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "6.02,581",
+        "radius": "Null",
+        "afinity": "",
+        "negativity": "1.3",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "+3"
+      },
+      "id": 96
+    },
+    {
+      "ids":"79A",
+      "General": {
+        "name": "Berkelium",
+        "symbol": "Bk",
+        "number": "97",
+        "neutron": "150",
+        "mass": "\t247.07031 u",
+        "config1": "2, 8, 18, 32, 27, 8, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s² 5f⁹,[Rn] 7s² 5f⁹",
+        "pictures": "f,L24",
+        "family": "Actinide",
+        "radioActive": "Bk-247",
+        "groupPeriod": "7,9B",
+        "year": "1949",
+        "density": "14 g/cm³"
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1259.2",
+        "boiling": " 3173 ",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "6.23,601",
+        "radius": "Null",
+        "afinity": "",
+        "negativity": "1.3",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "+4, +3"
+      },
+      "id": 97
+    },
+    {
+      "ids":"710A",
+      "General": {
+        "name": "Californium",
+        "symbol": "Cf",
+        "number": "98",
+        "neutron": "153",
+        "mass": "\t251.07959 u",
+        "config1": "2, 8, 18, 32, 28, 8, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s² 5f¹⁰,[Rn] 7s² 5f¹⁰",
+        "pictures": "f,L25",
+        "family": "Actinide",
+        "radioActive": "Cf-251",
+        "groupPeriod": "7,10B",
+        "year": "1950",
+        "density": "15.1 "
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1173",
+        "boiling": "1743",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "6.30,608",
+        "radius": "Null",
+        "afinity": "",
+        "negativity": "1.3",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "+3"
+      },
+      "id": 98
+    },
+    {
+      "ids":"711A",
+      "General": {
+        "name": "Einsteinium",
+        "symbol": "Es",
+        "number": "99",
+        "neutron": "153",
+        "mass": "\t252.0830 u",
+        "config1": "2, 8, 18, 32, 29, 8, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s² 5f¹¹,[Rn] 7s² 5f¹¹",
+        "pictures": "f,L26",
+        "family": "Actinide",
+        "radioActive": "Es-252",
+        "groupPeriod": "7,11B",
+        "year": "1952",
+        "density": ""
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1133",
+        "boiling": "1269",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "6.42,619",
+        "radius": "Null",
+        "afinity": "",
+        "negativity": "1.3",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "+3"
+      },
+      "id": 99
+    },
+    {
+      "ids":"712A",
+      "General": {
+        "name": "Fermium",
+        "symbol": "Fm",
+        "number": "100",
+        "neutron": "157",
+        "mass": "257.09511 u",
+        "config1": "2, 8, 18, 32, 30, 8, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s² 5f¹²,[Rn] 7s² 5f¹²",
+        "pictures": "f,L27",
+        "family": "Actinide",
+        "radioActive": "Fm-257",
+        "groupPeriod": "7,12B",
+        "year": "1952",
+        "density": ""
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1800",
+        "boiling": "Null",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "6.50",
+        "radius": "Null",
+        "afinity": "",
+        "negativity": "1.3",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "+3"
+      },
+      "id": 100
+    },
+    {
+      "ids":"713A",
+      "General": {
+        "name": "Mendelevium",
+        "symbol": "Md",
+        "number": "101",
+        "neutron": "157",
+        "mass": "258.09843 u",
+        "config1": "2, 8, 18, 32, 31, 8, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s² 5f¹³,[Rn] 7s² 5f¹³",
+        "pictures": "f,L28",
+        "family": "Actinide",
+        "radioActive": "Md-258",
+        "groupPeriod": "7,13B",
+        "year": "1955",
+        "density": ""
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1100",
+        "boiling": "Null",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "6.58,635",
+        "radius": "Null",
+        "afinity": "",
+        "negativity": "1.3",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "\t+3, +2"
+      },
+      "id": 101
+    },
+    {
+      "ids":"714A",
+      "General": {
+        "name": "Nobelium",
+        "symbol": "No",
+        "number": "102",
+        "neutron": "157",
+        "mass": "\t259.10100 u",
+        "config1": "2, 8, 18, 32, 32, 8, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s² 5f¹⁴,[Rn] 7s² 5f¹⁴",
+        "pictures": "f,L29",
+        "family": "Actinide",
+        "radioActive": "No-259",
+        "groupPeriod": "7,14B",
+        "year": "\t1957",
+        "density": ""
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1100",
+        "boiling": "Null",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "6.65,642",
+        "radius": "Null",
+        "afinity": "",
+        "negativity": "1.3",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "+3, +2"
+      },
+      "id": 102
+    },
+    {
+      "ids":"715A",
+      "General": {
+        "name": "Lawrencium",
+        "symbol": "Lr",
+        "number": "103",
+        "neutron": "163",
+        "mass": "266.120 u",
+        "config1": "2, 8, 18, 32, 32, 8, 3",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s² 5f¹⁴ 7p¹,[Rn] 7s² 5f¹⁴ 7p¹",
+        "pictures": "f,L30",
+        "family": "Actinide",
+        "radioActive": "\tLr-266",
+        "groupPeriod": "7,15B",
+        "year": "1961",
+        "density": ""
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "1900",
+        "boiling": "Null",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "4.87,470",
+        "radius": "Null",
+        "afinity": "",
+        "negativity": "",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "+3"
+      },
+      "id": 103
+    },
+    {
+      "ids":111,
+      "General": {
+        "name": "Rutherfordium",
+        "symbol": "Rf",
+        "number": "104",
+        "neutron": "163",
+        "mass": "\t267.122 u",
+        "config1": "2, 8, 18, 32, 32, 10, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s² 5f¹⁴ 6d²,[Rn] 7s² 5f¹⁴ 6d²",
+        "pictures": "d,C32",
+        "family": "Transition metal",
+        "radioActive": "Rf-267",
+        "groupPeriod": "7,3",
+        "year": "1964",
+        "density": ""
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "2400 (predicted)",
+        "boiling": "5800 (predicted)",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "6.01,580",
+        "radius": "Null",
+        "afinity": "",
+        "negativity": "",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "2",
+        "oxidation": "\t+4"
+      },
+      "id": 104
+    },
+    {
+      "ids":112,
+      "General": {
+        "name": "Dubnium",
+        "symbol": "Db",
+        "number": "105",
+        "neutron": "163",
+        "mass": "268.126 u",
+        "config1": "2, 8, 18, 32, 32, 11",
+        "config2": " 21s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s² 5f¹⁴ 6d³,[Rn] 7s² 5f¹⁴ 6d³",
+        "pictures": "d,C33",
+        "family": "Transition metal",
+        "radioActive": "Db-268",
+        "groupPeriod": "7,4",
+        "year": "\t1967",
+        "density": ""
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "Null",
+        "boiling": "Null",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "",
+        "radius": "Null",
+        "afinity": "",
+        "negativity": "",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "",
+        "oxidation": "\t5, 4, 3"
+      },
+      "id": 105
+    },
+    {
+      "ids":113,
+      "General": {
+        "name": "Seaborgium",
+        "symbol": "Sg",
+        "number": "106",
+        "neutron": "163",
+        "mass": "\t269.128 u",
+        "config1": "2, 8, 18, 32, 32, 12, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s² 5f¹⁴ 6d⁴,[Rn] 7s² 5f¹⁴ 6d⁴",
+        "pictures": "d,C34",
+        "family": "Transition metal",
+        "radioActive": "Sg-269",
+        "groupPeriod": "7,5",
+        "year": "1974",
+        "density": ""
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "Null",
+        "boiling": "Null",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "",
+        "radius": "Null",
+        "afinity": "",
+        "negativity": "",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "",
+        "oxidation": "6, 5, 4, 3, 0"
+      },
+      "id": 106
+    },
+    {
+      "ids":114,
+      "General": {
+        "name": "Bohrium",
+        "symbol": "Bh",
+        "number": "107",
+        "neutron": "100",
+        "mass": "270.133 u",
+        "config1": "2, 8, 18, 32, 32, 13, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s² 5f¹⁴ 6d⁵,[Rn] 7s² 5f¹⁴ 6d⁵",
+        "pictures": "d,C35",
+        "family": "Transition metal",
+        "radioActive": "Bh-278",
+        "groupPeriod": "7,6",
+        "year": "1976",
+        "density": ""
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "Null",
+        "boiling": "Null",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "",
+        "radius": "Null",
+        "afinity": "",
+        "negativity": "",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "",
+        "oxidation": "7, 5, 4, 3"
+      },
+      "id": 107
+    },
+    {
+      "ids":115,
+      "General": {
+        "name": "Hassium",
+        "symbol": "Hs",
+        "number": "108",
+        "neutron": "161",
+        "mass": "269.1336 u",
+        "config1": "2, 8, 18, 32, 32, 14, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s² 5f¹⁴ 6d⁶,[Rn] 7s² 5f¹⁴ 6d⁶",
+        "pictures": "d,C36",
+        "family": "Transition metal",
+        "radioActive": "Hs-269",
+        "groupPeriod": "7,7",
+        "year": "1984",
+        "density": ""
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "Null",
+        "boiling": "Null",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "",
+        "radius": "Null",
+        "afinity": "",
+        "negativity": "",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "",
+        "oxidation": "\t8, 6, 5, 4, 3, 2"
+      },
+      "id": 108
+    },
+    {
+      "ids":116,
+      "General": {
+        "name": "Meitnerium",
+        "symbol": "Mt",
+        "number": "109",
+        "neutron": "168",
+        "mass": "\t277.154 u",
+        "config1": "2, 8, 18, 32, 32, 15, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s² 5f¹⁴ 6d⁷,[Rn] 7s² 5f¹⁴ 6d⁷",
+        "pictures": "d,C37",
+        "family": "Transition Metal",
+        "radioActive": "Mt – 282",
+        "groupPeriod": "7,8",
+        "year": "\t1982",
+        "density": ""
+      },
+      "Physical": {
+        "phase": "Solid",
+        "melting": "Null",
+        "boiling": "Null",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "",
+        "radius": "Null",
+        "afinity": "",
+        "negativity": "",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "",
+        "oxidation": "\t9, 8, 6, 4, 3, 1"
+      },
+      "id": 109
+    },
+    {
+      "ids":117,
+      "General": {
+        "name": "Darmstadtium",
+        "symbol": "Ds",
+        "number": "110",
+        "neutron": "172",
+        "mass": "282.166 u",
+        "config1": "2, 8, 18, 32, 32, 17, 1",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s¹ 5f¹⁴ 6d⁹,[Rn] 7s¹ 5f¹⁴ 6d⁹",
+        "pictures": "d,C38",
+        "family": "Transition Metal",
+        "radioActive": "Ds-281",
+        "groupPeriod": "7,10",
+        "year": "1994",
+        "density": ""
+      },
+      "Physical": {
+        "phase": "Solid(expected)",
+        "melting": "Null",
+        "boiling": "Null",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "",
+        "radius": "Null",
+        "afinity": "",
+        "negativity": "",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "",
+        "oxidation": "8, 6, 4, 2, 0"
+      },
+      "id": 110
+    },
+    {
+      "ids":118,
+      "General": {
+        "name": "Roentgenium",
+        "symbol": "Rg",
+        "number": "111",
+        "neutron": "171",
+        "mass": "282.169 u",
+        "config1": "2, 8, 18, 32, 32, 17, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s² 5f¹⁴ 6d⁹,[Rn] 7s² 5f¹⁴ 6d⁹",
+        "pictures": "d,C39",
+        "family": "Transitional Metal",
+        "radioActive": "Rg-286",
+        "groupPeriod": "7,11",
+        "year": "",
+        "density": ""
+      },
+      "Physical": {
+        "phase": "Solid (Expected)",
+        "melting": "Null",
+        "boiling": "Null",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "",
+        "radius": "Null",
+        "afinity": "",
+        "negativity": "",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "",
+        "oxidation": "5, 3, 1, -1"
+      },
+      "id": 111
+    },
+    {
+      "ids":119,
+      "General": {
+        "name": "Copernicium",
+        "symbol": "Cn",
+        "number": "112",
+        "neutron": "174",
+        "mass": "286.179 u",
+        "config1": "2, 8, 18, 32, 32, 18, 2",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s² 5f¹⁴ 6d¹⁰,[Rn] 7s² 5f¹⁴ 6d¹⁰",
+        "pictures": "d,C40",
+        "family": "Transitional Metal",
+        "radioActive": "Cn-285",
+        "groupPeriod": "7,12",
+        "year": "1996",
+        "density": ""
+      },
+      "Physical": {
+        "phase": "Solid (Expected)",
+        "melting": "283±11",
+        "boiling": "340±10",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "",
+        "radius": "Null",
+        "afinity": "",
+        "negativity": "",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "",
+        "oxidation": "2, 1, 0"
+      },
+      "id": 112
+    },
+    {
+      "ids":120,
+      "General": {
+        "name": "Nihonium",
+        "symbol": "Nh",
+        "number": "113",
+        "neutron": "173",
+        "mass": "286.182 u",
+        "config1": "2, 8, 18, 32, 32, 18, 3",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s² 5f¹⁴ 6d¹⁰ 7p¹,[Rn] 7s² 5f¹⁴ 6d¹⁰ 7p¹",
+        "pictures": "p,D19",
+        "family": "Transition Metal",
+        "radioActive": "\tNh-286",
+        "groupPeriod": "7,13",
+        "year": "2004",
+        "density": ""
+      },
+      "Physical": {
+        "phase": "Solid (Expected)",
+        "melting": "700",
+        "boiling": "1430",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "",
+        "radius": "Null",
+        "afinity": "",
+        "negativity": "",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "",
+        "oxidation": ""
+      },
+      "id": 113
+    },
+    {
+      "ids":121,
+      "General": {
+        "name": "Flerovium",
+        "symbol": "Fl",
+        "number": "114",
+        "neutron": "176",
+        "mass": "290.192 u",
+        "config1": "2, 8, 18, 32, 32, 18, 4",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s² 5f¹⁴ 6d¹⁰ 7p²,[Rn] 7s² 5f¹⁴ 6d¹⁰ 7p²",
+        "pictures": "p,D20",
+        "family": "Post-Transition Metal",
+        "radioActive": "Fl-290",
+        "groupPeriod": "7,14",
+        "year": "1998",
+        "density": ""
+      },
+      "Physical": {
+        "phase": "Solid(Expected)",
+        "melting": "200",
+        "boiling": "380",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "",
+        "radius": "Null",
+        "afinity": "",
+        "negativity": "",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "",
+        "oxidation": "6, 4,2, 1, 0"
+      },
+      "id": 114
+    },
+    {
+      "ids":122,
+      "General": {
+        "name": "Moscovium",
+        "symbol": "Mc",
+        "number": "115",
+        "neutron": "175",
+        "mass": "\t290.196 u",
+        "config1": "2, 8, 18, 32, 32, 18, 5",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s² 5f¹⁴ 6d¹⁰ 7p³,[Rn] 7s² 5f¹⁴ 6d¹⁰ 7p³",
+        "pictures": "p,D21",
+        "family": "Post Transitional Metal",
+        "radioActive": "Mc-290",
+        "groupPeriod": "7,15",
+        "year": "2003",
+        "density": ""
+      },
+      "Physical": {
+        "phase": "Solid (Expected)",
+        "melting": "670(predicted)",
+        "boiling": "400(predicted)",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "",
+        "radius": "Null",
+        "afinity": "",
+        "negativity": "",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "",
+        "oxidation": "3, 1"
+      },
+      "id": 115
+    },
+    {
+      "ids":123,
+      "General": {
+        "name": "Livermorium",
+        "symbol": "Lv",
+        "number": "116",
+        "neutron": "177",
+        "mass": "293.205 u",
+        "config1": "2, 8, 18, 32, 32, 18, 6",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s² 5f¹⁴ 6d¹⁰ 7p⁴,[Rn] 7s² 5f¹⁴ 6d¹⁰ 7p⁴",
+        "pictures": "p,D22",
+        "family": "Post Transitional Metal",
+        "radioActive": "Lv-293",
+        "groupPeriod": "7,16",
+        "year": "",
+        "density": ""
+      },
+      "Physical": {
+        "phase": "Solid (Expected)",
+        "melting": "637–780(extrapolated)",
+        "boiling": "1035–1135(extrapolated)",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "",
+        "radius": "Null",
+        "afinity": "",
+        "negativity": "",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "",
+        "oxidation": "\t+4, +2, -2"
+      },
+      "id": 116
+    },
+    {
+      "ids":124,
+      "General": {
+        "name": "Tennessine",
+        "symbol": "Ts",
+        "number": "117",
+        "neutron": "117",
+        "mass": "\t294.211 u",
+        "config1": "2, 8, 18, 32, 32, 18, 7",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s² 5f¹⁴ 6d¹⁰ 7p⁵,[Rn] 7s² 5f¹⁴ 6d¹⁰ 7p⁵",
+        "pictures": "p,D23",
+        "family": "Halogen",
+        "radioActive": "Ts-294",
+        "groupPeriod": "7,17",
+        "year": "\t2010",
+        "density": ""
+      },
+      "Physical": {
+        "phase": "Solid (Expected)",
+        "melting": "623–823(predicted)",
+        "boiling": "883(predicted)",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "",
+        "radius": "Null",
+        "afinity": "",
+        "negativity": "",
+        "covalentRadius": "Null",
+        "vandalForces": "Null",
+        "valence": "",
+        "oxidation": "\t+5, +3, +1, -1"
+      },
+      "id": 117
+    },
+    {
+      "ids":125,
+      "General": {
+        "name": "Oganesson",
+        "symbol": "Og",
+        "number": "118",
+        "neutron": "117",
+        "mass": "295.216 u",
+        "config1": "2, 8, 18, 32, 32, 18, 8",
+        "config2": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s² 5f¹⁴ 6d¹⁰ 7p⁶,[Rn] 7s² 5f¹⁴ 6d¹⁰ 7p⁶",
+        "pictures": "p,D24",
+        "family": "Noble gas",
+        "radioActive": "Og-294",
+        "groupPeriod": "7,18",
+        "year": "2006",
+        "density": ""
+      },
+      "Physical": {
+        "phase": "Gas (Expected)",
+        "melting": " 325±15",
+        "boiling": "450±10",
+        "classification": "Metal",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "",
+        "radius": "Null",
+        "afinity": "",
+        "negativity": "",
+        "covalentRadius": "",
+        "vandalForces": "Null",
+        "valence": "",
+        "oxidation": "+6, +4, +2, +1, 0, -1"
+      },
+      "id": 118
+    },
+    {
+      "General": {
+        "name": "",
+        "symbol": "",
+        "number": "",
+        "neutron": "",
+        "mass": "",
+        "config1": "",
+        "config2": "",
+        "pictures": "d,C21",
+        "family": "",
+        "radioActive": "",
+        "groupPeriod": "",
+        "year": "",
+        "density": ""
+      },
+      "Physical": {
+        "phase": "",
+        "melting": "",
+        "boiling": "",
+        "classification": "",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "",
+        "radius": "",
+        "afinity": "",
+        "negativity": "",
+        "covalentRadius": "",
+        "vandalForces": "",
+        "valence": "",
+        "oxidation": ""
+      },
+      "id": 119
+    },
+    {
+      "General": {
+        "name": "",
+        "symbol": "",
+        "number": "",
+        "neutron": "",
+        "mass": "",
+        "config1": "",
+        "config2": "",
+        "pictures": "d,C31",
+        "family": "",
+        "radioActive": "",
+        "groupPeriod": "",
+        "year": "",
+        "density": ""
+      },
+      "Physical": {
+        "phase": "",
+        "melting": "",
+        "boiling": "",
+        "classification": "",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "Ionization": "",
+        "radius": "",
+        "afinity": "",
+        "negativity": "",
+        "covalentRadius": "",
+        "vandalForces": "",
+        "valence": "",
+        "oxidation": ""
+      },
+      "id": 120
+    },
+    {
+      "__typename": "ElementProperties",
+      "General": {
+        "__typename": "ModelGenProp",
+        "name": "",
+        "symbol": "",
+        "number": "",
+        "neutron": "",
+        "mass": "",
+        "config1": "",
+        "config2": "",
+        "pictures": "s,A2",
+        "family": "",
+        "radioActive": "",
+        "groupPeriod": "",
+        "year": "",
+        "density": ""
+      },
+      "Physical": {
+        "__typename": "ModelPhyProp",
+        "phase": "",
+        "melting": "",
+        "boiling": "",
+        "classification": "",
+        "allotropes": ""
+      },
+      "Reactive": {
+        "__typename": "ModelRecProp",
+        "Ionization": "",
+        "radius": "",
+        "afinity": "",
+        "negativity": "",
+        "covalentRadius": "",
+        "vandalForces": "",
+        "valence": "",
+        "oxidation": ""
+      },
+      "isotopes": [],
+      "id": 121
+    }
+  ]
