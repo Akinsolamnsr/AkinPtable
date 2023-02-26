@@ -4,8 +4,8 @@ import { Numb2, SpdfList, SpdfNumber } from "../../../ConsttSpdf"
 import { useAppContext } from "../../../UseContext"
 
 export default function SpdfDrop({accept,count,pos,numb,cont}) {
-    const SpdL=accept[0]
-    const SpdN=accept[2]
+    const SpdL=accept.split(",")[0]
+    const SpdN=parseInt(accept.split(",")[1])
      const [drp,setDrp]=useState(0)
      const [obj,setObj]=useState({})
      const [arr,setArr]=useState(0)
@@ -36,6 +36,7 @@ export default function SpdfDrop({accept,count,pos,numb,cont}) {
        accept:SpdL,
        drop: (item,montor) =>{
         dispatch({type:`ENERGYLEVEL`,payload:item.itm})
+        dispatch({type:`SPDFUPDATE`,payload:item.itm})
         setDrp(count)
         dispatched({type:`${drp}`,payload:SpdN})
         

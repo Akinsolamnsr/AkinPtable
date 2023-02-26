@@ -11,6 +11,7 @@ export default function GridTrend(){
     const MaxSize=(size.height/size.width)<0.75 && size.width<1025
      const marg=size.width<1300?true:false
     const Wdth=size.width>500 && size.height>1000
+    
     return(
        <div className="inline-flex h-[60vh] w-full flex-col items-end ">
         <div className={`flex flex-wrap  ${MaxSize?"w-[18rem]":"w-[36rem]"}`}>

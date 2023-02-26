@@ -6,15 +6,15 @@ import arrowLogoDown from "../../../../public/images/down-arrow-svgrepo-com.svg"
 import Image from 'next/image'
 
 
-export default function DragDndTrendLeft(){
+export default function DragDndTrendLeft({id}){
     const [{ isDragging }, drag, dragPreview] = useDrag(() => ({
 		// "type" is required. It is used by the "accept" specification of drop targets.
-    type:"left",
-    item:{},
+    type:"right",
+    item:{arrow:"right",id},
 		// The collect function utilizes a "monitor" instance (see the Overview for what this is)
 		// to pull important pieces of state from the DnD system.
         end:(item,monitor)=>{
-          
+         
         },
     collect: (monitor) => ({
       isDragging: monitor.isDragging()

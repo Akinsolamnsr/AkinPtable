@@ -7,7 +7,7 @@ const Afinity=(prop)=>{
            <div className="text-[0.6rem] text-[#001a33]">{name}</div>
         <div className="text-[#001a33]">{symbol}</div>
         <div className="text-[0.8rem] font-bold text-[#001a33]">{AfiVal}</div>
-        <div className={`relative w-[3.5rem] bg-[#99ccff] border opacity-50
+        <div className={`relative w-[3.5rem] bg-[#004d66] border opacity-50
         ${AfiVal<0.02?"":`${AfiVal<0.1?"h-[0.2rem] my-[0.1rem]":`${AfiVal<0.4?"h-[0.4rem] ":`
         ${AfiVal<0.8?"h-[1.5rem] -my-[1rem]":`${AfiVal<1.2?"h-[2rem] -my-[1.45rem]":`
         ${AfiVal<2.0?"h-[2.4rem] -my-[1.85rem]":`${AfiVal<2.4?"h-[2.8rem] -my-[2.35rem]":`

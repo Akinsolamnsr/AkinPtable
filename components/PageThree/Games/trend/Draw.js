@@ -3,6 +3,9 @@ import { Trend } from "../../../ConsttSpdf";
 import { useAppContext } from "../../../UseContext";
 import GridTrend from "./Grid"
 import Ions from "../../../../public/images/ionizationPic.PNG"
+import Neg from "../../../../public/images/NegList.PNG"
+import Afin from "../../../../public/images/Afin.PNG"
+import Rad from "../../../../public/images/empri.PNG"
 import Image from 'next/image'
 export default function DrawTrend(){
   const context=useAppContext()
@@ -16,12 +19,12 @@ export default function DrawTrend(){
     const countPrev=state.counter<1?0:state.counter-1
     const countNext=state.counter>2?3:state.counter+1
    
-
+const imgs=state.counter===0?Ions:state.counter===1?Neg:state.counter===2?Afin:Rad
 return(
     <div className={`ml-4 flex flex-col items-center ${MaxSize?"relative":""}`}>
-        <div className="flex justify-between w-full"><button className={`   font-bold ${MaxSize?"text-[1rem] -mt-8":"text-[1.3rem]  ml-4"} `}  onClick={()=>{dispatch({ type:"COUNTER",  payload:countPrev })}}   >prev</button> <button className={`   font-bold ${MaxSize?"text-[1rem] -mt-8":"text-[1.3rem]  mr-4"} `} onClick={()=>{dispatch({ type:"COUNTER",  payload:countNext })}}>next</button></div>
-    {swtch?<GridTrend />:<div className={`h-[60vh] w-[36rem] `}><Image src={Ions} alt="react Logo" width="1500" height="800" /></div>}
-    <button className={`${MaxSize?"-mt-[6rem] ":"-mt-[5rem] p-2"}   border-4 border-white bg-green-700 text-white font-bold pl-8 pr-8`} onClick={()=>setSwtch(swtch?false:true)}>check trend</button>
+        <div className="flex justify-between w-full"><button className={`   font-bold ${MaxSize?"text-[1rem] -mt-8":"text-[1.3rem]  ml-4"} `}  onClick={()=>{dispatch({ type:"COUNTER",  payload:countPrev })}}   >prev</button> <button className={` border   font-bold ${MaxSize?"text-[1rem] -mt-8":"text-[1.3rem]  mr-4"} `} onClick={()=>{dispatch({ type:"COUNTER",  payload:countNext })}}>next</button></div>
+    {swtch?<GridTrend />:<div className={`h-[60vh] w-[36rem] `}><Image src={imgs} alt="react Logo" width="1500" height="800" /></div>}
+    <button className={`-mt-[3rem] p-2  border-4 border-white bg-green-700 text-white font-bold pl-8 pr-8 -ml-12`} onMouseDown={()=>setSwtch(false)} onMouseUp={()=>setSwtch(true)}>check trend</button>
     <span className={`  font-bold  ${MaxSize?"mt-[1rem]":"-mt-12 text-[1.5rem] mt-[2rem]"}`}>{Trend[state.counter][1][3]}</span>
     </div>
 )   

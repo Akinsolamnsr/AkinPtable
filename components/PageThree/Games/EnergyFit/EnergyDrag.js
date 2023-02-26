@@ -15,7 +15,7 @@ export default function EnergyDragDnd({data}){
 		// to pull important pieces of state from the DnD system.
         end:(item,monitor)=>{
          
-        
+        console.log(item)
           
         },
       

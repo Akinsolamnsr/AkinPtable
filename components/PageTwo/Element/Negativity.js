@@ -9,7 +9,7 @@ const NegVal=isNaN(value)?'':value
         <div className="text-[0.6rem] text-[#0d001a]">{name}</div>
      <div className="text-[#0d001a]">{symbol}</div>
      <div className="text-[0.8rem] font-bold text-[#0d001a]">{NegVal}</div>
-     <div className={`relative w-[3.5rem] bg-[#cc99ff] border opacity-50
+     <div className={`relative w-[3.5rem] bg-[#520066] border opacity-50
      ${NegVal<0.5?"":`${NegVal<1?"h-[0.2rem] my-[0.1rem]":`${NegVal<1.2?"h-[0.4rem] ":`
      ${NegVal<1.4?"h-[1.5rem] -my-[1rem]":`${NegVal<1.8?"h-[2rem] -my-[1.45rem]":`
      ${NegVal<2.0?"h-[2.4rem] -my-[1.85rem]":`${NegVal<2.4?"h-[2.8rem] -my-[2.35rem]":`

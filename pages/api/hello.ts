@@ -1,7 +1,7 @@
 import path from 'path';
 import { promises as fs } from 'fs';
 import type { NextApiRequest, NextApiResponse } from 'next'
-
+import {forty} from "../../components/ConsttSpdf"
 
 const ConfigList = ["1s¹","1s²","2s¹","2s²","2p¹","2p²","2p³","2p⁴","2p⁵","2p⁶",
 "3s¹","3s²","3p¹","3p²","3p³","3p⁴","3p⁵","3p⁶","4s¹","4s²","3d¹","3d²","3d³","3d⁴","3d⁵","3d⁶","3d⁷","3d⁸","3d⁹","3d¹⁰",
@@ -46,5 +46,5 @@ export default async function handler(req:NextApiRequest, res:NextApiResponse) {
 //  console.log(List)
   //Return the content of the data file in json format
 
-  res.status(200).json(ListCon);
+  res.status(200).json(forty);
 }

@@ -11,7 +11,7 @@ import EnergySlide from './EnergySlid';
 import { Numb, Spdf } from '../../../Const';
 import { useEffect, useMemo, useState } from 'react';
 import { useSession } from 'next-auth/react';
-import { ConfigList, Twenty } from '../../../ConsttSpdf';
+import { ConfigList, forty, Full, Twenty, Twnnty } from '../../../ConsttSpdf';
 import UpdateScore from "../../../update";
 export default function Energy(){
   const {status,data} =useSession()
@@ -22,25 +22,33 @@ export default function Energy(){
     const MaxSize=(size.height/size.width)<0.75 && size.width<1025
      const marg=size.width<1300?true:false
     const Wdth=size.width>500 && size.height>1000
-    
-    
+    const newList=Twnnty.indexOf(state.spdfUpdate)
+    const newList2=forty.indexOf(state.spdfUpdate)
+    const newList3=Full.indexOf(state.spdfUpdate)
+    if(newList>-1){
+        Twnnty.splice(newList,1)
+    }
+    if(newList2>-1){
+      forty.splice(newList2,1)
+  }
+  if(newList3>-1){
+    Full.splice(newList3,1)
+}
+    const checkTwenty=Twnnty.length===0 && state.config==="Twenty"
+    const checkForty=forty.length===0 && state.config==="Forty"
+    const checkFull=Full.length===0 && state.config==="Full"
     
     const check=Array.from(new Set(state.spdfListBox1))
-    const checkTwenty=Twenty.every((x)=>state.EnergyLevel.includes(x))
-    const checkConfig=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19].every((x)=>check.includes(x))
-     const checkConfig2=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39].every((x)=>check.includes(x))
-     const checkConfig3=Numb.every((x)=>check.includes(x))
-     const checkConfi=checkConfig && state.config==="Twenty" || checkConfig2 && state.config==="Forty" || checkConfig3 && state.config==="Full"
+     const checkConfi=checkTwenty ||  checkForty || checkFull
    
-     const Ltn=[[7],[5],[9],[3]]
-     console.log(Ltn.sort((a,b)=>a[0]-b[0]))
+    console.log(state.EnergyLevel)
     return(
        <div className={`${size.width<550?"":""}`}>
    <div className={`${size.width<550?"":"hidden"}  ${size.width<550?"w-screen h-screen flex justify-center items-center bg-blue-300 -ml-4":"hidden"}`}><span className="text-[3rem] font-bold text-[#002233]">Rotate Screen</span></div>
  <div className={`${size.width<550?"hidden":""}    bg-gradient-to-l from-sky-200 via-cyan-300 to-cyan-400 ${MaxSize?"mt-2":"mt-12"}`}>
 
  <span className={`${checkConfi?"  absolute":"hidden"}`} style={{zIndex:3}}>{<Sound />} </span>      
- <>{checkConfig3 && state.config==="Full"?"":<div className={`${checkConfi ?"  absolute":"hidden"}  `}>{<Confetti width={`${MaxSize?"600":"1000"}`}  height="500"/> }</div>}</>
+ <>{checkFull?"":<div className={`${checkConfi ?"  absolute":"hidden"}  `}>{<Confetti width={`${MaxSize?"600":"1000"}`}  height="500"/> }</div>}</>
 
 
 
@@ -50,14 +58,14 @@ export default function Energy(){
 
 <div className={`absolute text-white  ${MaxSize?"ml-[25%] mt-24 text-[1.5rem]":"ml-[40%] mt-48 text-[3.5rem]"} flex flex-col items-center ${checkConfi?"  absolute":"hidden"}`} style={{zIndex:3}}>
             <div>
-            {checkConfig && state.config==="Twenty"?<Image src={medaLogo} alt="react Logo" width={`${MaxSize?"32":"64"}`} height={`${MaxSize?"32":"64"}`} />:
-            checkConfig2 && state.config==="Forty"?<><Image src={medaLogo} alt="react Logo" width={`${MaxSize?"32":"64"}`} height={`${MaxSize?"32":"64"}`} /><Image src={medaLogo} alt="react Logo" width={`${MaxSize?"32":"64"}`} height={`${MaxSize?"32":"64"}`} /></>:checkConfig3 && state.config==="Full"?
+            {checkTwenty?<Image src={medaLogo} alt="react Logo" width={`${MaxSize?"32":"64"}`} height={`${MaxSize?"32":"64"}`} />:
+            checkForty?<><Image src={medaLogo} alt="react Logo" width={`${MaxSize?"32":"64"}`} height={`${MaxSize?"32":"64"}`} /><Image src={medaLogo} alt="react Logo" width={`${MaxSize?"32":"64"}`} height={`${MaxSize?"32":"64"}`} /></>:checkFull?
             <><Image src={medaLogo} alt="react Logo" width={`${MaxSize?"32":"64"}`} height={`${MaxSize?"32":"64"}`} /><Image src={medaLogo} alt="react Logo" width={`${MaxSize?"32":"64"}`} height={`${MaxSize?"32":"64"}`} /><Image src={medaLogo} alt="react Logo" width={`${MaxSize?"32":"64"}`} height={`${MaxSize?"32":"64"}`} /></>:""}
             </div>
-            <span>{checkConfig&&state.config==="Twenty"?<>weldone !</>:checkConfig2&&state.config==="Forty"?<>Great Job !</>:checkConfig3&&state.config==="Full"?<>Excellent !</>:""}</span>
+            <span>{checkTwenty?<>weldone !</>:checkForty?<>Great Job !</>:checkFull?<>Excellent !</>:""}</span>
           </div>
           <div className="">
-       {checkConfig3&&state.config==="Full"?<Fireworks
+       {checkFull?<Fireworks
         
         options={{ opacity: 0.5 }}
         style={{

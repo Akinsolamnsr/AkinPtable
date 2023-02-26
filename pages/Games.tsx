@@ -1,10 +1,13 @@
 import type { NextPage } from 'next'
+import { useEffect } from 'react'
 import useSWR from 'swr'
 import Loading from "../components/Loading"
 import DataFile3 from '../components/PageThree/FilePage'
+import { useRouter } from "next/router"
 const   Games: NextPage = () => {
-  const { data, error } = useSWR('/api/dataFile',(datum)=>fetch(datum).then((res) => res.json()))
 
+  const { data, error } = useSWR('/api/dataFile',(datum)=>fetch(datum).then((res) => res.json()))
+ 
   if(error){
     return(
       <></>

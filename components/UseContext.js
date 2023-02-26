@@ -96,7 +96,6 @@ function user(state, action) {
                           return  {...state}
               case  "TIMER":
                 state.timer[action.payload[0]]=action.payload[1]
-
                   return {...state}
                case  "TIMER1":
                     return {...state,timer1:action.payload}
@@ -107,6 +106,11 @@ function user(state, action) {
                 return  {...state}
               case  "TIMEUPDATE":
                      return {...state,timeUpdate:action.payload}
+              case  "SPDFUPDATE":
+                      return {...state,spdfUpdate:action.payload}
+              case  "TRENDROP":
+                  state.trendDrop.push(action.payload)
+                      return {...state}
     default:
       return state;
   }
@@ -119,6 +123,7 @@ const combineReducers = (...reducers) => (state, action) => {
 };
 export function AppWrapper({ children }) {
   let sharedState = {
+    trendDrop:[],
     EnergyLevel:[],
     dataList:{},
     Properties:{},
@@ -157,6 +162,7 @@ export function AppWrapper({ children }) {
     spdfListBox1:[],
     trend:[true,true,true,true],
     timeUpdate:0,
+    spdfUpdate:'',
     spdfListBox:[
       [],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
       [],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
