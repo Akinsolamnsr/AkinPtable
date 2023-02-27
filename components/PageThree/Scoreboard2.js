@@ -20,7 +20,7 @@ export default  function ScoreBoardTwo(){
     else{
       return(
         <div className="w-full h-full flex flex-col">
-       	<button  className={`${MaxSize?"text-[0.7rem]":"text-[1rem]"}  bg-green-700 text-white font-bold border-4 border-cyan-200`}  onClick={() => signOut("google", { callbackUrl: `http://localhost:3000/Game` })}  >EXIT SCORE BOARD GAME</button>
+       	<button  className={`${MaxSize?"text-[0.7rem]":"text-[1rem]"}  bg-green-700 text-white font-bold border-4 border-cyan-200`}  onClick={() => signOut("google", { callbackUrl: `http://localhost:3000/Game` })}  >LOGOUT OF SCORE BOARD</button>
         <div><ScoreData2 datum={data} /></div>
         </div>
         )

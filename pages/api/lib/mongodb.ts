@@ -7,7 +7,7 @@ if (!process.env.NEXT_PUBLIC_MONGODB_URI) {
   
 const uri = process.env.NEXT_PUBLIC_MONGODB_URI
 const options = {}
-
+  
 let client
 declare global {
   namespace globalThis {

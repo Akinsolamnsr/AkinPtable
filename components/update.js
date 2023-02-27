@@ -11,6 +11,7 @@ async function sendRequest(url, { arg }) {
 }
   
 const UpdateScore = ({status,type,name}) => {
+ 
   const [User,setUser]=useState(false)
   const { trigger, isMutating } = useSWRMutation('/api/scoreDb', sendRequest /* options */)
   const context=useAppContext()

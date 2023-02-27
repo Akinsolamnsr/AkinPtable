@@ -30,24 +30,24 @@ export default function ScoreData(prop) {
       }
       
 const MapData=data.map((x,i)=>{
-    const Arrange=x.Games.Arrange.fst + x.Games.Arrange.scd/2 + x.Games.Arrange.thd/6;
-    const Elem=x.Games.ElementFit.fst + x.Games.ElementFit.scd/2 + x.Games.ElementFit.thd/6;
-    const Ener=x.Games.EnergyLevel.fst + x.Games.EnergyLevel.scd/2 + x.Games.EnergyLevel.thd/6;
-    const Con=x.Games.Configuration.fst + x.Games.Configuration.scd/2 + x.Games.Configuration.thd/6;
-    const fam=x.Games.Family.pos
-    const blck=x.Games.Block.pos
-    const trend=x.Games.Trend.pos
+    const Arrange=(1/((x.Games.Arrange.fst)/3000000)) +( 1/(x.Games.Arrange.scd/10000000 ))+ (1/(x.Games.Arrange.thd/20000000));
+    const Elem=(1/(x.Games.ElementFit.fst/2000000)) + (1/(x.Games.ElementFit.scd/4500000)) + (1/(x.Games.ElementFit.thd/10000000));
+    const Ener=(1/(x.Games.EnergyLevel.fst/4500000)) +(1/(x.Games.EnergyLevel.scd/10000000) )+(1/(x.Games.EnergyLevel.thd/30000000));
+    const Con=(1/(x.Games.Configuration.fst/10000000))+ (1/(x.Games.Configuration.scd/20000000)) + (1/(x.Games.Configuration.thd/50000000));
+    const fam=1/(x.Games.Family.pos/10000000)
+    const blck=1/(x.Games.Block.pos/10000000)
+    const trend=1/(x.Games.Trend.pos / 3000000)
     const sum=Math.round(Arrange+Elem+Ener+Con+fam+blck+trend)
      return [x.name,sum]
 })
-
+console.log(MapData)
   return (
     <div  className="w-full h-full  flex flex-col shadow-xl">
         
         <div className="flex flex-col relative z-3">
         <button className={`flex justify-between  border-green-200 ${MaxSize?"text-[0.7rem] border-2":"text-[0.8rem] p-1 border-4"}  font-bold bg-green-700 text-white rounded-full`}  onClick={()=>setSwtch("0")} value="0"><span className="">Overall best</span>{swtch==="7"?<span className={`rotate-90 font-bold ${MaxSize?"text-[0.7rem]":"text-[1rem]"}`}>&gt;</span>:<span className={`rotate-90 font-bold ${MaxSize?"text-[0.7rem]":"text-[1rem]"}`}>&gt;</span>}</button>
         <div className={`${swtch==="0"?"":"hidden"} ${MaxSize?"h-[10rem]":"h-[17rem]"} mr-1 ml-1 overflow-y-auto`}>
-        {MapData.sort((x,y)=>x[1]-y[1]).map((x,i)=>(<div key={`bestScore${i}`} className="mt-1 flex bg-[#e6faff] text-[#00141a] text-[0.7rem] font-semibold"><span className="basis-[15%]">{i+1}</span><span className="basis-[50%]">{x[0]}</span><span className="basis-[35%] ">{msToTime(x[1])}</span></div>))}
+        {MapData.sort((x,y)=>x[1]-y[1]).map((x,i)=>(<div key={`bestScore${i}`} className="mt-1 flex bg-[#e6faff] text-[#00141a] text-[0.7rem] font-semibold"><span className="basis-[15%]">{i+1}</span><span className="basis-[50%]">{x[0]}</span><span className="basis-[35%] ">{x[1]-197000000}</span></div>))}
         </div>
         </div>
 

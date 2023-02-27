@@ -7,33 +7,33 @@ import GamesList from '../../components/Schema/ListSchema'
   const userN = await User.find({})
   const update={
       Arrange:{
-          fst:0,
-          scd:0,
-          thd:0
+          fst:1,
+          scd:1,
+          thd:1
       },
       ElementFit:{
-          fst:0,
-          scd:0,
-          thd:0
+          fst:1,
+          scd:1,
+          thd:1
       },
       EnergyLevel:{
-          fst:0,
-          scd:0,
-          thd:0
+          fst:1,
+          scd:1,
+          thd:1
       },
       Configuration:{
-          fst:0,
-          scd:0,
-          thd:0
+          fst:1,
+          scd:1,
+          thd:1
       },
       Family:{
-          pos:0
+          pos:1
       },
       Block:{
-          pos:0
+          pos:1
       },
       Trend:{
-          pos:0
+          pos:1
       },
     }
   userN.forEach(async(element) => {

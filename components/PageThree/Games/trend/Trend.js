@@ -47,7 +47,7 @@ export default function TrendFit(){
     
   },[])
     return(
-        <div className={` ${size.width<550?"":""} mt-12`}>
+        <div className={` ${size.width<550?"":""}  `}>
         <div className={`${size.width<550?"":"hidden"}  ${size.width<550?"w-screen h-screen flex justify-center items-center -ml-4":"hidden"}`}><span className="text-[3rem] font-bold text-[#002233]">Rotate Screen</span></div>
         <div className={`${checkSpdf?"mt-[5rem]":"mt-12"} ${size.width<550?"hidden":""} `} >
          <span className={`${checkSpdf?"  absolute":"hidden"}`} style={{zIndex:3}}>{<Sound />} </span>       
@@ -100,18 +100,18 @@ export default function TrendFit(){
             </div>
            <span className="mt-4 relative z-4"><DrawTrend /></span>
            </div>
-           <div className="text-[4rem] absolute ml-[90%]">{hydr.length}/16</div>
-           <div className={`w-[15%] flex justify-center items-center  ml-12  ${MaxSize?"":"-mt-24"} `}>
-            <div className={`flex w-[10rem] h-96 ${state.counter===0?"":"hidden"}`}><DragDndTrend arrow="up" id="11" /><DragDndTrend arrow="down" id="12" /></div>
-            <div className={`flex w-[10rem] h-96 ${state.counter===1?"":"hidden"}`}><DragDndTrend arrow="up" id="13" /><DragDndTrend arrow="down" id="14" /></div>
-            <div className={`flex w-[10rem] h-96 ${state.counter===2?"":"hidden"}`}><DragDndTrend arrow="up" id="15" /><DragDndTrend arrow="down" id="16" /></div>
-            <div className={`flex w-[10rem] h-96 ${state.counter===3?"":"hidden"}`}><DragDndTrendUp id="17" /><DragDndTrendDown id="18" /></div>
+           <div className="text-[4rem] absolute ml-[90%] ">{hydr.length}/16</div>
+           <div className={`w-[15%] flex justify-center items-center  ml-12  ${MaxSize?"":"-mt-2"} `}>
+            <div className={`flex w-[10rem] h-48 ${state.counter===0?"":"hidden"}`}><DragDndTrend arrow="up" id="11" /><DragDndTrend arrow="down" id="12" /></div>
+            <div className={`flex w-[10rem] h-48 ${state.counter===1?"":"hidden"}`}><DragDndTrend arrow="up" id="13" /><DragDndTrend arrow="down" id="14" /></div>
+            <div className={`flex w-[10rem] h-48 ${state.counter===2?"":"hidden"}`}><DragDndTrend arrow="up" id="15" /><DragDndTrend arrow="down" id="16" /></div>
+            <div className={`flex w-[10rem] h-48 ${state.counter===3?"":"hidden"}`}><DragDndTrendUp id="17" /><DragDndTrendDown id="18" /></div>
             
             </div>
             
             </div> 
         <div className={` h-[20vh] flex -mt-[7rem] `}>
-        <div className=" basis-[15%]">{status==="authenticated" && checkSpdf?<button className="w-full mt-[0.9rem]   "><UpdateScore status={state.PeriodFlip} type="trend" name={data.user.name} /></button>:<div></div>}</div>
+        <div className=" basis-[15%]">{status==="authenticated" && checkSpdf?<button className="w-full mt-[0.9rem]  relative z-1 "><UpdateScore status={state.PeriodFlip} type="trend" name={data.user.name} /></button>:<div></div>}</div>
          <div className="w-full ">
          
         

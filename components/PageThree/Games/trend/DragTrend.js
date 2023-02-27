@@ -39,16 +39,16 @@ export default function DragDndTrend({arrow,id}){
     }
     else if(arrow==="up"){
             return(
-                <div className='ml-1 w-full h-[100%] ' ref={drag}>
-                 <Image src={arrowLogoUp} alt="react Logo" width="300" height="1000"  />
+                <div className='ml-1 w-full h-[70%] ' ref={drag}>
+                 <Image src={arrowLogoUp} alt="react Logo" width="300" height="750"  />
                 </div>
                 )
     }
 
     else {
         return(
-            <div className='ml-1 w-full h-[100%] ' ref={drag}>
-             <Image src={arrowLogoDown} alt="react Logo" width="300" height="1000"  />
+            <div className='ml-1 w-full h-[70%] ' ref={drag}>
+             <Image src={arrowLogoDown} alt="react Logo" width="300" height="700"  />
             </div>
             )
 }

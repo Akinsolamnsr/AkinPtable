@@ -3,17 +3,18 @@ import { useSession } from 'next-auth/react';
 
 export default function ScoreData2({datum}) {
     const {data} =useSession()
-    const MapData=datum.data.map((x,i)=>{
-      const Arrange=x.Games.Arrange.fst + x.Games.Arrange.scd/2 + x.Games.Arrange.thd/6;
-      const Elem=x.Games.ElementFit.fst + x.Games.ElementFit.scd/2 + x.Games.ElementFit.thd/6;
-      const Ener=x.Games.EnergyLevel.fst + x.Games.EnergyLevel.scd/2 + x.Games.EnergyLevel.thd/6;
-      const Con=x.Games.Configuration.fst + x.Games.Configuration.scd/2 + x.Games.Configuration.thd/6;
-      const fam=x.Games.Family.pos
-      const blck=x.Games.Block.pos
-      const trend=x.Games.Trend.pos
-      const sum=Math.round(Arrange+Elem+Ener+Con+fam+blck+trend)
-       return [x.name,sum]
-  })
+   const MapData=datum.data.map((x,i)=>{
+    const Arrange=(1/((x.Games.Arrange.fst)/3000000)) +( 1/(x.Games.Arrange.scd/10000000 ))+ (1/(x.Games.Arrange.thd/20000000));
+    const Elem=(1/(x.Games.ElementFit.fst/2000000)) + (1/(x.Games.ElementFit.scd/4500000)) + (1/(x.Games.ElementFit.thd/10000000));
+    const Ener=(1/(x.Games.EnergyLevel.fst/4500000)) +(1/(x.Games.EnergyLevel.scd/10000000) )+(1/(x.Games.EnergyLevel.thd/30000000));
+    const Con=(1/(x.Games.Configuration.fst/10000000))+ (1/(x.Games.Configuration.scd/20000000)) + (1/(x.Games.Configuration.thd/50000000));
+    const fam=1/(x.Games.Family.pos/10000000)
+    const blck=1/(x.Games.Block.pos/10000000)
+    const trend=1/(x.Games.Trend.pos / 3000000)
+    const sum=Math.round(Arrange+Elem+Ener+Con+fam+blck+trend)
+     return [x.name,sum]
+})
+
   const SortMap=MapData.sort((x,y)=>x[1]-y[1]).map((x,i)=>[...x,i+1]).filter((x)=>x[0]===data.user.name)
  
     const User=datum.data.filter((x)=>x.name===data.user.name)
@@ -109,14 +110,14 @@ export default function ScoreData2({datum}) {
     
       return pad(hrs) + ':' + pad(mins) + ':' + pad(secs) + '.' + pad(ms, 3);
     }
-
+console.log(SortMap)
   return (
     <div  className="w-full h-full  flex flex-col shadow-xl">
           <span className={`${MaxSize?"text-[0.7rem]":""}`}>Welcome <span className="font-bold text-gray-700">{User[0].name}</span></span>
         <div className="flex flex-col relative z-3">
         <div className={`  border-white ${MaxSize?"text-[0.6rem] border-2":"text-[0.8rem] p-1 border-1"}  font-bold bg-[#b30047] text-white text-center`} >Overall best position</div>
         <div className={`${swtch==="0"?"":"hidden"} ${MaxSize?"":"h-[2rem]"} mr-1 ml-1 `}>
-        <div className={`flex ${MaxSize?"text-[0.7rem]":""}`}><span className="w-full  flex justify-between text-black font-bold text-[0.7rem]">{msToTime(SortMap[0][1])}<span className="pr-1"><span className="font-bold">pos</span>:{SortMap[0][2]}</span></span></div>
+        <div className={`flex ${MaxSize?"text-[0.7rem]":""}`}><span className="w-full  flex justify-between text-black font-bold text-[0.7rem]">{SortMap[0][1]-197000000}<span className="pr-1"><span className="font-bold">pos</span>:{SortMap[0][2]}</span></span></div>
         </div>
         </div>
 

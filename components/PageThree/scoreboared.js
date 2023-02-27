@@ -16,7 +16,7 @@ export default function ScoreBoard(prop){
 
     return(
         <div className="w-full h-full flex flex-col">
-       	<button  className={`${MaxSize?"text-[0.7rem]":"text-[1rem]"}  bg-cyan-700 text-cyan-200 border-4 border-cyan-200`}   onClick={() => signIn("google", { callbackUrl: `http://localhost:3000${router.route}` })} >ENTER SCORE BOARD GAME</button>
+       	<button  className={`${MaxSize?"text-[0.7rem]":"text-[1rem]"}  bg-cyan-700 text-cyan-200 border-4 border-cyan-200`}   onClick={() => signIn("google", { callbackUrl: `http://localhost:3000${router.route}` })} >LOGIN TO SCORE BOARD</button>
         {data?<ScoreData {...data}  />:<div></div>}
         </div>
         )

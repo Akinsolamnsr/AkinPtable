@@ -21,7 +21,7 @@ export default function StopWatch({set,ind}){
         if(start){
             if(!set){
               Interval=setInterval(()=>{
-                setTimer(prev=>prev+1)
+                setTimer(prev=>prev+10)
             },10)
             }
 
@@ -45,6 +45,7 @@ export default function StopWatch({set,ind}){
     
     return(
         <div className={`flex flex-col `}>
+         
             <div className={`${MaxSize?"text-[1rem]":"text-[1.2rem]"} text-center  flex  justify-center`}><span className="flex"><span className="text-[2.3rem]">{msToTime2(time)[0]}:</span><span className="text-[2.3rem]">{msToTime2(time)[1]}:</span><span className='flex flex-col'><span>{msToTime2(time)[3]}ms</span><span>{msToTime2(time)[2]}s</span></span></span></div>
             <button className={`${MaxSize?"text-[0.7rem]":"pt-1 pb-1"} ${state.timer[ind-1]?"font-gray-400 border-gray-400":"text-white border-cyan-300 bg-blue-700"}  border-2  rounded-full font-bold `} onClick={()=>{setStart(true);dispatch({type:`TIMER`,payload:[ind-1,true]})}}><span className={`${state.timer[ind-1]?"":"animate-ping  inline-flex h-4 w-4 relative rounded-full bg-sky-400 opacity-75"}`}></span>Start Game</button>
             <button className={`${MaxSize?"text-[0.7rem]":"pt-1 pb-1"}  border-2 border-gray-400 rounded-full font-bold font-gray-400`} onClick={()=>{setStart(false);refreshPage()}}>Reset Game</button>

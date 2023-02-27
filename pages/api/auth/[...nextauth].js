@@ -7,11 +7,11 @@ import clientPromise from "../../..//pages/api//lib/mongodb"
     // Configure one or more authentication providers
     providers: [
         GoogleProvider({
-            clientId: "74285919064-s7k3k4q5t5nmb9gr6kmrareqko4jvbha.apps.googleusercontent.com", // process.env.GOOGLE_CLIENT_ID,
-            clientSecret: "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", //process.env.GOOGLE_CLIENT_SECRET,
+            clientId:process.env.NEXT_PUBLIC_client_ID, 
+            clientSecret:process.env.NEXT_PUBLIC_clientSecret,
           }),
           
-    ],
+    ], 
     callbacks:{
         async signIn({ user, account, profile, email, credentials }) {
             return true
