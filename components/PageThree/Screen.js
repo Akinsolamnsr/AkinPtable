@@ -7,7 +7,8 @@ export default function Screen(){
    const marg=size.width<1300?true:false
   const Wdth=size.width>500 && size.height>1000
   return(
-    <div className={`flex flex-wrap  `}>
+   <div className="h-screen overflow-auto ">
+ <div className={`flex flex-wrap `}>
       <div className={`${MaxSize?"w-48 h-48 ":""}`}>
       <GameLink href="/Games/Arrange">
         <div className='w-48 h-48 border-2 bg-[#fff0e6]  flex justify-center items-center flex-col text-gray-600   border-cyan-300 ml-12 mt-12   shadow-xl rounded  '>
@@ -62,7 +63,7 @@ export default function Screen(){
         </div>
       </GameLink>
       </div>
-      <div  className={`${MaxSize?"w-48 h-48 ml-12 mb-8":""}`}>
+      <div  className={`${MaxSize?"w-48 h-48 ml-12 ":""} mb-24`}>
       <GameLink href="/Games/TableTrend">
       <div className='w-48 h-48 border-2 bg-[#e6f7ff]  flex justify-center items-center flex-col text-gray-600   border-cyan-300  ml-12 mt-12   shadow-xl rounded  '>
           <span className="text-[2rem]">Periodic</span>
@@ -72,6 +73,7 @@ export default function Screen(){
       </GameLink>
       </div>
         </div>
+   </div>
   )
 }
 

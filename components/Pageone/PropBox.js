@@ -14,7 +14,7 @@ const PropBox = (...prop) => {
         <div className='inline-flex w-[16rem]'>
           {<GridFile {...prop} />}
         </div>
-        <div className={`inline-flex w-[17.5rem] pl-1 pr-1 ${size.width< 500?" scale-y-[80%] -mt-[2%]":`${Wdth?" scale-y-[80%] -mt-[2%]":""}`}`}>{<ElemFile {...prop} />}</div>
+        <div className={`inline-flex w-[17.5rem] pl-1 pr-1 ${size.width< 500?" scale-y-[80%] -mt-[4%]":`${Wdth?" scale-y-[80%] -mt-[2%]":""} `}`}>{<ElemFile {...prop} />}</div>
         <div className='inline-flex w-[17.5rem] pl-1 pr-1'><Oprop {...prop} /></div>
     </div>
     </div>
