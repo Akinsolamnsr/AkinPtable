@@ -1,12 +1,14 @@
 import { NextPage } from "next"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Group,Bckup,Lant, Func } from "./constant"
 import { useAppContext } from "../UseContext"
 
 
 
 
-const GridFile:NextPage = () => {
+const GridFile:NextPage = (prop) => {
+
+  
   const Series=()=>{
    
     const stat=(state.PropElement?.General?.groupPeriod)?.split(",")[0]==="6"?"A":"B"
@@ -14,13 +16,13 @@ const GridFile:NextPage = () => {
    }
   
   const context=useAppContext()
-  const {state}=context
+  const {state,dispatch}=context
   const {array,lant2}=Func()
   const Grp=(state.PropElement?.General?.groupPeriod)?.split(",")[1]
   const Prd=(state.PropElement?.General?.groupPeriod)?.split(",")[0]
   const Lat=isNaN(state.PropElement?.ids)
   const Act=Lat?Series():false
-    
+  
  
     return (
         <>

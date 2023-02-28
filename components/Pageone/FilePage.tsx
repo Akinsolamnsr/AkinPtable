@@ -4,6 +4,7 @@ import useSWR from 'swr'
 import AppSize from "./ScreenDim"
 import { useAppContext } from '../UseContext';
 import Loading from '../Loading';
+import ScreenDiv from './ScreenDiv';
   
 const DataFile:NextPage = (prop) => {
      const context=useAppContext()
@@ -21,7 +22,7 @@ const DataFile:NextPage = (prop) => {
           
           return(
                <>
-             <AppSize />
+             <ScreenDiv />
                  </>
                  )
        }

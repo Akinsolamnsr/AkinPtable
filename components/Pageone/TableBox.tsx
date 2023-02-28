@@ -3,10 +3,10 @@ import useSWR from 'swr'
 import Gridtable from './Grid';
 
   
-const Ptable:NextPage = () => {
+const Ptable:NextPage = (prop) => {
   return(
     <div className='inline '>
-     <Gridtable />
+     <Gridtable {...prop} />
     </div>
   )
 }

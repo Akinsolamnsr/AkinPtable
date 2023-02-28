@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/api/hello.ts", "Component/ScreenDim.js", "components/PropBox.js", "components/BatchLant.js", "components/PageTwo/List.js", "pages/_app.js", "pages/Games.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/api/hello.ts", "Component/ScreenDim.js", "components/PropBox.js", "components/BatchLant.js", "components/PageTwo/List.js", "pages/_app.js", "pages/Games.tsx", "pages/index.js", "components/Pageone/ScreenDiv.js"],
   "exclude": ["node_modules"]
 }

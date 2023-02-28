@@ -39,10 +39,10 @@ export default function AppSize() {
         <div className=''>
           <span className='text-[2rem] text-white font-bold bg-cyan-500 '>A</span><span className='text-cyan-500 font-bold'>table</span>
         </div>
-        <div className='w-1/3 flex justify-between h-full '>
+        <div className='w-1/3 flex justify-between h-full '>    
         
-           <span className='hover:text-cyan-500 flex items-center'>
-           {size.width<550?(<><Link href="/"><a><Image src={homePic} alt="pics" width="25" heigth="25" /></a></Link></>):(<><Image src={homePic} alt="pics" width="25" heigth="25" /><span className={` h-full pl-[1.5rem] pr-[1.2rem] -ml-[1.5rem] flex items-center   ${router.pathname == "/" ? "border-b-4 border-cyan-700 bg-gray-100" : ""}`}><Link href="/">Home</Link></span></>)}
+        <span className='hover:text-cyan-500 flex items-center'>
+           {size.width<550?(<><Link href="/"><a><Image src={homePic} alt="pics" width="25" heigth="25" /></a></Link></>):(<><Image src={homePic} alt="pics" width="25" heigth="25" /><span className={` h-full pl-[1.5rem] pr-[1.2rem] -ml-[1.5rem] flex items-center   ${router.pathname == "/" ? "border-b-4 border-cyan-700 bg-gray-100" : ""}`}><Link href="/"> Home</Link></span></>)}
            </span>
           <span className='hover:text-cyan-500 flex items-center'>
           {size.width<550?(<><Link href="/Properties"><a><Image src={PropPic} alt="pics" width="25" heigth="25" /></a></Link></>):(<><Image src={PropPic} alt="pics" width="25" heigth="25" /><span className={`h-full  flex items-center pl-[1.5rem] pr-[1.2rem] -ml-[1.5rem] ${router.pathname == "/Properties" ? "border-b-4 border-cyan-700 bg-gray-100" : ""}`}><Link href="/Properties">Properties</Link></span></>)}

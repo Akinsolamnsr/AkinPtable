@@ -25,7 +25,7 @@ export const Func=()=>{
     const context=useAppContext()
     const {state}=context
   const data=state.data
- 
+ console.log(data)
   
     const array=Abox.map((x)=>{
         const Filt=!Arr2.includes(x)

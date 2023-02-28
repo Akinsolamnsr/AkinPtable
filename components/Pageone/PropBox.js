@@ -5,17 +5,17 @@ import ElemFile from "./ElementProp"
 import Oprop from "./OtherProp"
 import Isoprop from "./IsoPrp"
 import { useAppContext } from '../UseContext';
-const PropBox = () => {
+const PropBox = (...prop) => {
   const size = useWindowSize();
   const Wdth=size.width>500 && size.height>1000
   return(
     <div className={`inline-flex h-full w-full overflow-auto mr-[3rem]` }>
      <div className={` flex   ${size.width< 500?"flex-row w-[70rem]":`${Wdth?"flex-row  w-[70rem] ":"flex-col h-[60rem]  w-full"}`}`}>
         <div className='inline-flex w-[16rem]'>
-          {<GridFile />}
+          {<GridFile {...prop} />}
         </div>
-        <div className={`inline-flex w-[17.5rem] pl-1 pr-1 ${size.width< 500?" scale-y-[80%] -mt-[2%]":`${Wdth?" scale-y-[80%] -mt-[2%]":""}`}`}>{<ElemFile />}</div>
-        <div className='inline-flex w-[17.5rem] pl-1 pr-1'><Oprop /></div>
+        <div className={`inline-flex w-[17.5rem] pl-1 pr-1 ${size.width< 500?" scale-y-[80%] -mt-[2%]":`${Wdth?" scale-y-[80%] -mt-[2%]":""}`}`}>{<ElemFile {...prop} />}</div>
+        <div className='inline-flex w-[17.5rem] pl-1 pr-1'><Oprop {...prop} /></div>
     </div>
     </div>
   )

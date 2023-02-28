@@ -8,7 +8,7 @@ function user(state, action) {
       return { ...state, Temp:temper };
     case "PROPERTIES":
      return  {...state,dataList:action.payload}
-     case "DATA":
+     case "DATA":   
       return  {...state,data:action.payload}
       case "STATUS":
         return  {...state,status:action.payload}
