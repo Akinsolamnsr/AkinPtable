@@ -110,7 +110,7 @@ export default function ScoreData2({datum}) {
     
       return pad(hrs) + ':' + pad(mins) + ':' + pad(secs) + '.' + pad(ms, 3);
     }
-console.log(SortMap)
+
   return (
     <div  className="w-full h-full  flex flex-col shadow-xl">
           <span className={`${MaxSize?"text-[0.7rem]":""}`}>Welcome <span className="font-bold text-gray-700">{User[0].name}</span></span>

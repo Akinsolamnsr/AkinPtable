@@ -60,7 +60,7 @@ export default function ElementArrange(){
       
     return(
         <div className={`${size.width<550?"":""}`}>
-           <div className={`${size.width<550?"w-screen h-screen flex justify-center items-center bg-blue-300 -ml-4":"hidden"}`}><span className="text-[3rem] font-bold text-[#002233]">Rotate Screen</span></div>
+           <div className={`${size.width<550?"w-screen h-scree flex justify-center items-center bg-blue-300 -ml-4":"hidden"}`}><span className="text-[3rem] font-bold text-[#002233]">Rotate Screen</span></div>
           <div className={`${size.width<550?"hidden":""}  mt-1`} >
    <span className={`${checkSpdf?"  absolute":"hidden"}`} style={{zIndex:3}}>{<Sound />} </span>      
         <>{checkFull && checkFullSym && state.fitELement==="full"?"":<div className={`${checkSpdf ?"  absolute":"hidden"}  `}>{<Confetti width={`${MaxSize?"600":"1000"}`}  height="500"/> }</div>}</>

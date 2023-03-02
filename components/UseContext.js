@@ -111,6 +111,21 @@ function user(state, action) {
               case  "TRENDROP":
                   state.trendDrop.push(action.payload)
                       return {...state}
+              case  "ARRANGEMOBILECHECK":
+                        return {...state,arrangeMobbileCheck:action.payload}
+              case  "ARRANGEMOBILEMATCH":
+                          return {...state,arrangeMobileMatch:action.payload}
+              case  "ARRANGEMOBILEMATCH2":
+                        return {...state,arrangeMobileMatch2:action.payload}
+              case  "MATCHDROP":
+                     state.matchDrop.push(action.payload)
+                          return {...state}
+              case  "MOBA20":
+                           return {...state,mobA20:action.payload}
+              case  "MOBA40":
+                          return {...state,mobA40:action.payload}
+              case  "MOBAFULL":
+                          return {...state,mobAFull:action.payload}
     default:
       return state;
   }
@@ -123,6 +138,13 @@ const combineReducers = (...reducers) => (state, action) => {
 };
 export function AppWrapper({ children }) {
   let sharedState = {
+    mobA20:"Full",
+    mobA40:'',
+    mobA2Full:'',
+    matchDrop:[],
+    arrangeMobbileCheck:false,
+    arrangeMobileMatch:"",
+    arrangeMobileMatch2:"",
     trendDrop:[],
     EnergyLevel:[],
     dataList:{},

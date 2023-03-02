@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react"
 import { HTML5Backend } from 'react-dnd-html5-backend'
 import { DndProvider } from 'react-dnd'
-import { TouchBackend } from 'react-dnd-touch-backend'
 import ElementArrange from "../../components/PageThree/Games/Arrangement/Arrange";
 import NavWrap2 from "../../components/PageThree/NavWrap2";
+import ArragementMobile from "../../components/PageThree/Games/Arrangement/mobile/ArrangeMob";
 
 
 export default function Arragement(){
@@ -13,25 +13,13 @@ export default function Arragement(){
    const marg=size.width<1300?true:false
   const Wdth=size.width>500 && size.height>1000
 
-
-  if(MaxSize){
-    return (
-      <NavWrap2>
-        <DndProvider backend={TouchBackend} >
-        <ElementArrange />
-        </DndProvider>
-      </NavWrap2>
-  );
-  }
-  else{
-    return (
-      <NavWrap2>
-        <DndProvider backend={HTML5Backend} >
-        <ElementArrange />
-        </DndProvider>
-      </NavWrap2>
-  );
-  }
+  return (
+    <NavWrap2>
+      <DndProvider backend={HTML5Backend} >
+      {MaxSize?<ArragementMobile />:<ElementArrange />}
+      </DndProvider>
+    </NavWrap2>
+);
 }
 
 
