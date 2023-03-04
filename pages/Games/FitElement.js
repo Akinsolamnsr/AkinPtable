@@ -17,16 +17,6 @@ export default function FitElement(){
    const marg=size.width<1300?true:false
   const Wdth=size.width>500 && size.height>1000
   
-if(MaxSize){
-  return (
-    <NavWrap2>
-      <DndProvider backend={TouchBackend} >
-      <ElementFit />
-      </DndProvider>
-    </NavWrap2>
-);
-}
-else{
   return (
     <NavWrap2>
       <DndProvider backend={HTML5Backend} >
@@ -34,7 +24,6 @@ else{
       </DndProvider>
     </NavWrap2>
 );
-}
 }
 
 function useWindowSize() {

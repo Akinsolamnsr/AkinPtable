@@ -43,7 +43,7 @@ import GamesList from '../../components/Schema/ListSchema'
     }
     else{
       const nms1=  await GamesList.findOne({name:docs.name})
-      if(nms1) return
+      if(nms1) {return}
       
         else{
           const nms=  await GamesList.create({

@@ -59,8 +59,8 @@ export default function NavWrap2({children}) {
       </div>
 
       <div className={`h-screen w-[90%] ml-[5%] order-1 md:order-2 flex  ${size.width< 500?"flex-col":`${Wdth?"flex-col":"flex-row"}`}`}  >
-      <div className={`${size.width< 500?"w-full h-[75%] overflow-auto":`${Wdth?"w-full h-[80%] overflow-auto":`${MaxSize?"w-full h-full  w`1s":`${size.width<1300?"w-[70%] h-full overflow-auto ":`w-[80%] scale-[85%] -mt-[4rem] h-full  ${state.slide?"overflow-auto":""}`}`}`}`} `} >{children}</div>
-      <div className={`shadow-xl ${size.width< 500?"w-full h-[100%]":`${Wdth?"w-full h-[20%]":`${MaxSize?"w-[20%] h-full hidden":`${size.width<1300?"w-[30%] h-full":"w-[20%] h-full "}`}`}`} `}>
+      <div className={`${size.width< 500?"w-full h-[75%] overflow-auto":`${Wdth?"w-full h-[80%] overflow-auto":`${MaxSize?"w-full h-full  ":`${size.width<1300?"w-[70%] h-full overflow-auto ":`w-[80%] scale-[85%] -mt-[4rem] h-full  ${state.slide?"overflow-auto":""}`}`}`}`} `} >{children}</div>
+      <div className={`shadow-xl ${size.width< 500?"w-full h-[100%]":`${Wdth?"w-full h-[20%]":`${MaxSize || size.width<720?"w-[20%] h-full hidden":`${size.width<1300?"w-[30%] h-full":"w-[20%] h-full "}`}`}`} `}>
         {status==="authenticated"?<ScoreBoardTwo />:<ScoreBoard  /> }
         </div> 
      </div>

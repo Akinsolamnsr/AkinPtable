@@ -79,7 +79,7 @@ export default function ArragementMobile(){
       </div>
 
 
-     <div className={`${state.timer[0]?"":"absolute z-1 w-full h-[90%] bg-black opacity-25"}`}></div>
+     <div className={`${state.timer[0]?"":"absolute z-1 w-full h-[85%] bg-black opacity-25"}`}></div>
        {/*Horizontal element selector box box*/}
       <div className="basis-[85%] bg-blue-200 overflow-auto ">
         <button onTouchStart={()=>dispatch({ type:"ARRANGEMOBILECHECK",  payload:true })} onTouchEnd={()=>dispatch({ type:"ARRANGEMOBILECHECK",  payload:false })}      className="w-full bg-blue-700 rounded-full text-white font-bold border-4 border-pink-200 sticky top-0 h-8 ">click</button>
