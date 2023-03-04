@@ -12,13 +12,24 @@ export default function Block(){
      const marg=size.width<1300?true:false
     const Wdth=size.width>500 && size.height>1000
     
+  if(MaxSize){
     return (
       <NavWrap2>
         <DndProvider backend={HTML5Backend} >
-        {MaxSize?<ElementFitMobile />:<BlockFit />}
+        <ElementFitMobile />
         </DndProvider>
       </NavWrap2>
   )
+  }
+  else{
+    return (
+      <NavWrap2>
+        <DndProvider backend={HTML5Backend} >
+         <BlockFit />
+        </DndProvider>
+      </NavWrap2>
+  )
+  }
 }  
 
 
