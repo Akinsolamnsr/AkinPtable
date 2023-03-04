@@ -43,7 +43,7 @@ return(
             })}
         </div>
     ):limit==="Forty"?(
-        <div className="w-[250vh] flex flex-wrap mt- mb-4 ">
+        <div className="w-[65rem] flex flex-wrap mt- mb-4 ">
         {ListElement.map((x,i)=>{
                if(x===0){
                 return(
@@ -70,7 +70,7 @@ return(
     </div>
     ):(
         <>
-        <div className="w-[250vh] flex flex-wrap mt- mb-4 ">
+        <div className="w-[65rem] flex flex-wrap mt- mb-4 ">
         {ListElement.map((x,i)=>{
                if(x===0){
                 return(
