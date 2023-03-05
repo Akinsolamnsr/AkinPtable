@@ -1,37 +1,28 @@
-import { HTML5Backend } from 'react-dnd-html5-backend'
-import { DndProvider } from 'react-dnd'
-import { TouchBackend } from 'react-dnd-touch-backend'
-import NavWrap2 from '../../components/PageThree/NavWrap2'
-import BlockFit from '../../components/PageThree/Games/BlockFit'
-import { useEffect, useState } from 'react'
-import ElementFitMobile from '../../components/PageThree/Games/ElemFit/ElemenentFitMobile/ElementMob'
-import NavWrapGame from '../../components/PageThree/navWrapGame'
+import { useEffect, useState } from "react";
+import ElementArrange from "./Arrange";
 
-export default function Block(){
+
+
+
+
+export function ArrangeSplit(){
+
     const size =useWindowSize();
     const MaxSize=(size.height/size.width)<0.75 && size.width<1025
      const marg=size.width<1300?true:false
-    const Wdth=size.width>500 && size.height>1000
-    
-  if(MaxSize){
-    return (
-      <NavWrapGame>
-        <DndProvider backend={HTML5Backend} >
-        <ElementFitMobile />
-        </DndProvider>
-      </NavWrapGame>
-  )
-  }
+    const Wdth=size.width>500  && size.height>1000
+
+if(size.width<720){
+  <div className="w-full h-full bg-red-200"><span style={{fontSize:"100px"}} className="">ROTATE SCREEN</span></div>
+}
   else{
-    return (
-      <NavWrap2>
-        <DndProvider backend={HTML5Backend} >
-         <BlockFit />
-        </DndProvider>
-      </NavWrap2>
+    return(
+      <>
+      <ElementArrange />
+      </>
   )
   }
-}  
+}
 
 
 function useWindowSize() {

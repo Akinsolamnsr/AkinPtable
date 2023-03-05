@@ -57,11 +57,12 @@ export default function ElementArrange(){
   const MaxSize=(size.height/size.width)<0.75 && size.width<1025
    const marg=size.width<1300?true:false
   const Wdth=size.width>500  && size.height>1000
-      console.log([size.width,size.height])
+  const Truth=size.width<1000
+      console.log(size.width)
     return(
         <div className={`${size.width<550?"":""}`}>
-           <div className={`${size.width<720?"":"hidden"} flex justify-center`}><span style={{fontSize:'50px'}} className=" font-bold">Rotate Screen</span></div>
-          <div className={`${size.width<720 ?"hidden":""}  mt-1`} >
+           <div className={`${Truth?"":"hidden"} flex justify-center`}><span style={{fontSize:'50px'}} className=" font-bold">Rotate Screen</span></div>
+          <div  className={` ${Truth?"hidden":""}  mt-1`} >
    <span className={`${checkSpdf?"  absolute":"hidden"}`} style={{zIndex:3}}>{<Sound />} </span>      
         <>{checkFull && checkFullSym && state.fitELement==="full"?"":<div className={`${checkSpdf ?"  absolute":"hidden"}  `}>{<Confetti width={`${MaxSize?"600":"1000"}`}  height="500"/> }</div>}</>
     

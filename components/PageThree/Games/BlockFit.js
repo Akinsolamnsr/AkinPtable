@@ -31,11 +31,11 @@ export default function BlockFit(){
     const Elem3=Array.from(new Set(state.dropT))
     useEffect(()=>{
       
-      if(router.route==="/Games/Block"){
+      if(router.route==="/Games/Block"  || size.width<550){
         dispatch({type:`TIMER`,payload:[1,false]})
       }
       
-      
+      console.log(size.width)
     },[])
     
       const checkSpdf=Elem1.length===20 && state.PeriodFlip==="Twenty" || Elem2.length===40 && state.PeriodFlip==="Forty" || Elem3.length===118 && state.PeriodFlip==="Full"
@@ -45,8 +45,8 @@ export default function BlockFit(){
    
     return(     
         <div className={`${size.width<550?"":""}`}>
-          <div className={`${size.width<550?"w-screen h-screen flex justify-center items-center bg-blue-300 -ml-4":"hidden"}`}><span className="text-[3rem] font-bold text-[#002233]">Rotate Screen</span></div>
-         <div className={`${size.width<550?"hidden":""}  mt-1`}>
+   
+         <div className={`${size.width<1100?"hidden":""}  mt-1`}>
           
          <span className={`${checkSpdf?"  absolute":"hidden"}`} style={{zIndex:3}}>{<Sound />} </span>       
            <>{Elem3.length===118 && state.PeriodFlip==="Full"?"":<div className={`${checkSpdf ?"  absolute":"hidden"}  `}>{<Confetti width={`${MaxSize?"600":"1000"}`}  height="500"/> }</div>}</>

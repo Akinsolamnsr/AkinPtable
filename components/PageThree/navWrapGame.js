@@ -10,7 +10,7 @@ import PropPic from "../../public/images/PropNew.svg"
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 
-export default function NavWrap2({children}) {
+export default function NavWrapGame({children}) {
   const router = useRouter();
    const {status} =useSession()
 
@@ -58,12 +58,8 @@ export default function NavWrap2({children}) {
 
       </div>
 
-      <div className={`h-screen w-[90%] ml-[5%] order-1 md:order-2 flex  ${size.width< 720?"flex-col":`${Wdth?"flex-col":"flex-row"}`}`}  >
-      <div className={`${size.width< 1100?"w-full h-[100%] overflow-aut":`${Wdth?"w-full h-[80%] overflow-auto":`${MaxSize?"w-full h-full  ":`${size.width<1300?"w-[70%] h-full overflow-auto ":`w-[80%] scale-[85%] -mt-[4rem] h-full  ${state.slide?"overflow-auto":""}`}`}`}`} `} >{children}</div>
-      <div className={`shadow-xl ${size.width< 1100?"w-full h-full":`${Wdth?"w-full h-[20%]":`${MaxSize?"w-[20%] h-full hidden":`${size.width<1300?"w-[30%] h-full":"w-[20%] h-full "}`}`}`} `}>
-        <span className={`text-[1.5rem] font-bold ml-12 ${size.width< 1100?"":"hidden"}`}>ROTATE SCREEN</span>
-        {status==="authenticated"?<ScoreBoardTwo />:<ScoreBoard  /> }
-        </div> 
+      <div className={`h-screen`}  >
+        {children}
      </div>
 
     </div>

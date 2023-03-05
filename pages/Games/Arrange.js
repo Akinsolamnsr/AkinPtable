@@ -4,6 +4,8 @@ import { DndProvider } from 'react-dnd'
 import ElementArrange from "../../components/PageThree/Games/Arrangement/Arrange";
 import NavWrap2 from "../../components/PageThree/NavWrap2";
 import ArragementMobile from "../../components/PageThree/Games/Arrangement/mobile/ArrangeMob";
+import { ArrangeSplit } from "../../components/PageThree/Games/Arrangement/ArrajgeSplit";
+import NavWrapGame from "../../components/PageThree/navWrapGame";
 
 
 export default function Arragement(){
@@ -13,13 +15,24 @@ export default function Arragement(){
    const marg=size.width<1300?true:false
   const Wdth=size.width>500 && size.height>1000
 
+if(MaxSize){
+  return (
+    <NavWrapGame>
+      <DndProvider backend={HTML5Backend} >
+      <ArragementMobile />
+      </DndProvider>
+    </NavWrapGame>
+);
+}
+else{
   return (
     <NavWrap2>
       <DndProvider backend={HTML5Backend} >
-      {MaxSize?<ArragementMobile />:<ElementArrange />}
+      <ArrangeSplit />
       </DndProvider>
     </NavWrap2>
 );
+}
 }
 
 
