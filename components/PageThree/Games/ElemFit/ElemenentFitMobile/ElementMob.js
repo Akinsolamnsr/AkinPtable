@@ -34,8 +34,6 @@ export default function ArragementMobile(){
 
     const {status,data} =useSession()
     const Elem1=Array.from(new Set(state.elementDropFit))
-    console.log(Elem1)
-    console.log(state.mobA40)
   const checkTwenty=Elem1.length===21
   const checkForty=Elem1.length===41 
   const checkFull=Elem1.length===119 

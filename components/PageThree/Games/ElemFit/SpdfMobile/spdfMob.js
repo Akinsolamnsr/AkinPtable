@@ -11,14 +11,14 @@ import medaLogo from "../../../../../public/images/Rating-SVG-Icon-s9fd.svg"
 
 import Image from 'next/image'
 import Fireworks from "@fireworks-js/react";
-
-import UpdateScore from "../../../../update";
-import FamilySlideMobile from "./MobFamSlide";
-import FamilyDropMobile from "./FamDropMob";
+import SpdfDropMobile from "./SpdfDropMob";
+import SpdfSlideMobile from "./SpdfSlide";
 
 
 
-export default function FamilyMobile(){
+
+
+export default function SpdfMobile(){
 
   const size = useWindowSize();
   const MaxSize=(size.height/size.width)<0.75 && size.width<1025
@@ -34,7 +34,7 @@ export default function FamilyMobile(){
     const {state,dispatch}=context
 
     const {status,data} =useSession()
-    const Elem1=Array.from(new Set(state.elementDropFit2))
+    const Elem1=Array.from(new Set(state.blockDropFit))
   
  
     useEffect(()=>{
@@ -80,7 +80,7 @@ export default function FamilyMobile(){
      <div className={`${state.timer[5]?"":"absolute z-1 w-full h-[90%] bg-black opacity-25"}`}></div>
        {/* main box*/}
       <div className={`basis-[80%]  flex flex-col overflow-auto`}>
-       <FamilyDropMobile />
+       <SpdfDropMobile />
       </div>
 <hr />
       <div className={`basis-[20%]  flex flex-col `}>
@@ -89,7 +89,7 @@ export default function FamilyMobile(){
       <div className=" basis-[20%] flex">
  
  <div className="basis-[70%]  flex  flex-col overflow-auto bg-cyan-700">
- <FamilySlideMobile />
+ <SpdfSlideMobile />
  </div>
  
  <div className="basis-[30%]">

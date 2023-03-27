@@ -58,7 +58,7 @@ export default function ElementArrange(){
    const marg=size.width<1300?true:false
   const Wdth=size.width>500  && size.height>1000
   const Truth=size.width<1000
-      console.log(size.width)
+     
     return(
         <div className={`${size.width<550?"":""}`}>
            <div className={`${Truth?"":"hidden"} flex justify-center`}><span style={{fontSize:'50px'}} className=" font-bold">Rotate Screen</span></div>

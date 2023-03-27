@@ -44,7 +44,7 @@ export default function BlockFit(){
    
    
     return(     
-        <div className={`${size.width<550?"":""}`}>
+        <div className={`${size.width<1023?"hidden":""}`}>
    
          <div className={`${size.width<1100?"hidden":""}  mt-1`}>
           

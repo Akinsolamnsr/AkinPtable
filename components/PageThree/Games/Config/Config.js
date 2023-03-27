@@ -29,7 +29,7 @@ export default function Config(){
    
 
     return(
-        <div className={`${size.width<550?"":""}`}>
+        <div className={`${size.width<1023?"hidden":""}`}>
            <div className={`${size.width<550?"w-screen h-screen flex justify-center items-center bg-blue-300 -ml-4":"hidden"}`}><span className="text-[3rem] font-bold text-[#002233]">Rotate Screen</span></div>
           <div className={`${size.width<550?"hidden":""}  mt-12 bg-gradient-to-l from-sky-200 via-cyan-300 to-cyan-400`}>
           <span className={`${checkConfi?"  absolute":"hidden"}`} style={{zIndex:3}}>{<Sound />} </span>        

@@ -121,21 +121,44 @@ function user(state, action) {
                         return {...state,arrangeMobileMatch2:action.payload}
               case  "ARRANGEMOBILEMATCH3":
                           return {...state,arrangeMobileMatch3:action.payload}
+              case  "ARRANGEMOBILEMATCH4":
+                          return {...state,arrangeMobileMatch4:action.payload}
+               case  "ARRANGEMOBILEMATCH5":
+                            return {...state,arrangeMobileMatch5:action.payload}
+               case  "CONFIGMOBILEMATCH":
+                             return {...state,ConfigMobileMatch:action.payload}
+               case  "CONFIGMOBILEMATCH1":
+                      const tempMob=action.payload[1]
+                      state.ConfigMobileMatch1[tempMob]=action.payload[0]
+                              return {...state}
               case  "MATCHDROP":
                      state.matchDrop.push(action.payload)
                           return {...state}
               case  "MATCHDROPFIT":
                      state.matchDropFit.push(action.payload)
                           return {...state}
+               case  "MATCHDROPFIT2":
+                     state.matchDropFit2.push(action.payload)
+                          return {...state}
               case  "ELEMENTDROPFIT":
                             state.elementDropFit.push(action.payload)
                                  return {...state}
+               case  "ELEMENTDROPFIT2":
+                            state.elementDropFit2.push(action.payload)
+                                  return {...state}
+               case  "BLOCKDROPFIT":
+                             state.blockDropFit.push(action.payload)
+                                  return {...state}
               case  "MOBA20":
                            return {...state,mobA20:action.payload}
+              case  "CLICKMOB":
+                            return {...state,mobClick:action.payload}
               case  "MOBA40":
                           return {...state,mobA40:action.payload}
               case  "MOBAFULL":
                           return {...state,mobAFull:action.payload}
+              case  "MOBEN":
+                          return {...state,moben:action.payload}
     default:
       return state;
   }
@@ -148,17 +171,26 @@ const combineReducers = (...reducers) => (state, action) => {
 };
 export function AppWrapper({ children }) {
   let sharedState = {
+    moben:"Twenty",
+    mobClick:false,
+    blockDropFit:[],
     elementDropFit:[],
-    mobA20:"Full",
-    mobA40:'Full',
+    elementDropFit2:[],
+    mobA20:"Twenty",
+    mobA40:'Twenty',
     mobA2Full:'',
     matchDrop:[],
     matchDropFit:[],
+    matchDropFit2:[],
     arrangeMobbileCheck:false,
     arrangeMobbileCheck3:false,
     arrangeMobileMatch:"",
     arrangeMobileMatch2:"",
     arrangeMobileMatch3:"",
+    arrangeMobileMatch4:"",
+    arrangeMobileMatch5:"",
+    ConfigMobileMatch:"",
+    ConfigMobileMatch1:[],
     trendDrop:[],
     EnergyLevel:[],
     dataList:{},

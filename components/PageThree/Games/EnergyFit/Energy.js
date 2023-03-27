@@ -41,9 +41,9 @@ export default function Energy(){
     const check=Array.from(new Set(state.spdfListBox1))
      const checkConfi=checkTwenty ||  checkForty || checkFull
    
-    console.log(state.EnergyLevel)
+   
     return(
-       <div className={`${size.width<550?"":""}`}>
+       <div className={`${size.width<1023?"hidden":""}`}>
    <div className={`${size.width<550?"":"hidden"}  ${size.width<550?"w-screen h-screen flex justify-center items-center bg-blue-300 -ml-4":"hidden"}`}><span className="text-[3rem] font-bold text-[#002233]">Rotate Screen</span></div>
  <div className={`${size.width<550?"hidden":""}    bg-gradient-to-l from-sky-200 via-cyan-300 to-cyan-400 ${MaxSize?"mt-2":"mt-12"}`}>
 

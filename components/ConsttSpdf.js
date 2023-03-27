@@ -5,8 +5,16 @@ export const SpdfList=[
 [],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
 [],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
 [],[],[],[],[],[],[],[],[],[],[],[],[],
+]   
 
-] 
+export const TrueBoxes=[
+  false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
+  false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
+  false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
+  false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
+  false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
+  false,false,false,false,false,false,false,false,false,false,false,false,false
+]
 
 export const SpdfNumber={
     0:[], 1: [], 2: [], 3: [], 4: [], 5: [], 6: [], 7: [], 8: [], 9: [], 10:[],
@@ -41,10 +49,38 @@ export const SpdfNumber={
     [["INCREASING ATOMIC RADIUS",'left','down',"ATOMIC RADIUS"],["DECREASING ATOMIC RADIUS",'right','up',"ATOMIC RADIUS"]],
   ]
 
+  export const Trending=[
+    ["INCREASING IONIZATION ENERGY",'right','up',"IONIZATION ENERGY"],
+    ["INCREASING ELETRONEGATIVITY",'right','up',"ELETRONEGATIVITY"],
+    ["INCREASING ELETRON AFINITY",'right','up',"ELETRON AFINITY"],
+    ["INCREASING ATOMIC RADIUS",'left','down',"ATOMIC RADIUS"],
+    ["DECREASING IONIZATION ENERGY",'left','down',"IONIZATION ENERGY"],
+    ["DECREASING ELETRONEGATIVITY",'left','down',"ELETRONEGATIVITY"],
+    ["DECREASING ELETRON AFINITY",'left','down',"ELETRON AFINITY"],
+    ["DECREASING ATOMIC RADIUS",'right','up',"ATOMIC RADIUS"],
+  ]
 
+  export const Trend2=[
+    "INCREASING IONIZATION ENERGY",
+    "INCREASING ELETRONEGATIVITY",
+    "INCREASING ELETRON AFINITY",
+    "INCREASING ATOMIC RADIUS",
+    "DECREASING IONIZATION ENERGY",
+    "DECREASING ELETRON AFINITY",
+    "DECREASING ELETRONEGATIVITY",
+    "DECREASING ATOMIC RADIUS",
+    "IONIZATION ENERGY",
+    "ELETRONEGATIVITY",
+    ,"ELETRON AFINITY",
+    "ATOMIC RADIUS",
+  ]
 
-
-
+export const TrendPick=['INCREASING IONIZATION ENERGY,right', 'INCREASING ELETRONEGATIVITY,right', 'INCREASING ELETRON AFINITY,right', 'INCREASING ATOMIC RADIUS,left', 'DECREASING IONIZATION ENERGY,left', 'DECREASING ELETRON AFINITY,left', 'DECREASING ELETRONEGATIVITY,left', 'DECREASING ATOMIC RADIUS,right']
+export const TrendPicker=['INCREASING IONIZATION ENERGY,up', 'INCREASING ELETRONEGATIVITY,up', 'INCREASING ELETRON AFINITY,up', 'INCREASING ATOMIC RADIUS,down', 'DECREASING IONIZATION ENERGY,down', 'DECREASING ELETRON AFINITY,down', 'DECREASING ELETRONEGATIVITY,down', 'DECREASING ATOMIC RADIUS,up']
+export const TrendCheck=[
+  'INCREASING IONIZATION ENERGY,right', 'INCREASING ELETRONEGATIVITY,right', 'INCREASING ELETRON AFINITY,right', 'INCREASING ATOMIC RADIUS,left', 'DECREASING IONIZATION ENERGY,left', 'DECREASING ELETRON AFINITY,left', 'DECREASING ELETRONEGATIVITY,left', 'DECREASING ATOMIC RADIUS,right',
+  'INCREASING IONIZATION ENERGY,up', 'INCREASING ELETRONEGATIVITY,up', 'INCREASING ELETRON AFINITY,up', 'INCREASING ATOMIC RADIUS,down', 'DECREASING IONIZATION ENERGY,down', 'DECREASING ELETRON AFINITY,down', 'DECREASING ELETRONEGATIVITY,down', 'DECREASING ATOMIC RADIUS,up'
+]
   export const Twenty=["1s¹","1s¹","1s²","1s²","1s²","1s²","2s¹","2s¹","1s²","1s²","2s²","2s²","1s²","1s²","2s²","2s²","2p¹","2p¹","1s²","1s²","2s²","2s²","2p²","2p²","1s²","1s²","2s²","2s²","2p³","2p³","1s²","1s²","2s²","2s²","2p⁴","2p⁴","1s²","1s²","2s²","2s²","2p⁵","2p⁵","1s²","1s²","2s²","2s²","2p⁶","2p⁶","1s²","1s²","2s²","2s²","2p⁶","2p⁶","3s¹","3s¹","1s²","1s²","2s²",
   "2s²","2p⁶","2p⁶","3s²","3s²","1s²","1s²","2s²","2s²","2p⁶","2p⁶","3s²","3s²","3p¹","3p¹","1s²","1s²","2s²","2s²","2p⁶","2p⁶","3s²","3s²","3p²","3p²","1s²","1s²","2s²","2s²","2p⁶","2p⁶","3s²","3s²","3p³","3p³","1s²","1s²","2s²","2s²","2p⁶","2p⁶","3s²","3s²","3p⁴","3p⁴","1s²","1s²","2s²","2s²","2p⁶","2p⁶","3s²","3s²","3p⁵","3p⁵","1s²","1s²","2s²","2s²","2p⁶","2p⁶","3s²","3s²"
   ,"3p⁶","3p⁶","1s²","1s²","2s²","2s²","2p⁶","2p⁶","3s²","3s²","3p⁶","3p⁶","4s¹","4s¹","1s²","1s²","2s²","2s²","2p⁶","2p⁶","3s²","3s²","3p⁶","3p⁶","4s²","4s²"]

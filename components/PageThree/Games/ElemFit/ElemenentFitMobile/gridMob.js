@@ -9,7 +9,7 @@ import { useAppContext } from "../../../../UseContext"
 export default function GridMobileElementFit(){
     const context=useAppContext()
     const {state,dispatch}=context
-    const [matchSymbol,setMatchSymbol]=useState("")
+   const [matchSymbol,setMatchSymbol]=useState("")
 const limit=state.mobA40
 const Element=false
 useEffect(()=>{

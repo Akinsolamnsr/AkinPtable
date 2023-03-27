@@ -4,6 +4,8 @@ import { TouchBackend } from 'react-dnd-touch-backend'
 import { DndProvider } from 'react-dnd'
 import FamilyFit from "../../components/PageThree/Games/family/FamilyFit";
 import { useEffect, useState } from "react";
+import NavWrapGame from "../../components/PageThree/navWrapGame";
+import FamilyMobile from "../../components/PageThree/Games/family/MobileFamily/MobFam";
 
 
 
@@ -14,17 +16,19 @@ export default function Family(){
   const MaxSize=(size.height/size.width)<0.75 && size.width<1025
    const marg=size.width<1300?true:false
   const Wdth=size.width>500 && size.height>1000
+  const Tab=(Math.min(size.height,size.width))/(Math.max(size.height,size.width))
+  const TabSize=Tab>0.65 && size.width>1000
   
-if(MaxSize){
+if(MaxSize || TabSize){
   return (
-    <NavWrap2>
+    <NavWrapGame>
       <DndProvider backend={TouchBackend} >
-      <FamilyFit />
+      <FamilyMobile />
       </DndProvider>
-    </NavWrap2>
+    </NavWrapGame>
 );
 }
-else{
+else{    
   return (
     <NavWrap2>
       <DndProvider backend={HTML5Backend} >

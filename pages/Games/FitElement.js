@@ -4,6 +4,8 @@ import { TouchBackend } from 'react-dnd-touch-backend'
 import { DndProvider } from 'react-dnd'
 import ElementFit from "../../components/PageThree/Games/ElemFit/ElemFit";
 import { useEffect, useState } from "react";
+import NavWrapGame from "../../components/PageThree/navWrapGame";
+import SpdfMobile from "../../components/PageThree/Games/ElemFit/SpdfMobile/spdfMob";
 
 
 
@@ -16,14 +18,24 @@ export default function FitElement(){
   const MaxSize=(size.height/size.width)<0.75 && size.width<1025
    const marg=size.width<1300?true:false
   const Wdth=size.width>500 && size.height>1000
+  const Tab=(Math.min(size.height,size.width))/(Math.max(size.height,size.width))
+  const TabSize=Tab>0.65 && size.width>1000
   
+ if(MaxSize || TabSize){
+  return (
+    <NavWrapGame>
+      <SpdfMobile />
+    </NavWrapGame>
+)
+ }else{
   return (
     <NavWrap2>
       <DndProvider backend={HTML5Backend} >
       <ElementFit />
       </DndProvider>
     </NavWrap2>
-);
+)
+ };
 }
 
 function useWindowSize() {

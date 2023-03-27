@@ -4,7 +4,8 @@ import NavWrap2 from "../../components/PageThree/NavWrap2";
 import { TouchBackend } from 'react-dnd-touch-backend'
 import Config from '../../components/PageThree/Games/Config/Config';
 import { useEffect, useState } from 'react';
-
+import NavWrapGame from "../../components/PageThree/navWrapGame";
+import EnergyFitMobile from '../../components/PageThree/Games/Config/EnergyFitMob/EnergyMobile';
 
 
 
@@ -15,14 +16,15 @@ export default function Configuration(){
   const MaxSize=(size.height/size.width)<0.75 && size.width<1025
    const marg=size.width<1300?true:false
   const Wdth=size.width>500 && size.height>1000
-  
-if(MaxSize){
+  const Tab=(Math.min(size.height,size.width))/(Math.max(size.height,size.width))
+  const TabSize=Tab>0.65 && size.width>1000
+if(MaxSize || TabSize){
   return (
-    <NavWrap2>
+    <NavWrapGame>
       <DndProvider backend={TouchBackend} >
-      <Config />
+      <EnergyFitMobile />
       </DndProvider>
-    </NavWrap2>
+    </NavWrapGame>
 );
 }
 else{

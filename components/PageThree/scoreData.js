@@ -40,7 +40,7 @@ const MapData=data.map((x,i)=>{
     const sum=Math.round(Arrange+Elem+Ener+Con+fam+blck+trend)
      return [x.name,sum]
 })
-console.log(MapData)
+
   return (
     <div  className="w-full h-full  flex flex-col shadow-xl">
         

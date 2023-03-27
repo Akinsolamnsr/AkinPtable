@@ -14,7 +14,7 @@ export default function MidFig({data,count}){
     const context=useAppContext()
     const {dispatch,state}=context
     const names=[]
-   
+  
     data.forEach((data,i) => {
         names.push(<span><FormConfig data={data} /></span>)
       })

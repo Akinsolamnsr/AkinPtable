@@ -1,40 +1,51 @@
-import { HTML5Backend } from 'react-dnd-html5-backend'
-import { DndProvider } from 'react-dnd'
-import { TouchBackend } from 'react-dnd-touch-backend'
-import NavWrap2 from '../../components/PageThree/NavWrap2'
-import BlockFit from '../../components/PageThree/Games/BlockFit'
-import { useEffect, useState } from 'react'
-import ElementFitMobile from '../../components/PageThree/Games/ElemFit/ElemenentFitMobile/ElementMob'
-import NavWrapGame from '../../components/PageThree/navWrapGame'
 
-export default function Block(){
+import React, { useEffect, useState } from "react"
+import { useAppContext } from "../../../../UseContext";
+import { Elem,LanAct, ListElement} from "../../../../Const"
+
+export default function GridTrendMobile(){
+
+    const context=useAppContext()
+    const {state,dispatch}=context
     const size =useWindowSize();
     const MaxSize=(size.height/size.width)<0.75 && size.width<1025
      const marg=size.width<1300?true:false
     const Wdth=size.width>500 && size.height>1000
-    const Tab=(Math.min(size.height,size.width))/(Math.max(size.height,size.width))
-    const TabSize=Tab>0.65 && size.width>1000
     
-  if(MaxSize  || TabSize){
-    return (
-      <NavWrapGame>
-        <DndProvider backend={HTML5Backend} >
-        <ElementFitMobile />
-        </DndProvider>
-      </NavWrapGame>
-  )
-  }
-  else{
-    return (
-      <NavWrap2>
-        <DndProvider backend={HTML5Backend} >
-         <BlockFit />
-        </DndProvider>
-      </NavWrap2>
-  )
-  }
-}  
+    return(
+       <div className="inline-flex  h-[60vh] w-full flex-col scale-[70%]">
+        <div className={`flex flex-wrap w-[36rem]`}>
+        {ListElement.map((x,i)=>{
+            
+            if(x===0){
+                
+                return(
+                    <div key={`array-${i}`} className={`w-[2rem] h-[2rem]   invisible `}>
+                        
+                    </div>
+                )
+            }
+            else{
+               
+                return(
+                    <div key={`arrayScd${i}`} className={`border border-black w-[2rem] h-[2rem]`}>
+                    </div>
+                )
+            }
+           
+        })}
+        </div>
+        <div className={`flex flex-wrap w-[30rem] h-[4rem] mt-4 `}>
+        {LanAct.map((x,i)=>{
 
+return(
+    <div key={`Actinide${i}`} className={`border border-black w-[2rem] h-[2rem] invisible`}> </div>
+)
+})}
+        </div>
+       </div>
+    )
+}
 
 function useWindowSize() {
     // Initialize state with undefined width/height so server and client renders match

@@ -4,33 +4,36 @@ import { TouchBackend } from 'react-dnd-touch-backend'
 import { DndProvider } from 'react-dnd'
 import Energy from "../../components/PageThree/Games/EnergyFit/Energy";
 import { useEffect, useState } from "react";
-
-
+import ConfigMobile from "../../components/PageThree/Games/EnergyFit/ConfigMob/ConfigMobile";
+import NavWrapGame from "../../components/PageThree/navWrapGame";
+import NavWrapNew from "../../components/PageThree/NavWrapNew";
 
 
 export default function Arragement(){
 
   const size =useWindowSize();
   const MaxSize=(size.height/size.width)<0.75 && size.width<1025
-   const marg=size.width<1300?true:false
-  const Wdth=size.width>500 && size.height>1000
-  
-if(MaxSize){
+  const Tab=(Math.min(size.height,size.width))/(Math.max(size.height,size.width))
+  const TabSize=Tab>0.65 && size.width>1000
+   const marg=size.width<1300?true:false  
+  const Wdth=size.width>500 && size.height>1000    
+    
+if(MaxSize || TabSize){
   return (
-    <NavWrap2>
+    <NavWrapGame>
       <DndProvider backend={TouchBackend} >
-      <Energy />
+      <ConfigMobile />
       </DndProvider>
-    </NavWrap2>
+    </NavWrapGame>
 );
 }
 else{
   return (
-    <NavWrap2>
+    <NavWrapNew>
       <DndProvider backend={HTML5Backend} >
       <Energy />
       </DndProvider>
-    </NavWrap2>
+    </NavWrapNew>
 );
 }
 }

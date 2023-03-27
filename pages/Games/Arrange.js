@@ -14,8 +14,10 @@ export default function Arragement(){
   const MaxSize=(size.height/size.width)<0.75 && size.width<1025
    const marg=size.width<1300?true:false
   const Wdth=size.width>500 && size.height>1000
-
-if(MaxSize){
+  const Tab=(Math.min(size.height,size.width))/(Math.max(size.height,size.width))
+  const TabSize=Tab>0.62 && size.width>1000
+console.log(Tab)
+if(MaxSize || TabSize){
   return (
     <NavWrapGame>
       <DndProvider backend={HTML5Backend} >

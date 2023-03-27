@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
-import { useAppContext } from "../../../UseContext"
-import EnergyDragDnd from "./EnergyDrag"
+import { useAppContext } from "../../../../UseContext";
 
 
-export default function EnergySlide({idn}){
+
+export default function MobClickConfig({idn}){
     const context=useAppContext()
     const {dispatch,state}=context
     const size =useWindowSize();
@@ -25,11 +25,11 @@ const spdf=[["1s¹","1s","1s1"],["1s²","1s","1s2"],["2s¹","2s","2s1"],["2s²",
 ["7s¹","7s","7s1"],["7s²","7s","7s2"],["7p¹","7p","7p1"],["7p²","7p","7p2"],["7p³","7p","7p3"],["7p⁴","7p","7p4"],["7p⁵","7p","7p5"],["7p⁶","7p","7p6"]
 ]
 return(
-    <div className="h-full  w-full">
+    <div className="h-12 flex flex-wrap">
     {spdf.map((x,i)=>{
         
         return(
-            <div key={`SpdfSlide${i}`}  className={`${MaxSize?"w-[1.35rem] ml-1 text-[0.8rem] border-2":"w-[2.7rem] ml-1 text-[1.2rem] font-bold border-4"}    text-center  h-full  border-pink-300 shadow-lg text-black bg-white inline-block ${x[1]===state.spdfConfig?"":"hidden"}`}><EnergyDragDnd data={x[0]}  /></div>
+            <button onClick={()=>dispatch({ type:"CONFIGMOBILEMATCH",  payload:x[0] })} key={`SpdfSlide${i}`}  className={`${state.ConfigMobileMatch===x[0]?"text-purple-700 bg-white border-purple-700":"text-white bg-purple-700 border-white"}  font-bold p-1 border-2 ml-2  ${x[1]===state.spdfConfig?"":`hidden`}`}>{x[0]}</button>
         )
     })}
     </div>

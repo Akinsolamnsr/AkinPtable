@@ -47,7 +47,7 @@ export default function TrendFit(){
     
   },[])
     return(
-        <div className={` ${size.width<550?"":""}  `}>
+        <div className={` ${size.width<1023?"hidden":""}  `}>
         <div className={`${size.width<550?"":"hidden"}  ${size.width<550?"w-screen h-screen flex justify-center items-center -ml-4":"hidden"}`}><span className="text-[3rem] font-bold text-[#002233]">Rotate Screen</span></div>
         <div className={`${checkSpdf?"mt-[5rem]":"mt-12"} ${size.width<550?"hidden":""} `} >
          <span className={`${checkSpdf?"  absolute":"hidden"}`} style={{zIndex:3}}>{<Sound />} </span>       
