@@ -15,7 +15,7 @@ export default function ElemFile(){
            const color=family.split(',')[0]
     
     return(
-        <div className={`flex flex-col w-full p-1 
+        <div className={`flex flex-col w-full p-1
         ${color==="Alkaline metal"?`bg-[#ffcccc] text-[#b30000]`:`
         ${color==="Alkaline earth metal"?`bg-[#cceeff] text-[#00334d]`:`
         ${color==="Metalloid"?`bg-[#ccffff] text-[#003333]`:`
@@ -27,7 +27,7 @@ export default function ElemFile(){
         `${color==="Actinide"?"bg-[#e0e0d1] text-[#2e2e1f]":`
         ${color==="Lanthanide"?"bg-[#ffcce0] text-[#330014]":""}`}`}`}`}`}`}`}`}`}
         `}>
-        <div className={` flex justify-between font-bold  text-sm
+        <div className={`mt-8 sm:mt-1 flex justify-between font-bold  text-sm
         ${color==="Alkaline metal"?`bg-[#e60000] text-[#1a0000]`:`
         ${color==="Alkaline earth metal"?`bg-[#1ab2ff] text-[#003333]`:`
         ${color==="Metalloid"?`bg-[#4dffff] text-[#330033]`:`
@@ -45,7 +45,7 @@ export default function ElemFile(){
         <div className="  text-[6rem] text-center">{symbol}</div>
         <div className=" text-center font-bold">{name}</div>
         <div className=" text-center text-xs">{phase.toUpperCase()}</div>
-        <div className={` flex justify-between font-bold  text-sm
+        <div className={`sm:mt-1  flex justify-between font-bold mb-12 text-sm 
         ${color==="Alkaline metal"?`bg-[#e60000] text-[#003333]`:`
         ${color==="Alkaline earth metal"?`bg-[#1ab2ff] text-[#00334d]`:`
         ${color==="Metalloid"?`bg-[#4dffff] text-[#330033]`:`
