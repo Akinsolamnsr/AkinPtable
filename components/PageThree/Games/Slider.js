@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react"
-import { List } from "../../Const"
+import { List, List20, List40 } from "../../Const"
 import {Func} from "../../Pageone/constant"
 import { useAppContext } from "../../UseContext"
 import DragDnd from "./DND/DragBlockFit"
@@ -30,7 +30,7 @@ export default function Slider(){
     
      <div className={` ${MaxSize?"w-[65rem]":"w-[120rem]"} h-full flex flex-wrap mt-2`}>
      {
-   TwentyList.map((x,i)=>{
+   List20.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1).map((x,i)=>{
     const Stat=arrayList.indexOf(x[1]) >-1
 return(
   <div key={`SliderTwentyGrid${i}`} className={`inline-flex `}><DragDnd {...{data:x,Index:Stat}}  /></div>
@@ -47,7 +47,7 @@ return(
     
      <div className={` h-full flex flex-wrap mt-2 ${MaxSize?"w-[129rem]":"w-[240rem]"}`}>
      {
-   FortyList.map((x,i)=>{
+   List40.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1).map((x,i)=>{
       
     const Stat=arrayList2.indexOf(x[1]) >-1
 return(
@@ -65,7 +65,7 @@ return(
     
      <div className={`${MaxSize?"w-[475rem]":"w-[950rem]"} h-full flex flex-wrap mt-2`}>
      {
-   List.map((x,i)=>{
+   List.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1).map((x,i)=>{
       
     const Stat=arrayList3.indexOf(x[1]) >-1
 return(

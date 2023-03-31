@@ -24,10 +24,10 @@ const [{ canDrop, isOver }, drop] = useDrop(() => ({
 }))
 const Block=data[3].split(',')[0] 
 return (
-  <div key={`array-${data[0]}`} className={`w-full h-full ${isOver?`${MaxSize?"bg-cyan-500  scale-[200%]":"scale-[150%] bg-cyan-500 "}`:""} flex rounded-full items-center justify-center 
+  <div key={`array-${data[0]}`} className={`${state.flip?"bg-gray-300":""} w-full h-full ${isOver?`${MaxSize?"bg-cyan-500  scale-[200%]":"scale-[150%] bg-cyan-500 "}`:""} flex rounded-full items-center justify-center 
   ${status?`${Block==="s"?"text-[#002933] bg-[#005266] border-4 border-[#4ddbff] ":`${Block==="p"?"bg-[#660029] border-4 border-[#ff80b3]":`${Block==="d"?"text-[#004d1a] bg-[#80ffaa]":"text-[#330033] bg-[#ff80ff]"}`}`}`:"border border-black"}
   `}  ref={drop}>  
-  <span className={`${status?"":`${state.flip?"text-gray-300 ":`${state.flip?"text-gray-300 ":"hidden "}`}`}  ${MaxSize?"text-[0.8rem]":"text-[2rem]"} text-white font-bold `}>{data[1]}</span>
+  <span className={`${status?"":``}  ${MaxSize?"text-[0.8rem]":"text-[2rem]"} text-white font-bold `}>{data[1]}</span>
    </div>
 )
 }

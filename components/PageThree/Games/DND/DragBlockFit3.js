@@ -23,10 +23,10 @@ export default function DragDnd3(prop){
   }))
   const Block=data[3].split(',')[0]  
     return(   
-        <div className={`${Index?"hidden":""} inline-flex flex-col ${MaxSize?"w-[1.2rem] h-[1.2rem] ml-4 mr-4 ":"w-8 h-8 ml-8 mr-8 "} h-full  shadow-lg rounded-full font-bold ${isDragging?"hidden":""} hover:cursor-pointer
+        <div className={`${Index?"hidden":""} inline-flex flex-col ${MaxSize?"w-[1.2rem] h-[1.2rem] ml-4 mr-4 ":"w-12 h-8 ml-8 mr-8 "} h-full  shadow-lg rounded-full font-bold ${isDragging?"hidden":""} hover:cursor-pointer
         ${Block==="s"?"text-[#002933] bg-[#99ebff]":`${Block==="p"?"text-[#660029] bg-[#ff80b3]":`${Block==="d"?"text-[#004d1a] bg-[#80ffaa]":"text-[#330033] bg-[#ff80ff]"}`}`}
         `} ref={drag}>
-        <div className={`text-center ${MaxSize?"text-[0.5rem] ":"text-[1rem] "} `}>{data[1]}</div><div className={`${MaxSize?"text-[0.5rem] -ml-8":"text-[1rem]"} text-center w-12 -ml-4`}>{data[2]}</div>
+        <div className={`text-center ${MaxSize?"text-[0.5rem] ":"text-[1rem] "} `}>{data[1]}</div><div className={`${MaxSize?"text-[0.5rem] -ml-8":"text-[1rem]"} text-center w-12 -ml-`}>{data[2]}</div>
         </div>
         )
 }

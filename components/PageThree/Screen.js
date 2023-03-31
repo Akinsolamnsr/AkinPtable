@@ -16,7 +16,7 @@ export default function Screen(){
         <div className='w-48 h-48 border-2 bg-[#fff0e6]  flex justify-center items-center flex-col text-gray-600   border-cyan-300 ml-12 mt-12   shadow-xl rounded  '>
           <span className="text-[2rem]">Arrange</span>
           <span className="font-bold">Element</span>
-          <span className={`font-bold `}>{MaxSize || TabSize?<>Click n Click</>:<>Drag n Drop</>}  Game</span>
+          <span className={`font-bold `}>{MaxSize || TabSize || size.width<550?<>Click n Click</>:<>Drag n Drop</>}  Game</span>
         </div>
       </GameLink>
       </div>
@@ -25,7 +25,7 @@ export default function Screen(){
       <div className='w-48 h-48 border-2 bg-[#ffe6ff]  flex justify-center items-center flex-col text-gray-600   border-cyan-300 ml-12 mt-12   shadow-xl rounded  '>
           <span className="text-[2rem]">Fit</span>
           <span className="font-bold">Element</span>
-          <span className="font-bold">{MaxSize || TabSize?<>Click n Click</>:<>Drag n Drop</>}  Game</span>
+          <span className="font-bold">{MaxSize || TabSize || size.width<550?<>Click n Click</>:<>Drag n Drop</>}  Game</span>
         </div>
       </GameLink>
       </div>
@@ -43,7 +43,7 @@ export default function Screen(){
       <div className='w-48 h-48 border-2 bg-[#ffffe6]  flex justify-center items-center flex-col text-gray-600   border-cyan-300  ml-12 mt-12   shadow-xl rounded  '>
           <span className="text-[2rem]">Electronic</span>
           <span className="font-bold"> Configuration</span>
-          <span className="font-bold">{MaxSize || TabSize?<>Click n Click</>:<>Drag n Drop</>}  Game</span>
+          <span className="font-bold">{MaxSize || TabSize || size.width<550?<>Click n Click</>:<>Drag n Drop</>}  Game</span>
         </div>
       </GameLink>
       </div>
@@ -52,7 +52,7 @@ export default function Screen(){
       <div className='w-48 h-48 border-2 bg-[#fff5e6]  flex justify-center items-center flex-col text-gray-600   border-cyan-300  ml-12 mt-12   shadow-xl rounded  '>
           <span className="text-[2rem]">Family</span>
           <span className="font-bold">Periodic Table</span>
-          <span className="font-bold">{MaxSize || TabSize?<>Click n Click</>:<>Drag n Drop</>}  Game</span>
+          <span className="font-bold">{MaxSize || TabSize || size.width<550?<>Click n Click</>:<>Drag n Drop</>}  Game</span>
         </div>
       </GameLink>
       </div>
@@ -61,7 +61,7 @@ export default function Screen(){
       <div className='w-48 h-48 border-2 bg-[#f2e6ff]  flex justify-center items-center flex-col text-gray-600   border-cyan-300  ml-12 mt-12   shadow-xl rounded  '>
           <span className="text-[2rem]">SPDF</span>
           <span className="font-bold">Block</span>
-          <span className="font-bold">{MaxSize || TabSize?<>Click n Click</>:<>Drag n Drop</>}  Game</span>
+          <span className="font-bold">{MaxSize || TabSize || size.width<550?<>Click n Click</>:<>Drag n Drop</>}  Game</span>
         </div>
       </GameLink>
       </div>
@@ -70,7 +70,7 @@ export default function Screen(){
       <div className='w-48 h-48 border-2 bg-[#e6f7ff]  flex justify-center items-center flex-col text-gray-600   border-cyan-300  ml-12 mt-12   shadow-xl rounded  '>
           <span className="text-[2rem]">Periodic</span>
           <span className="font-bold">Table Trend</span>
-          <span className="font-bold">{MaxSize || TabSize?<>Click n Click</>:<>Drag n Drop</>}  Game</span>
+          <span className="font-bold">{MaxSize || TabSize || size.width<550?<>Click n Click</>:<>Drag n Drop</>}  Game</span>
         </div>
       </GameLink>
       </div>

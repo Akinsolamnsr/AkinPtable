@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { List } from "../../../Const"
+import { List, List20, List40 } from "../../../Const"
 import { useAppContext } from "../../../UseContext"
 import MyDropTargetFit from "./Drop1"
 import MyDropTargetFit2 from "./Drop2"
@@ -22,7 +22,7 @@ if(state.fitELement==="Twenty"){
     return(
         <div className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 h-full flex flex-wrap overflow-auto">
             <div className="w-full ">{MaxSize?<button className={`w-full bg-cyan-700 border-2 border-cyan-300 rounded-full p-1 font-bold text-white  ${MaxSize?"text-[0.6rem]":""}`} onTouchStart={()=>dispatch({type:"CHECK",payload:true})} onTouchEnd={()=>dispatch({type:"CHECK",payload:false})} >check element</button>:<button className={`w-full bg-cyan-700 border-2 border-cyan-300 rounded-full p-1 font-bold text-white  ${MaxSize?"text-[0.6rem]":""}`} onMouseDown={()=>dispatch({type:"CHECK",payload:true})} onMouseUp={()=>dispatch({type:"CHECK",payload:false})} >check element</button>}</div>
-        {TwentyList.map((x,i)=>{
+        {List20.sort((a,b)=> parseInt(a[0])-parseInt(b[0])).map((x,i)=>{
         
         return(
             <div key={`fitGrid${i}`} className={`   m-1 flex justify-between ${MaxSize?"w-[5rem] h-4":"w-36 h-8"}`}>
@@ -39,7 +39,7 @@ if(state.fitELement==="Forty"){
     return(
         <div className="w-full bg-red-100 h-full flex flex-wrap overflow-auto bg-gradient-to-r from-cyan-500 to-blue-500">
        <div className="w-full ">{MaxSize?<button className={`w-full bg-cyan-700 border-2 border-cyan-300 rounded-full p-1 font-bold text-white  ${MaxSize?"text-[0.6rem]":""}`} onTouchStart={()=>dispatch({type:"CHECK",payload:true})} onTouchEnd={()=>dispatch({type:"CHECK",payload:false})} >check element</button>:<button className={`w-full bg-cyan-700 border-2 border-cyan-300 rounded-full p-1 font-bold text-white  ${MaxSize?"text-[0.6rem]":""}`} onMouseDown={()=>dispatch({type:"CHECK",payload:true})} onMouseUp={()=>dispatch({type:"CHECK",payload:false})} >check element</button>}</div>
-        {FortyList.map((x,i)=>{
+        {List40.sort((a,b)=> parseInt(a[0])-parseInt(b[0])).map((x,i)=>{
         
         return(
             <div key={`fitGrid55${i}`} className={`   m-1 flex justify-between ${MaxSize?"w-[5rem] h-4":"w-36 h-8"}`}>
@@ -57,7 +57,7 @@ else{
     return(
         <div className="w-full bg-red-100 h-full flex flex-wrap overflow-auto bg-gradient-to-r from-cyan-500 to-blue-500">
             <div className="w-full ">{MaxSize?<button className={`w-full bg-cyan-700 border-2 border-cyan-300 rounded-full p-1 font-bold text-white  ${MaxSize?"text-[0.6rem]":""}`} onTouchStart={()=>dispatch({type:"CHECK",payload:true})} onTouchEnd={()=>dispatch({type:"CHECK",payload:false})} >check element</button>:<button className={`w-full bg-cyan-700 border-2 border-cyan-300 rounded-full p-1 font-bold text-white  ${MaxSize?"text-[0.6rem]":""}`} onMouseDown={()=>dispatch({type:"CHECK",payload:true})} onMouseUp={()=>dispatch({type:"CHECK",payload:false})} >check element</button>}</div>
-        {List.map((x,i)=>{
+        {List.sort((a,b)=> parseInt(a[0])-parseInt(b[0])).map((x,i)=>{
         
             return(
               <div key={`fitGrid99${i}`} className={`   m-1 flex justify-between ${MaxSize?"w-[5rem] h-4":"w-36 h-8"}`}>

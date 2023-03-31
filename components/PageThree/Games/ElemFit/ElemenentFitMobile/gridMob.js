@@ -89,7 +89,7 @@ return(
             })}
             
     </div>
-   <div className="w-[210vh]">
+   <div className="w-[55rem]">
    {LanAct.map((x,i)=>{
            return(
             <button onClick={()=>setMatchSymbol(x[1])} key={`BlockMobileFull${i}`} className={`w-[3rem] h-[3rem] ml-2 mt-2 font-bold rounded-full border-4 shadow-xl ${matchSymbol===x[1]?"border-black border-4 bg-gray-200 text-gray-400":""} ${state.arrangeMobbileCheck3?" text-gray-400":`${ state.matchDropFit.includes(x[1])?"border-cyan-300 bg-pink-700 text-white":""}`}`}>

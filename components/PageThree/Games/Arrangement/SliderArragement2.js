@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { List } from "../../../Const"
+import { List, List20, List40 } from "../../../Const"
 import { useAppContext } from "../../../UseContext"
 import DragDndA2 from "./Drag2"
 
@@ -21,7 +21,7 @@ export default function SliderArrage2(){
     
      <div className="w-full h-full flex flex-wrap">
      {
-   TwentyList.map((x,i)=>{
+   List20.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1).map((x,i)=>{
       
     const Stat=arrayList.indexOf(x[2]) >-1
 return(
@@ -39,7 +39,7 @@ return(
     
      <div className="w-full h-full flex flex-wrap">
      {
-   FortyList.map((x,i)=>{
+   List40.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1).map((x,i)=>{
       
     const Stat=arrayList.indexOf(x[2]) >-1
 return(
@@ -57,7 +57,7 @@ return(
     
      <div className="w-full h-full flex flex-wrap">
      {
-   List.map((x,i)=>{
+   List.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1).map((x,i)=>{
       
     const Stat=arrayList.indexOf(x[2]) >-1
 return(

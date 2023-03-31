@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { List } from "../../../../Const"
+import { List, List20, List40 } from "../../../../Const"
 import { useAppContext } from "../../../../UseContext"
 
 
@@ -22,9 +22,9 @@ return(
    <>
    {
     limit==="Twenty"?(
-        <div className=" h-12 w-[210%] flex flex-wrap">
+        <div className=" h-12 w-[280%] flex flex-wrap">
          {
-            TwentyList.map((x,i)=>{
+            List20.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1).map((x,i)=>{
                 const Stat=arrayList.indexOf(x[1]) >-1
                 return(
                     <button key={`SldTwenty${i}`} onClick={()=>dispatch({ type:"ARRANGEMOBILEMATCH3",  payload:x[1] })}   className={`w-12 h-12 bg-gray-200 shadow-xl mt-2 ml-4 border-4 rounded-full text-center font-bold text-[1.5rem] ${state.arrangeMobileMatch3===x[1]?"border-black text-black opacity-25":"border-cyan-200 text-cyan-700"}  ${Stat?"hidden":""}`}>{x[1]}</button>
@@ -35,7 +35,7 @@ return(
     ):limit==="Forty"?(
         <div className=" h-12 w-[410%] flex flex-wrap">
          {
-            FortyList.map((x,i)=>{
+            List40.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1).map((x,i)=>{
                 const Stat=arrayList.indexOf(x[1]) >-1
                 return(
                     <button key={`SldForty${i}`} onClick={()=>dispatch({ type:"ARRANGEMOBILEMATCH3",  payload:x[1] })}   className={`w-12 h-12 bg-gray-100 shadow-xl mt-2 ml-4 border-4 rounded-full text-center font-bold text-[1.5rem] ${state.arrangeMobileMatch3===x[1]?"border-black text-black opacity-25":"border-pink-200 text-pink-700"}  ${Stat?"hidden":""}`}>{x[1]}</button>
@@ -46,7 +46,7 @@ return(
     ):(
         <div className=" h-12 w-[2400%] flex flex-wrap">
          {
-            List.map((x,i)=>{
+            List.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1).map((x,i)=>{
                 const Stat=arrayList.indexOf(x[1]) >-1
                 return(
                     <button key={`HorTwenty${i}`} onClick={()=>dispatch({ type:"ARRANGEMOBILEMATCH3",  payload:x[1] })}   className={`w-12 h-12 bg-gray-100 shadow-xl mt-2 ml-4 border-4 rounded-full text-center font-bold text-[1.5rem] ${state.arrangeMobileMatch3===x[1]?"border-black text-black opacity-25":"border-green-200 text-green-700"}  ${Stat?"hidden":""}`}>{x[1]}</button>

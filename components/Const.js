@@ -44,6 +44,19 @@ export const List=[
     ["107","Bh","Bohrium","d,C35"],["108","Hs","Hassium","d,C36"],["109","Mt","Meitnerium","d,C37"],["110","Ds","Darmstadtium","d,C38"],["111","Rg","Roentgenium","d,C39"],["112","Cn","Copernicium","d,C40"],["113","Nh","Nihonium","p,D19"],["114","Fl","Flerovium","p,D20"],
     ["115","Mc","Moscovium","p,D21"],["116","Lv","Livermorium","p,D22"],["117","Ts","Tennessine","p,D23"],["118","Og","Oganesson","p,D24"]
 ]
+export const List40=[  
+  ["1","H","Hydrogen","s,A1"],["2","He","Helium","s,F1"],["3","Li","Lithium","s,A3"],["4","Be","Beryllium","s,A4"],["5","B","Boron","p,E1"],["6","C","Carbon","p,E2"],["7","N","Nitrogen","p,E4"],["8","O","Oxygen","p,E4"],["9","F","Fluorine","p,E5"],["10","Ne","Neon ","p,E6"],
+  ["11","Na","Sodium","s,A5"],["12","Mg","Magnesium","s,A6"],["13","Al","Aluminium","p,E7"],["14","Si","Silicon","p,E8"],["15","P","Phosphorus","p,E9"],["16","S","Sulfur","p,E10"],["17","Cl","Chlorine","p,E11"],["18","Ar","Argon","p,E12"],["19","K","Potassium","s,A7"],
+  ["20","Ca","Calcium","s,A8"],["21","Sc","Scandium","d,C1"],["22","Ti","Titanium","d,C2"],["23","V","Vanadium","d,C3"],["24","Cr","Chromium","d,C4"],["25","Mn","Manganese","d,C5"],["26","Fe","Iron","d,C6"],["27","Co","Cobalt","d,C7"],["28","Ni","Nickel","d,C8"],
+  ["29","Cu","Copper","d,C9"],["30","Zn","Zinc","d,C10"],["31","Ga","Gallium","p,D1"],["32","Ge","Germanium","p,D2"],["33","As","Arsenic","p,D3"],["34","Se","Selenium","p,D4"],["35","Br","Bromine","p,D5"],["36","Kr","Krypton","p,D6"],["37","Rb","Rubidium","s,B1"],
+  ["38","Sr","Strontium","s,B2"],["39","Y","Yttrium","d,C11"],["40","Zr","Zirconium","d,C12"]
+]
+
+export const List20=[  
+  ["1","H","Hydrogen","s,A1"],["2","He","Helium","s,F1"],["3","Li","Lithium","s,A3"],["4","Be","Beryllium","s,A4"],["5","B","Boron","p,E1"],["6","C","Carbon","p,E2"],["7","N","Nitrogen","p,E4"],["8","O","Oxygen","p,E4"],["9","F","Fluorine","p,E5"],["10","Ne","Neon ","p,E6"],
+  ["11","Na","Sodium","s,A5"],["12","Mg","Magnesium","s,A6"],["13","Al","Aluminium","p,E7"],["14","Si","Silicon","p,E8"],["15","P","Phosphorus","p,E9"],["16","S","Sulfur","p,E10"],["17","Cl","Chlorine","p,E11"],["18","Ar","Argon","p,E12"],["19","K","Potassium","s,A7"],
+  ["20","Ca","Calcium","s,A8"]
+]
 
 export const LanAct=[
   ["57","La","Lanthanum","f,L1"],["58","Ce","Cerium","f,L2"],["59","Pr","Praseodymium","f,L3"],["60","Nd","Neodymium","f,L4"],["61","Pm","Promethium","f,L5"],["62","Sm","Samarium","f,L6"],

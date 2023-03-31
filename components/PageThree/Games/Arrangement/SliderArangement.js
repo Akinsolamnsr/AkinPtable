@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { List } from "../../../Const"
+import { List, List20, List40 } from "../../../Const"
 import { useAppContext } from "../../../UseContext"
 
 import DragDndA from "./Drag"
@@ -17,13 +17,14 @@ export default function SliderArrage(){
     const arrayList=Array.from(setList)
       const TwentyList=List.slice(0,20)
       const FortyList=List.slice(0,40)
+     
     if(state.fitELement==="Twenty"){
       return(
-        <div className={`${MaxSize?"w-[20rem]":"w-[40rem]"} h-full overflow-x-auto overflow-y-hidden `}>
+        <div className={` ${MaxSize?"w-[20rem]":"w-[40rem]"} h-full overflow-x-auto overflow-y-hidden `}>
     
      <div className="w-[45rem] h-full flex flex-wrap mt-2">
      {
-   TwentyList.map((x,i)=>{
+   List20.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1).map((x,i)=>{
     const Stat=arrayList.indexOf(x[1]) >-1
 return(
   <div key={`ArrangeSlider1${i}`} className={`inline-flex `}><DragDndA {...{data:x,Index:Stat}}  /></div>
@@ -40,7 +41,7 @@ return(
     
      <div className="w-[90rem] h-full flex flex-wrap mt-2">
      {
-   FortyList.map((x,i)=>{
+   List40.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1).map((x,i)=>{
       
     const Stat=arrayList.indexOf(x[1]) >-1
 return(
@@ -58,7 +59,7 @@ return(
     
      <div className="w-[357rem] h-full flex flex-wrap mt-2">
      {
-   List.map((x,i)=>{
+   List.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1).map((x,i)=>{
       
     const Stat=arrayList.indexOf(x[1]) >-1
 return(

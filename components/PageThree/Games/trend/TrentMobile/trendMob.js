@@ -53,6 +53,7 @@ export default function TrendMobile(){
      const imgs=swipe===0 ||swipe===4?Ions:swipe===1 || swipe===5?Neg:swipe===2 || swipe===6?Afin:Rad
      const dir=Trending[swipe][1]==="left"?"left":"right"
      const checkSpdf=TrendCheck.every((x)=>list.includes(x))
+     console.log(swipe)
     return (
    <div className=" flex w-screen flex-col h-[100%]">
             <div className={`${checkSpdf?"absolute z-2 w-full h-[90%]":"hidden"}`}>
@@ -86,15 +87,27 @@ export default function TrendMobile(){
        {/* main box*/}
       <div className={`basis-[80%]  flex overflow-auto `}>
       <div className="basis-[20%]  flex">
-     {list.includes(TrendPicker[swipe])?<div className="w-full h-full bg-pink-700 text-white text-center">{TrendPicker[swipe]}</div>:<>
-     <button onClick={()=>{if(Trending[swipe][2]==="up"){setList(prev=>[...prev,Trend2[swipe].concat(",up")])}else{return}}}  className="basis-[50%] bg-purple-700 text-white border-4 border-white">UP ARROW</button>
-      <button onClick={()=>{if(Trending[swipe][2]==="down"){setList(prev=>[...prev,Trend2[swipe].concat(",down")])}else{return}}}  className="basis-[50%] bg-purple-700 text-white border-4 border-white">DOWN ARROW</button>
+     {list.includes(TrendPicker[swipe])?<div className="w-full h-full bg-pink-700 text-white text-center">
+     {swipe===3?<>{Trending[swipe][3]}<br></br>increase from top to bottom <br></br><span className="text-[4rem]">&darr;</span></>:swipe>3 && swipe<7?
+            <>{Trending[swipe][3]}<br></br>decrease from top to bottom <br></br><span className="text-[4rem]">&darr;</span></>:swipe===7?
+            <><>{Trending[swipe][3]}<br></br>decrease from bottom to top <br></br><span className="text-[4rem]">&uarr;</span></></>:
+            <><>{Trending[swipe][3]}<br></br>increase from bottom to top <br></br><span className="text-[4rem]">&uarr;</span></></>
+           }
+     </div>:<>
+     <button onClick={()=>{if(Trending[swipe][2]==="up"){setList(prev=>[...prev,Trend2[swipe].concat(",up")])}else{return}}}  className="basis-[50%] bg-purple-700 text-white border-4 border-white font-black text-[100px]">&uarr;</button>
+      <button onClick={()=>{if(Trending[swipe][2]==="down"){setList(prev=>[...prev,Trend2[swipe].concat(",down")])}else{return}}}  className="basis-[50%] bg-purple-700 text-white border-4 border-white font-black text-[100px]">&darr;</button>
      </>}
      </div>
       <div className="basis-[65%]  flex flex-col">
         <div className="basis-[25%]  flex ">
-          {list.includes(TrendPick[swipe])?<div className="w-full h-full bg-pink-700 text-white text-center">increase from left to right</div>:<> <button onClick={()=>{if(Trending[swipe][1]==="left"){setList(prev=>[...prev,Trend2[swipe].concat(",left")])}else{return}}}  className="basis-[50%] bg-purple-700 text-white border-4 border-white">LEFT ARROW</button>
-          <button onClick={()=>{if(Trending[swipe][1]==="right"){setList(prev=>[...prev,Trend2[swipe].concat(",right")])}else{return}}} className="basis-[50%] bg-purple-700 text-white border-4 border-white">RIGHT ARROW</button>
+          {list.includes(TrendPick[swipe])?<div className="w-full h-full bg-pink-700 text-white text-center">
+            {swipe===3?<>{Trending[swipe][3]}<br></br>increase from right to left <span className="text-[1.5rem]">&larr;</span></>:swipe>3 && swipe<7?
+            <>{Trending[swipe][3]}<br></br>decrease from right to left <span className="text-[1.5rem]">&larr;</span></>:swipe===7?
+            <><>{Trending[swipe][3]}<br></br>decrease from left to right <span className="text-[1.5rem]">&#x2192;</span></></>:
+            <><>{Trending[swipe][3]}<br></br>increase from left to right <span className="text-[1.5rem]">&#x2192;</span></></>
+           }
+          </div>:<> <button onClick={()=>{if(Trending[swipe][1]==="left"){setList(prev=>[...prev,Trend2[swipe].concat(",left")])}else{return}}}  className="basis-[50%] bg-purple-700 text-white border-4 border-white font-black text-[2rem]" style={{textTransform:"full-width"}}>&larr;</button>
+          <button onClick={()=>{if(Trending[swipe][1]==="right"){setList(prev=>[...prev,Trend2[swipe].concat(",right")])}else{return}}} className="basis-[50%] bg-purple-700 text-white border-4 border-white font-black text-[2rem]">&#x2192;</button>
         </>}
          </div>
         <div className="basis-[75%] ">

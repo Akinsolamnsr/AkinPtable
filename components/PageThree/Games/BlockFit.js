@@ -80,7 +80,7 @@ export default function BlockFit(){
          </div>
           <div className={`${state.timer[1]?"hidden":"relative"} `}><div className={`absolute ${MaxSize?`w-screen ${state.PeriodFlip==="Full"?"h-[23rem]":"h-[20rem]"}`:"w-[109%] h-[34.5rem]"}   opacity-50 bg-gray-700`}></div></div>
  
-          
+               
           <div className={`w-full ${MaxSize?"h-[69vh]":"h-[87vh]"}  lg:mt-12 mb-4`}><GridBlock /></div>
           <div className={` h-[17vh] flex ${state.PeriodFlip==="Full"?`${MaxSize?"mt-[5rem]":"-mt-2"}`:""}`}>
               <div className="basis-[15%]">{status==="authenticated" && checkSpdf?<button className="w-full mt-[0.9rem]  relative z-1 "><UpdateScore status={state.PeriodFlip} type="ElementFit" name={data.user.name} /></button>:<div></div>}</div>

@@ -86,7 +86,7 @@ export default function EnergyFitMobile(){
      <div className={`${state.timer[3]?"":"absolute z-1 w-full h-[85%] bg-black opacity-25"}`}></div>
        {/*Horizontal element selector box box*/}
       <div className="basis-[85%]  overflow-auto ">
-        <button onTouchStart={()=>dispatch({ type:"ARRANGEMOBILECHECK",  payload:true })} onTouchEnd={()=>dispatch({ type:"ARRANGEMOBILECHECK",  payload:false })}      className="w-full bg-blue-700 rounded-full text-white font-bold border-4 border-pink-200 sticky top-0 h-8 ">click</button>
+        <button onTouchStart={()=>dispatch({ type:"ARRANGEMOBILECHECK",  payload:true })} onTouchEnd={()=>dispatch({ type:"ARRANGEMOBILECHECK",  payload:false })}      className="w-full bg-blue-700 rounded-full text-white font-bold border-4 border-pink-200 sticky top-0 h-8 ">check Energy Level</button>
          <div className="w-full h-full">
            <SwitchMob />
          </div>
@@ -114,15 +114,15 @@ export default function EnergyFitMobile(){
       <div className={`basis-[30%]  flex flex-col bg-blue-300`}>
      
     {/* element selector box*/}
-    <div className=" basis-[80%] flex flex-col overflow-auto bg-purple-300">
-    <div className="basis-[80%] bg-green-100">
-
+    <div className=" basis-[80%] flex flex-col overflow-auto bg-cyan-300">
+    <div className="basis-[80%] bg-cyan-500 text-[2rem]  flex justify-center items-center text-white opacity-20">
+       <span className="font-bold">ENERGY</span>
     </div>
-      <div className="basis-[40%] bg-green-700">
+      <div className="basis-[40%] bg-cyan-700 opacity-50 ">
 
       </div>
-      <div className="basis-[80%] bg-green-100">
-        
+      <div className="basis-[80%] bg-cyan-500  text-[2rem] flex justify-center items-center text-white opacity-20">
+        <div className="font-bold">LEVEL</div>
       </div>
 </div>
 

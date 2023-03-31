@@ -10,7 +10,7 @@ async function sendRequest(url, { arg }) {
   }).then(res => res.json())
 }
   
-const UpdateScore = ({status,type,name}) => {
+const UpdateScoreMobile = ({status,type,name}) => {
  
   const [User,setUser]=useState(false)
   const { trigger, isMutating } = useSWRMutation('/api/scoreDb', sendRequest /* options */)
@@ -47,8 +47,8 @@ const UpdateScore = ({status,type,name}) => {
    const marg=size.width<1300?true:false
   const Wdth=size.width>500 && size.height>1000
   return(
-    <div className={`inline-flex  w-full h-full ${MaxSize?"text-[1.7rem]":""}`}>
-     {User?.success?   <div className={`${MaxSize?"":"mt-[0.9rem] mt-[0.9rem]"}  inline-flex  h-full w-full text-white font-bold border-4 bg-green-700  `}>
+    <div className={`inline-flex  w-full h-full ${MaxSize?"":""}`}>
+     {User?.success?   <div className={`  inline-flex  h-full w-full text-white font-bold border-4 bg-green-700  `}>
     {User.update?<div>Best score updated</div>:<div>Not your Best score</div>}
     </div>
       :<div className='mt-[0.9rem] inline-flex flex-col p-4 w-full h-full text-white font-bold border-4 border-cyan-300 rounded-full bg-pink-700'><div>{msToTime(state.timeUpdate)}</div>
@@ -57,7 +57,7 @@ const UpdateScore = ({status,type,name}) => {
   )
 }     
 
-export default UpdateScore
+export default UpdateScoreMobile
 
 function useWindowSize() {
   // Initialize state with undefined width/height so server and client renders match

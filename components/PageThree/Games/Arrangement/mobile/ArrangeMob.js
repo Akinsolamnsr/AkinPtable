@@ -13,6 +13,8 @@ import medaLogo from "../../../../../public/images/Rating-SVG-Icon-s9fd.svg"
 import { ArrangeForty, ArrangeFull, ArrangeTwenty } from "./MobileConst";
 import Image from 'next/image'
 import Fireworks from "@fireworks-js/react";
+import UpdateScore from "../../../../update";
+import UpdateScoreMobile from "../../../../updateMod";
 
 
 
@@ -82,10 +84,11 @@ export default function ArragementMobile(){
      <div className={`${state.timer[0]?"":"absolute z-1 w-full h-[85%] bg-black opacity-25"}`}></div>
        {/*Horizontal element selector box box*/}
       <div className="basis-[85%] bg-blue-200 overflow-auto ">
-        <button onTouchStart={()=>dispatch({ type:"ARRANGEMOBILECHECK",  payload:true })} onTouchEnd={()=>dispatch({ type:"ARRANGEMOBILECHECK",  payload:false })}      className="w-full bg-blue-700 rounded-full text-white font-bold border-4 border-pink-200 sticky top-0 h-8 ">click</button>
-         <div className="">
-            <GridMobile />
+        <button onTouchStart={()=>dispatch({ type:"ARRANGEMOBILECHECK",  payload:true })} onTouchEnd={()=>dispatch({ type:"ARRANGEMOBILECHECK",  payload:false })}      className="w-full bg-blue-700 rounded-full text-white font-bold border-4 border-pink-200 sticky top-0 h-8 ">check Element </button>
+         <div className={`${state.timer[0]?"":"hidden"}`}>
+            <GridMobile  />
          </div>
+       
       </div>
     {/* start, select, reset game in that order*/}
 <div className="basis-[15%]  flex">
@@ -103,7 +106,7 @@ export default function ArragementMobile(){
     {/* element selector box*/}
     <div className=" basis-[80%] overflow-auto bg-blue-200">
 <VerticalArrangeMobile />
-</div>
+</div>   
 
    {/*element selector, , timer, range box*/}
 <div className=" basis-[20%] flex">
