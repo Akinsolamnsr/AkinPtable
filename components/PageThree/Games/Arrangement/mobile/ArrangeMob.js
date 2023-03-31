@@ -15,7 +15,7 @@ import Image from 'next/image'
 import Fireworks from "@fireworks-js/react";
 import UpdateScore from "../../../../update";
 import UpdateScoreMobile from "../../../../updateMod";
-
+import { NextSeo } from 'next-seo';
 
 
 export default function ArragementMobile(){
@@ -48,7 +48,10 @@ export default function ArragementMobile(){
 
     return (
    <div className=" flex w-screen  h-[100%]">
-      
+      <NextSeo
+            title="Arrange Element name and symbol Game"
+            description="Fit the element name and symbol on the exact box"
+        />
        {/* main box*/}
       <div className={`basis-[70%]  flex flex-col`}>
     
