@@ -55,7 +55,7 @@ export default function SpdfDrop({accept,count,pos,numb,cont}) {
      },[count])
     //// console.log(state.EnergyLevel)
      return (
-       <div ref={drop} className={`${MaxSize?"w-[1.5rem] h-[1.25rem]":"w-[3rem] h-[2.5rem]"}   ml-1 mt-1  ${datum[count].includes(SpdN)?" ":"bg-white"}  text-center ${isOver ?"bg-[#660029]":""}`}>
+       <div ref={drop} className={`${MaxSize?"w-[1.5rem] h-[1.25rem]":"w-[3rem] h-[2.5rem]"}   ml-1 mt-1  ${datum[count].includes(SpdN)?" ":`${isOver ?"bg-green-400":"bg-white "}`}  text-center `}>
         <span className={`${datum[count].includes(SpdN)?`text-white font-bold ${MaxSize?"text-[0.8rem]":"text-[1.5rem]"}`:`${state.onoff?"text-gray-700":"hidden"}`}`}>{SpdL}</span>
         </div>
      )
