@@ -35,11 +35,12 @@ export default function ConfigMobile(){
   const setList=new Set(state.matchDrop)
     const arrayList=Array.from(setList)
     
-  const  checkTwenty=TrueBoxes.slice(0,19).every((x)=>x===true)
-  const  checkForty=TrueBoxes.slice(0,39).every((x)=>x===true)
+  const  checkTwenty=TrueBoxes.slice(0,20).every((x)=>x===true)
+  
+  const  checkForty=TrueBoxes.slice(0,40).every((x)=>x===true)
   const  checkFull=TrueBoxes.every((x)=>x===true)
   const checkSpdf=checkTwenty || checkForty || checkFull
- 
+  console.log(TrueBoxes.slice(0,20))
     const {status,data} =useSession()
     useEffect(()=>{
       
@@ -52,7 +53,7 @@ export default function ConfigMobile(){
 
 
     return (
-   <div className=" flex w-screen  h-screen">
+   <div className=" flex w-screen  h-screen ">
       
        {/* main box*/}
       <div className={`basis-[70%]  flex flex-col `}>

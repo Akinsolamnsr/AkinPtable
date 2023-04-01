@@ -36,7 +36,7 @@ export default function EnergyFitMobile(){
   const  checkForty=TrueBox.slice(0,20).every((x)=>x===true)
   const  checkFull=TrueBox.every((x)=>x===true)
   const checkSpdf=checkTwenty || checkForty || checkFull
- 
+
     const {status,data} =useSession()
     useEffect(()=>{
       
@@ -49,7 +49,7 @@ export default function EnergyFitMobile(){
 
 
     return (
-   <div className=" flex w-screen  h-screen">
+   <div className=" flex w-screen  h-screen ">
       
        {/* main box*/}
       <div className={`basis-[70%]  flex flex-col `}>
