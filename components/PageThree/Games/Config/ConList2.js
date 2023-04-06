@@ -1,11 +1,11 @@
 
 import { useEffect, useState } from "react";
-import { Confg, Confg20 } from "../../../Const"
+import { Confg, Confg40 } from "../../../Const"
 import { useAppContext } from "../../../UseContext";
 import FormConfig from "./FormConfg";
 import Mid from "./Mid";
 
-export default function ConList({count}){
+export default function ConList2({count}){
 
     const size =useWindowSize();
     const MaxSize=(size.height/size.width)<0.75 && size.width<1025
@@ -15,7 +15,7 @@ export default function ConList({count}){
     const nList=false
     const context=useAppContext()
     const {dispatch,state}=context
-    const data=Confg20[count]
+    const data=Confg40[count]
     const ArrayConfg=data[3].split(',')
    
     return(

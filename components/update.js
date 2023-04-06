@@ -19,7 +19,6 @@ const UpdateScore = ({status,type,name}) => {
     const {state}=context
   const Post=async()=>{
     try {
- 
   const user = await trigger({timeUpdate:state.timeUpdate,status,type,name})
   setUser(user)
 } catch (error) {
@@ -43,6 +42,7 @@ const UpdateScore = ({status,type,name}) => {
   
     return pad(hrs) + ':' + pad(mins) + ':' + pad(secs) + '.' + pad(ms, 3);
   }
+  
   const size =useWindowSize();
   const MaxSize=(size.height/size.width)<0.75 && size.width<1025
    const marg=size.width<1300?true:false

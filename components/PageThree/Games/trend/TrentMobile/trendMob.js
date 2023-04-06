@@ -13,6 +13,8 @@ import {Trend, Trend2, TrendCheck, Trending, TrendPick, TrendPicker} from "../..
 import Image from 'next/image'
 import Fireworks from "@fireworks-js/react";
 import GridTrendMobile from "./GridMob";
+import UpdateScore from "../../../../update";
+import UpdateScoreMobile from "../../../../updateMod";
 
 
 
@@ -36,14 +38,7 @@ export default function TrendMobile(){
     const Elem1=Array.from(new Set(state.elementDropFit2))
   
  
-    useEffect(()=>{
-      
-        if(router.route==="/Games/TableTrend" || size.width<550){
-          dispatch({type:`TIMER`,payload:[6,false]})
-        }
-        
-        
-      },[])
+
 
       
       const ListTrend=["1","3","5","7","2","4","6","8","11","13","15","17","12","14","16","18"]
@@ -53,9 +48,18 @@ export default function TrendMobile(){
      const imgs=swipe===0 ||swipe===4?Ions:swipe===1 || swipe===5?Neg:swipe===2 || swipe===6?Afin:Rad
      const dir=Trending[swipe][1]==="left"?"left":"right"
      const checkSpdf=TrendCheck.every((x)=>list.includes(x))
+     useEffect(()=>{
+      
+      if(router.route==="/Games/TableTrend" || size.width<550){
+        dispatch({type:`TIMER`,payload:[6,false]})
+      }
+      
+      setList([])
+    },[])
      console.log(swipe)
     return (
    <div className=" flex w-screen flex-col h-[100%]">
+    
             <div className={`${checkSpdf?"absolute z-2 w-full h-[90%]":"hidden"}`}>
       
       <>{checkSpdf?<Fireworks
@@ -82,8 +86,8 @@ export default function TrendMobile(){
       <div className="absolute w-full h-full bg-black opacity-50"></div>
       </div>
 
-
-     <div className={`${state.timer[6]?"":"absolute z-1 w-full h-[90%] bg-black opacity-25"}`}></div>
+      
+     <div className={`${state.timer[6]?"":"absolute z-4 w-full h-[90%] bg-black opacity-25"}`}></div>
        {/* main box*/}
       <div className={`basis-[80%]  flex overflow-auto `}>
       <div className="basis-[20%]  flex">
@@ -128,12 +132,12 @@ export default function TrendMobile(){
       </div>
 <hr />
       <div className={`basis-[20%]  flex flex-col `}>
-
+      
       <div className="basis-[20%]">
       <div className=" basis-[20%] flex">
  
  <div className="basis-[70%]  flex  flex-col overflow-auto">
- 
+ <div className="absolute z-5  basis-[5%]" style={{zIndex:7}} >{status==="authenticated" && checkSpdf?<span className=" mt-[6.9rem] "><UpdateScoreMobile status={state.PeriodFlip} type="trend" name={data.user.name} /></span>:<div></div>}</div>
  </div>
  
  <div className="basis-[30%]">

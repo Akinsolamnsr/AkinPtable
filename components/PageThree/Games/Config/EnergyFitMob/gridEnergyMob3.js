@@ -11,10 +11,10 @@ export default function EnergyContainer3({Width}){
     const [index,setIndex]=useState(0)
     const [count, setCount] = useState(0);
     const {state,dispatch}=context
-
+    const OList=Confg.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1)
     const data1=Confg[count-1]?Confg[count-1]:""
     const data2=Confg[count+1]?Confg[count+1]:"" 
-    const data=Confg[count]
+    const data=OList[count]
     
   
     const ArrayConfg=data[3].split(',')
@@ -25,9 +25,9 @@ return(
     <div className="w-[70%]  flex" >
         <div className="basis-[20%]  flex justify-center text-white"><button className="rotate-180" onClick={()=>setCount(prev=>prev<=0?0:count-1)}><Image src={Imgs} alt="react Logo" width='60' height='60' /></button></div>
         <div className={`basis-[60%] bg-blue-700 flex flex-col border-4 border-cyan-300 shadow-xl`}>
-          <div className="text-center text-[1.5rem] font-bold text-white">{Confg[count][0]}</div>
-          <div className="text-center text-[5.5rem] text-white">{Confg[count][1]}</div>
-          <div className="text-center text-[1.2rem] text-white">{Confg[count][2]}</div>
+          <div className="text-center text-[1.5rem] font-bold text-white">{OList[count][0]}</div>
+          <div className="text-center text-[5.5rem] text-white">{OList[count][1]}</div>
+          <div className="text-center text-[1.2rem] text-white">{OList[count][2]}</div>
         </div>
         <div className="basis-[20%]  flex justify-center"><button className="" onClick={()=>setCount(prev=>prev>=length?length:count+1)}><Image src={Imgs} alt="react Logo" width='60' height='60' /></button></div>
     </div>

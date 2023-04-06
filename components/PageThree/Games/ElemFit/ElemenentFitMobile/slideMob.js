@@ -27,7 +27,7 @@ return(
             List20.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1).map((x,i)=>{
                 const Stat=arrayList.indexOf(x[1]) >-1
                 return(
-                    <button key={`SldTwenty${i}`} onClick={()=>dispatch({ type:"ARRANGEMOBILEMATCH3",  payload:x[1] })}   className={`w-12 h-12 bg-gray-200 shadow-xl mt-2 ml-4 border-4 rounded-full text-center font-bold text-[1.5rem] ${state.arrangeMobileMatch3===x[1]?"border-black text-black opacity-25":"border-cyan-200 text-cyan-700"}  ${Stat?"hidden":""}`}>{x[1]}</button>
+                    <button key={`SldTwenty${i}`} onClick={()=>dispatch({ type:"ARRANGEMOBILEMATCH3",  payload:x[1] })}   className={`w-12 h-12 bg-gray-200 shadow-xl mt-2 ml-4 border-4 rounded-full text-center font-bold text-[1.5rem] ${state.arrangeMobileMatch3===x[1]?"border-black text-black opacity-25":"border-cyan-200 text-cyan-700"}  ${Stat?"hidden":""}`}>{state.arrangeMobbileCheck3?x[0]:x[1]}</button>
                 )
             })
          }
@@ -38,7 +38,7 @@ return(
             List40.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1).map((x,i)=>{
                 const Stat=arrayList.indexOf(x[1]) >-1
                 return(
-                    <button key={`SldForty${i}`} onClick={()=>dispatch({ type:"ARRANGEMOBILEMATCH3",  payload:x[1] })}   className={`w-12 h-12 bg-gray-100 shadow-xl mt-2 ml-4 border-4 rounded-full text-center font-bold text-[1.5rem] ${state.arrangeMobileMatch3===x[1]?"border-black text-black opacity-25":"border-pink-200 text-pink-700"}  ${Stat?"hidden":""}`}>{x[1]}</button>
+                    <button key={`SldForty${i}`} onClick={()=>dispatch({ type:"ARRANGEMOBILEMATCH3",  payload:x[1] })}   className={`w-12 h-12 bg-gray-100 shadow-xl mt-2 ml-4 border-4 rounded-full text-center font-bold text-[1.5rem] ${state.arrangeMobileMatch3===x[1]?"border-black text-black opacity-25":"border-pink-200 text-pink-700"}  ${Stat?"hidden":""}`}>{state.arrangeMobbileCheck3?x[0]:x[1]}</button>
                 )
             })
          }
@@ -49,7 +49,7 @@ return(
             List.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1).map((x,i)=>{
                 const Stat=arrayList.indexOf(x[1]) >-1
                 return(
-                    <button key={`HorTwenty${i}`} onClick={()=>dispatch({ type:"ARRANGEMOBILEMATCH3",  payload:x[1] })}   className={`w-12 h-12 bg-gray-100 shadow-xl mt-2 ml-4 border-4 rounded-full text-center font-bold text-[1.5rem] ${state.arrangeMobileMatch3===x[1]?"border-black text-black opacity-25":"border-green-200 text-green-700"}  ${Stat?"hidden":""}`}>{x[1]}</button>
+                    <button key={`HorTwenty${i}`} onClick={()=>dispatch({ type:"ARRANGEMOBILEMATCH3",  payload:x[1] })}   className={`w-12 h-12 bg-gray-100 shadow-xl mt-2 ml-4 border-4 rounded-full text-center font-bold text-[1.5rem] ${state.arrangeMobileMatch3===x[1]?"border-black text-black opacity-25":"border-green-200 text-green-700"}  ${Stat?"hidden":""}`}>{state.arrangeMobbileCheck3?x[0]:x[1]}</button>
                 )
             })
          }

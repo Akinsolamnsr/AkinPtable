@@ -26,7 +26,7 @@ return(
             List20.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1).map((x,i)=>{
                 const Stat=arrayList.indexOf(x[2]) >-1
                 return(
-                    <button key={`VArrangeTwenty${i}`} onClick={()=>dispatch({ type:"ARRANGEMOBILEMATCH2",  payload:x[2] })}   className={`w- h-12 bg-gray-100 shadow-xl mt-2 ml-4 border-2  text-center font-bold text-[1rem] ${state.arrangeMobileMatch2===x[2]?"border-black text-black opacity-25":"border-cyan-200 text-cyan-700"}  ${Stat?"hidden":""}`}>{x[2]}</button>
+                    <button key={`VArrangeTwenty${i}`} onClick={()=>dispatch({ type:"ARRANGEMOBILEMATCH2",  payload:x[2] })}   className={`w- h-12 bg-gray-100 shadow-xl mt-2 ml-4 border-2  text-center font-bold text-[1rem] ${state.arrangeMobileMatch2===x[2]?"border-black text-black opacity-25":"border-cyan-200 text-black"}  ${Stat?"hidden":""}`}>{x[2]}</button>
                 )
             })
          }

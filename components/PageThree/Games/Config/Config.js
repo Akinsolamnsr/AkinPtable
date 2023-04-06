@@ -5,7 +5,7 @@ import { useAppContext } from "../../../UseContext";
 import { Fireworks } from '@fireworks-js/react'
 import StopWatch from '../../../stopWatch';
 import ConTrend from './ConFit';
-import { Confg, Numb } from '../../../Const';
+import { Confg, Numb, TrueBox, TrueBox2 } from '../../../Const';
 import Sound from '../Sound';
 import { useEffect, useState } from 'react';
 import UpdateScore from '../../../update';
@@ -27,7 +27,9 @@ export default function Config(){
      const checkConfig3=Numb.every((x)=>check.includes(x))
      const checkConfi=checkConfig && state.config==="Twenty" || checkConfig2 && state.config==="Forty" || checkConfig3 && state.config==="Full"
    
-
+useEffect(()=>{
+  TrueBox.fill(false)
+},[])
     return(
         <div className={`${size.width<1023?"hidden":""}`}>
            <div className={`${size.width<550?"w-screen h-screen flex justify-center items-center bg-blue-300 -ml-4":"hidden"}`}><span className="text-[3rem] font-bold text-[#002233]">Rotate Screen</span></div>

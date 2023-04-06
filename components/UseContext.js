@@ -131,6 +131,9 @@ function user(state, action) {
                       const tempMob=action.payload[1]
                       state.ConfigMobileMatch1[tempMob]=action.payload[0]
                               return {...state}
+              case  "MATCHDROPEMPTY":
+                    state.matchDrop=[]
+                                return {...state}
               case  "MATCHDROP":
                      state.matchDrop.push(action.payload)
                           return {...state}
@@ -140,12 +143,21 @@ function user(state, action) {
                case  "MATCHDROPFIT2":
                      state.matchDropFit2.push(action.payload)
                           return {...state}
+              case "ELEMENTDROPFITEMPTY":
+                        state.matchDropFit=[]
+                           return {...state}
               case  "ELEMENTDROPFIT":
                             state.elementDropFit.push(action.payload)
                                  return {...state}
+              case  "ELEMENTDROPFIT2EMPTY":
+                             state.blockDropFit=[]
+                                return {...state}
                case  "ELEMENTDROPFIT2":
                             state.elementDropFit2.push(action.payload)
                                   return {...state}
+               case  "BLOCKDROPFITEMPTY":
+                                    state.blockDropFit=[]
+                                         return {...state}
                case  "BLOCKDROPFIT":
                              state.blockDropFit.push(action.payload)
                                   return {...state}

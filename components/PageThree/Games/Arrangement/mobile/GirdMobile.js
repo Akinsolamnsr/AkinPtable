@@ -14,7 +14,7 @@ export default function GridMobile(){
  const TwentyList=List.slice(0,20)
  const FortyList=List.slice(0,40)
 const limit=state.mobA20
-const Element=false
+const Element=false  
 useEffect(()=>{
     if(state.arrangeMobileMatch===matchSymbol){
         dispatch({ type:"MATCHDROP",  payload:matchSymbol })
@@ -64,3 +64,4 @@ return(
    </>
 )
 }
+

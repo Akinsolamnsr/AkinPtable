@@ -15,8 +15,10 @@ import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/router"
 import UpdateScore from "../../update";
 export default function BlockFit(){
+  
   const router=  useRouter()
   const {status,data} =useSession()
+ 
     const context=useAppContext()
     const {dispatch,state}=context
     const [swtch,setSwtch]=useState("3")
@@ -31,11 +33,12 @@ export default function BlockFit(){
     const Elem3=Array.from(new Set(state.dropT))
     useEffect(()=>{
       
-      if(router.route==="/Games/Block"  || size.width<550){
+      if(router.route==="/Games/Block"){
         dispatch({type:`TIMER`,payload:[1,false]})
       }
-      
-      console.log(size.width)
+      dispatch({ type:"MATCHDROPEMPTY",  payload:[] })
+      dispatch({ type:"ELEMENTDROPFITEMPTY",  payload:[] })
+      console.log("RUE")
     },[])
     
       const checkSpdf=Elem1.length===20 && state.PeriodFlip==="Twenty" || Elem2.length===40 && state.PeriodFlip==="Forty" || Elem3.length===118 && state.PeriodFlip==="Full"
@@ -83,7 +86,7 @@ export default function BlockFit(){
                
           <div className={`w-full ${MaxSize?"h-[69vh]":"h-[87vh]"}  lg:mt-12 mb-4`}><GridBlock /></div>
           <div className={` h-[17vh] flex ${state.PeriodFlip==="Full"?`${MaxSize?"mt-[5rem]":"-mt-2"}`:""}`}>
-              <div className="basis-[15%]">{status==="authenticated" && checkSpdf?<button className="w-full mt-[0.9rem]  relative z-1 "><UpdateScore status={state.PeriodFlip} type="ElementFit" name={data.user.name} /></button>:<div></div>}</div>
+              <div className="basis-[15%]">{status==="authenticated" && checkSpdf ?<div className="w-full mt-[0.9rem]  relative z-1 "><UpdateScore status={state.PeriodFlip} type="ElementFit" name={data.user.name} /></div>:<div></div>}</div>
              <div className=" basis-[82%]  ">
              <div className={` w-full ${MaxSize?"h-[2rem]":"h-[4.5rem]"}`}><Slider /></div>
                  <div className="flex  justify-between bg-cyan-400 ">

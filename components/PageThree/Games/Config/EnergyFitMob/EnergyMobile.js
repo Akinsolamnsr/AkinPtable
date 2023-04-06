@@ -1,6 +1,6 @@
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import StopWatch from "../../../../stopWatch";
 import UpdateSore from "../../../../update";
 import { useAppContext } from "../../../../UseContext";
@@ -21,7 +21,7 @@ export default function EnergyFitMobile(){
     const MaxSize=(size.height/size.width)<0.75 && size.width<1025
      const marg=size.width<1300?true:false
     const Wdth=size.width>500 && size.height>1000
-    
+    const [Nstat,setNstat]=useState(false)
     function refreshPage() {
         window.location.reload(false);
       }
@@ -36,17 +36,21 @@ export default function EnergyFitMobile(){
   const  checkForty=TrueBox.slice(0,20).every((x)=>x===true)
   const  checkFull=TrueBox.every((x)=>x===true)
   const checkSpdf=checkTwenty || checkForty || checkFull
-
+  function refreshPage() {
+    window.location.reload(false);
+  }
     const {status,data} =useSession()
     useEffect(()=>{
       
-        if(router.route==="/Games/Configuration" || size.width<550){
+        if(router.route==="/Games/Configuration"){
           dispatch({type:`TIMER`,payload:[3,false]})
         }
         
-        
-      },[])
-
+        if(size.width>550){
+          setNstat(true)
+        }
+      },[size])
+   
 
     return (
    <div className=" flex w-screen  h-screen ">
@@ -83,18 +87,18 @@ export default function EnergyFitMobile(){
       </div>
 
 
-     <div className={`${state.timer[3]?"":"absolute z-1 w-full h-[85%] bg-black opacity-25"}`}></div>
+     <div className={`${state.timer[2] || Nstat?"":"absolute z-5 w-full h-[85%] bg-black opacity-25"}`}></div>
        {/*Horizontal element selector box box*/}
       <div className="basis-[85%]  overflow-auto ">
         <button onTouchStart={()=>dispatch({ type:"ARRANGEMOBILECHECK",  payload:true })} onTouchEnd={()=>dispatch({ type:"ARRANGEMOBILECHECK",  payload:false })}      className="w-full bg-blue-700 rounded-full text-white font-bold border-4 border-pink-200 sticky top-0 h-8 ">check Energy Level</button>
-         <div className="w-full h-full">
+         <div className={` w-full h-full ${state.timer[2]?"":"hidden"}`}>
            <SwitchMob />
          </div>
       </div>
     {/* start, select, reset game in that order*/}
 <div className="basis-[15%]  flex ">
     <div className="basis-[20%]">
-    <div className=" basis-[15%]">{status==="authenticated" && checkSpdf?<div className="w-full mt-[0.9rem]  relative z-1 "><UpdateSore status={state.mobA20} type="arrange" name={data.user.name} /></div>:<div></div>}</div>
+    <div className=" basis-[15%]">{status==="authenticated" && checkSpdf?<div className="w-full mt-[0.9rem]  relative z-1 "><UpdateSore status={state.mobA20} type="Energy" name={data.user.name} /></div>:<div></div>}</div>
     </div>
     <div className="basis-[80%] bg-blue-200 overflow-auto">
     <div className="basis-[70%]  flex  bg-cyan-400">
@@ -132,7 +136,7 @@ export default function EnergyFitMobile(){
 
 
 <div className="basis-[30%]">
-<StopWatch  set={checkSpdf}  ind={4}/>
+<StopWatch  set={checkSpdf}  ind={3}/>
 </div>
 
 </div>

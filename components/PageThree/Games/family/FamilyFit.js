@@ -33,7 +33,7 @@ export default function FamilyFit(){
       dispatch({type:`TIMER`,payload:[5,false]})
     }
     
-    
+    dispatch({type:"ELEMENTDROPFIT2EMPTY",payload:[]})
   },[])
 
     return(
@@ -71,11 +71,11 @@ export default function FamilyFit(){
          
        <div className={`${state.timer[5]?"hidden":" relative"}  `}><div className={`absolute ${MaxSize?"w-screen h-[17rem]":"w-[109%] h-[34.5rem]"} z-2  opacity-50 bg-gray-700`}></div></div>
 
-
+     
 
         <div className={`w-full  ${MaxSize?"h-[70vh] -mt-12":"h-[80vh]"}`}><GridBox /></div> 
         <div className="w-full h-[20vh] flex">
-        <div className=" basis-[15%]">{status==="authenticated" && checkSpdf?<div className={`w-full mt-[0.9rem]  relative z-1 ${MaxSize?"scale-[80%] -mt-4":""}`}><UpdateScore status={state.PeriodFlip} type="Block" name={data.user.name} /></div>:<div></div>}</div>
+        <div className=" basis-[15%]">{status==="authenticated" && checkSpdf?<div className={`w-full mt-[0.9rem]  relative z-1 ${MaxSize?"scale-[80%] -mt-4":""}`}><UpdateScore status={state.PeriodFlip} type="family" name={data.user.name} /></div>:<div></div>}</div>
             
             <div className=" basis-[80%]">
                 <div className={`${MaxSize?"h-[3rem]":"h-[4rem]"} w-full `}><SliderFm /></div>

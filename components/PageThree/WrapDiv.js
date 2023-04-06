@@ -18,6 +18,7 @@ export default function WrapDiv({children}) {
   const MaxSize=(size.height/size.width)<0.75 && size.width<1025
    const marg=size.width<1300?true:false
   const Wdth=size.width>500 && size.height>1000
+  console.log(router.route)
    function Resize(){
       const Stat=state.status?false:true
     dispatch({
@@ -49,7 +50,7 @@ export default function WrapDiv({children}) {
            <span className='hover:text-cyan-500 flex items-center'>
            {size.width<550?(<><Link href="/Games"><a><Image src={gamePic} alt="pics" width="25" heigth="25" /></a></Link></>):(<><Image src={gamePic} alt="pics" width="25" heigth="25" /><span className={`h-full  flex items-center pl-[1.5rem] pr-[1.2rem] -ml-[1.5rem] ${router.pathname == "/Games" ? "border-b-4 border-cyan-700 bg-gray-100" : ""}`}><Link href="/Games">Games</Link></span></>)}
            </span>
-         
+           <span><button className={`h-12 bg-cyan-700 pl-4 pr-4 text-[0.8rem] font-bold text-white ${router.route==="/"?"":"hidden" }`} onClick={Resize}>{state.status?<span>Full Table</span>:<span>First 20 Element</span>}</button></span>
         </div>
         <span className='w-12'></span>
       </div>

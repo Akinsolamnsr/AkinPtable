@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useState } from "react"
 import Image from 'next/image'
 import Imgs from "../../../../../public/images/6TpoBbxac.png"
-import { TrueBox } from "../../../../Const"
+import { TrueBox, TrueBox2 } from "../../../../Const"
 import { useAppContext } from "../../../../UseContext"
 export default function Mid({data,count,List}){
   const context=useAppContext()
@@ -38,9 +38,11 @@ export default function Mid({data,count,List}){
         setVal6("")
         setVal7("")
        }
-      
-       
+          
       },[TrueBox[count]])
+
+
+
       const ListNames=[
 (<div className="" key='SliderMidNum1'>{state.arrangeMobbileCheck?(<div   className={` w-[4rem] h-12 ml-2 mr-2 text-[2rem]   font-bold border-4 border-gray-500  text-center bg-white text-gray-500`} >{data[0]}</div>):(<div key='SliderMidNum11' className={`  flex  items-center ${MaxSize?"ml-1 mr-1":"ml-2 mr-2"} `}><input value={val} type="number"  onChange={(e)=>{setVal(e.target.value)}} className={`w-[4rem] h-12 text-center  text-[1.5rem] font-bold border-4 ${data[0]===val?"border-cyan-500":"border-pink-500"}`} />{data[0]===val?<Image src={Imgs} alt="react Logo" width={`${MaxSize?"20":"40"}`} height={`${MaxSize?"20":"40"}`}  />:""}</div>)}</div>),
 (<div className="" key='SliderMidNum2'>{state.arrangeMobbileCheck?<div   className={`  w-[4rem] h-12 ml-2 mr-2 text-[2rem] font-bold border-4 border-gray-500  text-center bg-white text-gray-500`} >{data[1]}</div>:<div key='SliderMidNum12' className={` flex  items-center ${MaxSize?"ml-1 mr-1":"ml-2 mr-2"} `}><input value={val2} type="number"  onChange={(e)=>{setVal2(e.target.value)}} className={`w-[4rem] h-12 text-center text-[1.5rem] font-bold border-4 ${data[1]===val2?"border-cyan-500":"border-pink-500"}`} />{data[1]===val2?<Image src={Imgs} alt="react Logo" width={`${MaxSize?"20":"40"}`} height={`${MaxSize?"20":"40"}`}  />:""}</div>}</div>),
@@ -59,7 +61,7 @@ export default function Mid({data,count,List}){
         
        }
       
-      useMemo(()=>{
+      useMemo(()=>{    
         if(TrueBox[count]){
           dispatch({  type:"FIG2",payload:[count]})
         }

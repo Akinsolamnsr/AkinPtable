@@ -23,11 +23,12 @@ const [{ canDrop, isOver }, drop] = useDrop(() => ({
     }),
 }))
 const Block=data[3].split(',')[0] 
+console.log(data)  
 return (
   <div key={`array-${data[0]}`} className={`w-full h-full ${isOver?`${MaxSize?"bg-cyan-500  scale-[200%]":"scale-[150%] bg-cyan-500 "}`:""} flex rounded-full items-center justify-center 
-  ${status?`${Block==="s"?"text-[#002933] bg-[#005266] border-4 border-[#4ddbff] ":`${Block==="p"?"bg-[#660029] border-4 border-[#ff80b3]":`${Block==="d"?"bg-[#004d1a] border-4 border-[#80ffaa]":"bg-[#330033] border-4 border-[#80ffaa]"}`}`}`:"border border-black"}
+  ${status?`${Block==="s"?"text-[#002933] bg-[#005266] border-4 border-[#4ddbff] ":`${Block==="p"?"bg-[#660029] border-4 border-[#ff80b3]":`${Block==="d"?"bg-[#004d1a] border-4 border-[#80ffaa]":"bg-[#330033] border-4 border-[#80ffaa]"}`}`} text-white`:"border border-black text-black"}
   `}  ref={drop}>  
-  <span className={`${status?"":`${state.flip?"text-gray-500 ":"hidden "}`}  ${MaxSize?"text-[0.8rem]":"text-[1rem]"} text-white font-bold `}>{data[1]}</span>
+  <span className={`${status?"":`${state.flip?"text-gray-500 ":" "}`}  ${MaxSize?"text-[0.8rem]":"text-[1rem]"}  font-bold `}>{state.flip?data[1]:status?data[1]:data[0]}</span>
    </div>
 )
 }

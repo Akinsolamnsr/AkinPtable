@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { Spdf, spdfRaw, spdfRaw20 } from "../../../Const"
+import { Spdf, spdfRaw, spdfRaw40 } from "../../../Const"
 import { Numb2 } from "../../../ConsttSpdf";
 import { useAppContext } from "../../../UseContext";
 
@@ -7,12 +7,12 @@ import SpdfDrop from "./SpdfDrop"
 
 
 
-export default function SpdfMid({count}){
+export default function SpdfMid2({count}){
     const context=useAppContext()
     const {dispatch,state}=context
     const names=[]
-    const SortRaw=spdfRaw20.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1)
- console.log(SortRaw[count])
+    const SortRaw=spdfRaw40.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1)
+ 
     const ConfigList = ["1s¹,1","1s²,2","2s¹,3","2s²,4","2p¹,5","2p²,6","2p³,7","2p⁴,8","2p⁵,9","2p⁶,10",
     "3s¹,11","3s²,12","3p¹,13","3p²,14","3p³,15","3p⁴,16","3p⁵,17","3p⁶,18","3d¹,19","3d²,20","3d¹,21","3d²,22","3d³,23","3d⁴,24","3d⁵,25","3d⁶,26","3d⁷,27","3d⁸,28","3d⁹,29","3d¹⁰,30",
     "4s¹,31","4s²,32","4p¹,33","4p²,34","4p³,35","4p⁴,36","4p⁵,37","4p⁶,38","4d¹,39","4d²,40","4d¹,41","4d²,42","4d³,43","4d⁴,44","4d⁵,45","4d⁶,46","4d⁷,47","4d⁸,48","4d⁹,49","4d¹⁰,50",

@@ -1,6 +1,6 @@
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import StopWatch from "../../../../stopWatch";
 import UpdateSore from "../../../../update";
 import { useAppContext } from "../../../../UseContext";
@@ -20,7 +20,10 @@ import { NextSeo } from 'next-seo';
 
 export default function ArragementMobile(){
 
-    
+
+
+
+
     function refreshPage() {
         window.location.reload(false);
       }
@@ -34,18 +37,27 @@ export default function ArragementMobile(){
   const  checkForty=ArrangeForty.every((x)=>arrayList.includes(x))
   const  checkFull=ArrangeFull.every((x)=>arrayList.includes(x))
   const checkSpdf=checkTwenty || checkForty || checkFull
- 
+
+  const size =useWindowSize();
+  const MaxSize=(size.height/size.width)<0.75 && size.width<1025
+   const marg=size.width<1300?true:false
+  const Wdth=size.width>500 && size.height>1000
     const {status,data} =useSession()
+
+  
+  
     useEffect(()=>{
       
         if(router.route==="/Games/Arrange"){
           dispatch({type:`TIMER`,payload:[1,false]})
         }
-        
-        
-      },[])
+       
+       
+      },[size])
 
 
+      
+console.log(state.matchDrop)
     return (
    <div className=" flex w-screen  h-[100%]">
       <NextSeo
@@ -133,3 +145,37 @@ export default function ArragementMobile(){
    </div>
   );
   }
+
+  function useWindowSize() {
+    // Initialize state with undefined width/height so server and client renders match
+    // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
+    const [windowSize, setWindowSize] = useState({
+      width: undefined,
+      height: undefined,
+    });
+    useEffect(() => {
+      // only execute all the code below in client side
+      if (typeof window !== 'undefined') {
+        // Handler to call on window resize
+        function handleResize() {
+          // Set window width/height to state
+          setWindowSize({
+            width: window.innerWidth,
+             height: window.innerHeight,
+          });
+        }
+      
+        // Add event listener
+        window.addEventListener("resize", handleResize);
+       
+        // Call handler right away so state gets updated with initial window size
+        handleResize();
+      
+        // Remove event listener on cleanup
+        return () => window.removeEventListener("resize", handleResize);
+      }
+    }, []); // Empty array ensures that effect is only run on mount
+    return windowSize;
+  }
+
+

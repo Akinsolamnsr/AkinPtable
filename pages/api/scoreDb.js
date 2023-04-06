@@ -10,16 +10,18 @@ import GamesList from '../../components/Schema/ListSchema'
       try {
        const data=JSON.parse(req.body)
       const {timeUpdate,status,type,name}=data
-       const filter={name}
+      const filter={name}
        switch(type){
-        case "arrange":
+
+     
+       case "arrange":
           if(status==="Twenty"){
             const update={$set: {"Games.Arrange.fst":timeUpdate}}
-             GamesList.findOne({filter},async(err,doc)=>{
+             GamesList.findOne({name},async(err,doc)=>{
               if(err) console.log(err)
               else{
                 if(doc.Games.Arrange.fst<=5000  ){
-                  await GamesList.findOneAndUpdate(filter,update,{new:true})
+                  await GamesList.findOneAndUpdate(filter,update,{new:true})  
                   res.status(201).json({ success: true,update:true})
                 }
                else if(doc.Games.Arrange.fst<=timeUpdate  ){
@@ -35,14 +37,14 @@ import GamesList from '../../components/Schema/ListSchema'
           }
          else if(status==="Forty"){
            const update={$set: {"Games.Arrange.scd":timeUpdate}}
-           GamesList.findOne({filter},async(err,doc)=>{
+           GamesList.findOne({name},async(err,doc)=>{
             if(err) console.log(err)
             else{
-              if(doc.Games.Arrange.fst<=5000){
+              if(doc.Games.Arrange.scd<=5000){
                 await GamesList.findOneAndUpdate(filter,update,{new:true})
                 res.status(201).json({ success: true,update:true})
               }
-             else if(doc.Games.Arrange.fst<=timeUpdate){
+             else if(doc.Games.Arrange.scd<=timeUpdate){
                 res.status(201).json({ success: true,update:false})
               }
               else{
@@ -54,14 +56,14 @@ import GamesList from '../../components/Schema/ListSchema'
           }
           else{
             const update={$set: {"Games.Arrange.thd":timeUpdate}}
-            GamesList.findOne({filter},async(err,doc)=>{
+            GamesList.findOne({name},async(err,doc)=>{
               if(err) console.log(err)
               else{
-                if(doc.Games.Arrange.fst<=5000){
+                if(doc.Games.Arrange.thd<=5000){
                   await GamesList.findOneAndUpdate(filter,update,{new:true})
                   res.status(201).json({ success: true,update:true})
                 }
-               else if(doc.Games.Arrange.fst<=timeUpdate){
+               else if(doc.Games.Arrange.thd<=timeUpdate){
                   res.status(201).json({ success: true,update:false})
                 }
                 else{
@@ -72,37 +74,42 @@ import GamesList from '../../components/Schema/ListSchema'
             })
           }
          break;
-        case "ElementFit":
+      
+     
+         case "ElementFit":
+       
           if(status==="Twenty"){
             const update={$set: {"Games.ElementFit.fst":timeUpdate}}
-             GamesList.findOne({name},async(err,doc)=>{
-              if(err) console.log(err)
-              else{
-                if(doc.Games.ElementFit.fst<=5000  ){
-                  await GamesList.findOneAndUpdate(name,update,{new:true})
-                  res.status(201).json({ success: true,update:true})
-                }
-               else if(doc.Games.ElementFit.fst<=timeUpdate  ){
-                  res.status(201).json({ success: true,update:false})
-                }
-                else{
-                  await GamesList.findOneAndUpdate(name,update,{new:true})
-                  res.status(201).json({ success: true,update:true})
-                }
-              }
-            })
-           
+            GamesList.findOne({name},async(err,doc)=>{
+             if(err){ console.log(err)}
+             else{
+              console.log(doc)
+               if(doc.Games.ElementFit.fst<=5000){
+               const rest=  await GamesList.findOneAndUpdate(filter,update,{new:true})
+             
+                 res.status(201).json({ success: true,update:true})
+               }
+              else if(doc.Games.ElementFit.fst<=timeUpdate){     
+               
+                 res.status(201).json({ success: true,update:false})
+               }
+               else{
+                 await GamesList.findOneAndUpdate(filter,update,{new:true})
+                 res.status(201).json({ success: true,update:true})
+               }
+             }
+           })
           }
          else if(status==="Forty"){
            const update={$set: {"Games.ElementFit.scd":timeUpdate}}
            GamesList.findOne({filter},async(err,doc)=>{
             if(err) console.log(err)
             else{
-              if(doc.Games.ElementFit.fst<=5000){
+              if(doc.Games.ElementFit.scd<=5000){
                 await GamesList.findOneAndUpdate(filter,update,{new:true})
                 res.status(201).json({ success: true,update:true})
               }
-             else if(doc.Games.ElementFit.fst<=timeUpdate){
+             else if(doc.Games.ElementFit.scd<=timeUpdate){
                 res.status(201).json({ success: true,update:false})
               }
               else{
@@ -117,11 +124,11 @@ import GamesList from '../../components/Schema/ListSchema'
             GamesList.findOne({filter},async(err,doc)=>{
               if(err) console.log(err)
               else{
-                if(doc.Games.ElementFit.fst<=5000){
+                if(doc.Games.ElementFit.thd<=5000){
                   await GamesList.findOneAndUpdate(filter,update,{new:true})
                   res.status(201).json({ success: true,update:true})
                 }
-               else if(doc.Games.ElementFit.fst<=timeUpdate){
+               else if(doc.Games.ElementFit.thd<=timeUpdate){
                   res.status(201).json({ success: true,update:false})
                 }
                 else{
@@ -132,6 +139,10 @@ import GamesList from '../../components/Schema/ListSchema'
             })
           }
          break;
+       
+
+           
+         
          case "Energy":
           if(status==="Twenty"){
             const update={$set: {"Games.EnergyLevel.fst":timeUpdate}}
@@ -139,14 +150,14 @@ import GamesList from '../../components/Schema/ListSchema'
               if(err) console.log(err)
               else{
                 if(doc.Games.EnergyLevel.fst<=5000  ){
-                  await GamesList.findOneAndUpdate(name,update,{new:true})
+                  await GamesList.findOneAndUpdate(filter,update,{new:true})
                   res.status(201).json({ success: true,update:true})
                 }
                else if(doc.Games.EnergyLevel.fst<=timeUpdate  ){
                   res.status(201).json({ success: true,update:false})
                 }
                 else{
-                  await GamesList.findOneAndUpdate(name,update,{new:true})
+                  await GamesList.findOneAndUpdate(filter,update,{new:true})
                   res.status(201).json({ success: true,update:true})
                 }
               }
@@ -158,11 +169,11 @@ import GamesList from '../../components/Schema/ListSchema'
            GamesList.findOne({filter},async(err,doc)=>{
             if(err) console.log(err)
             else{
-              if(doc.Games.EnergyLevel.fst<=5000){
+              if(doc.Games.EnergyLevel.scd<=5000){
                 await GamesList.findOneAndUpdate(filter,update,{new:true})
                 res.status(201).json({ success: true,update:true})
               }
-             else if(doc.Games.EnergyLevel.fst<=timeUpdate){
+             else if(doc.Games.EnergyLevel.scd<=timeUpdate){
                 res.status(201).json({ success: true,update:false})
               }
               else{
@@ -177,25 +188,29 @@ import GamesList from '../../components/Schema/ListSchema'
             GamesList.findOne({name},async(err,doc)=>{
               if(err) console.log(err)
               else{
-                if(doc.Games.EnergyLevel.fst<=5000){
-                  await GamesList.findOneAndUpdate(name,update,{new:true})
+                if(doc.Games.EnergyLevel.thd<=5000){
+                  await GamesList.findOneAndUpdate(filter,update,{new:true})
                   res.status(201).json({ success: true,update:true})
                 }
-               else if(doc.Games.EnergyLevel.fst<=timeUpdate){
+               else if(doc.Games.EnergyLevel.thd<=timeUpdate){
                   res.status(201).json({ success: true,update:false})
                 }
                 else{
-                  await GamesList.findOneAndUpdate(name,update,{new:true})
+                  await GamesList.findOneAndUpdate(filter,update,{new:true})
                   res.status(201).json({ success: true,update:true})
                 }
               }
             })
-          }
+          }  
          break;
+        
+       
+        
+        
          case "Configure":
           if(status==="Twenty"){
             const update={$set: {"Games.Configuration.fst":timeUpdate}}
-             GamesList.findOne({filter},async(err,doc)=>{
+             GamesList.findOne({name},async(err,doc)=>{
               if(err) console.log(err)
               else{
                 if(doc.Games.Configuration.fst<=5000  ){
@@ -215,14 +230,14 @@ import GamesList from '../../components/Schema/ListSchema'
           }
          else if(status==="Forty"){
            const update={$set: {"Games.Configuration.scd":timeUpdate}}
-           GamesList.findOne({filter},async(err,doc)=>{
+           GamesList.findOne({name},async(err,doc)=>{
             if(err) console.log(err)
             else{
-              if(doc.Games.Configuration.fst<=5000){
+              if(doc.Games.Configuration.scd<=5000){
                 await GamesList.findOneAndUpdate(filter,update,{new:true})
                 res.status(201).json({ success: true,update:true})
               }
-             else if(doc.Games.Configuration.fst<=timeUpdate){
+             else if(doc.Games.Configuration.scd<=timeUpdate){
                 res.status(201).json({ success: true,update:false})
               }
               else{
@@ -237,24 +252,29 @@ import GamesList from '../../components/Schema/ListSchema'
             GamesList.findOne({name},async(err,doc)=>{
               if(err) console.log(err)
               else{
-                if(doc.Games.Configuration.fst<=5000){
-                  await GamesList.findOneAndUpdate(name,update,{new:true})
+                if(doc.Games.Configuration.thd<=5000){
+                  await GamesList.findOneAndUpdate(filter,update,{new:true})
                   res.status(201).json({ success: true,update:true})
                 }
-               else if(doc.Games.Configuration.fst<=timeUpdate){
+               else if(doc.Games.Configuration.thd<=timeUpdate){
                   res.status(201).json({ success: true,update:false})
                 }
                 else{
-                  await GamesList.findOneAndUpdate(name,update,{new:true})
+                  await GamesList.findOneAndUpdate(filter,update,{new:true})
                   res.status(201).json({ success: true,update:true})
                 }
               }
             })
           }
          break;
-         case "Block":
+        
+        
+        
+         
+        
+         case "Block":  
           const update2={$set: {"Games.Block.pos":timeUpdate}}
-          GamesList.findOne({filter},async(err,doc)=>{
+          GamesList.findOne({name},async(err,doc)=>{
             if(err) console.log(err)
             else{
               if(doc.Games.Block.pos<=5000){
@@ -270,10 +290,13 @@ import GamesList from '../../components/Schema/ListSchema'
               }
             }
           })
-         break;
+         break;   
+         
+       
+         
          case "family":
           const update3={$set: {"Games.Family.pos":timeUpdate}}
-          GamesList.findOne({filter},async(err,doc)=>{
+          GamesList.findOne({name},async(err,doc)=>{
             if(err) console.log(err)
             else{
               if(doc.Games.Family.pos<=5000){
@@ -290,30 +313,39 @@ import GamesList from '../../components/Schema/ListSchema'
             }
           })
          break;
-         case "trend":
          
+         
+         case "trend":
           const update4={$set: {"Games.Trend.pos":timeUpdate}}
-          GamesList.findOne({filter},async(err,doc)=>{
+          console.log(name)
+          GamesList.findOne({name},async(err,doc)=>{
             if(err) console.log(err)
             else{
-              if(doc.Games.Trend.pos<=5000){
+              if(doc.Games.Trend.pos<5000){
                const result= await GamesList.findOneAndUpdate(filter,update4,{new:true})
-                res.status(201).json({ success: true,update:true})
-                console.log(result)
+              return  res.status(201).json({ success: true,update:true})
+                 
               }
               else if(doc.Games.Trend.pos<=timeUpdate){
-                res.status(201).json({ success: true,update:false})
-              }
+               return res.status(201).json({ success: true,update:false})
+                
+                
+              }   
               else{
                 await GamesList.findOneAndUpdate(filter,update4,{new:true})
-                res.status(201).json({ success: true,update:true})
+               return res.status(201).json({ success: true,update:true})
               }
             }
           })
          break;
-         default:
+       
+     
+       
+       
+         default:    
          throw new Error()
-      }
+      }     
+      
        // const singleUser=await  GamesList.findOne({name:"Archinsio dex"})
         //res.status(201).json({ success: true, data:req.body })
       } catch (error) {

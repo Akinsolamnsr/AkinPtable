@@ -11,7 +11,7 @@ import EnergySlide from './EnergySlid';
 import { Numb, Spdf } from '../../../Const';
 import { useEffect, useMemo, useState } from 'react';
 import { useSession } from 'next-auth/react';
-import { ConfigList, forty, Full, Twenty, Twnnty } from '../../../ConsttSpdf';
+import { ConfigList, forty, Full, SpdfNumber, TrueBoxes, Twenty, Twnnty } from '../../../ConsttSpdf';
 import UpdateScore from "../../../update";
 export default function Energy(){
   const {status,data} =useSession()
@@ -41,7 +41,13 @@ export default function Energy(){
     const check=Array.from(new Set(state.spdfListBox1))
      const checkConfi=checkTwenty ||  checkForty || checkFull
    
-   
+     useEffect(()=>{
+      let i=0
+      while(i<127){
+        SpdfNumber[i]=[]
+        i++
+      }
+    },[])
     return(
        <div className={`${size.width<1023?"hidden":""}`}>
    <div className={`${size.width<550?"":"hidden"}  ${size.width<550?"w-screen h-screen flex justify-center items-center bg-blue-300 -ml-4":"hidden"}`}><span className="text-[3rem] font-bold text-[#002233]">Rotate Screen</span></div>

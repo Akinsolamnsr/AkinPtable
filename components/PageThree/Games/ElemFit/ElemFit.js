@@ -29,7 +29,7 @@ export default function ElementFit(){
       dispatch({type:`TIMER`,payload:[4,false]})
     }
     
-    
+    dispatch({type:"ELEMENTDROPFIT2EMPTY",payload:[]})
   },[])
     return(
        <div className={`${size.width<1000?"hidden":""}`}>

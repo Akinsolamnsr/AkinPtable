@@ -16,11 +16,6 @@ import clientPromise from "../../..//pages/api//lib/mongodb"
         async signIn({ user, account, profile, email, credentials }) {
             return true
           },
-          async session({ session, user, token }) {
-            console.log(user)
-
-            return session
-          },
       },
     NEXTAUTH_URL:"http://localhost",
     secret:"hbuhyfytcdytfk"

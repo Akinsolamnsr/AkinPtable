@@ -40,7 +40,7 @@ export default function ConfigMobile(){
   const  checkForty=TrueBoxes.slice(0,40).every((x)=>x===true)
   const  checkFull=TrueBoxes.every((x)=>x===true)
   const checkSpdf=checkTwenty || checkForty || checkFull
-  console.log(TrueBoxes.slice(0,20))
+  
     const {status,data} =useSession()
     useEffect(()=>{
       
@@ -101,7 +101,7 @@ export default function ConfigMobile(){
     {/* start, select, reset game in that order*/}
 <div className="basis-[15%]  flex ">
     <div className="basis-[20%]">
-    <div className=" basis-[15%]">{status==="authenticated" && checkSpdf?<div className="w-full mt-[0.9rem]  relative z-1 "><UpdateSore status={state.mobA20} type="arrange" name={data.user.name} /></div>:<div></div>}</div>
+    <div className=" basis-[15%]">{status==="authenticated" && checkSpdf?<div className="w-full mt-[0.9rem]  relative z-1 "><UpdateSore status={state.mobA20} type="Configure" name={data.user.name} /></div>:<div></div>}</div>
     </div>
     <div className="basis-[80%] bg-blue-200 overflow-auto">
     <div className="basis-[70%]  flex  bg-cyan-400">

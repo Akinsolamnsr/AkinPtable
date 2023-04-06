@@ -1,15 +1,16 @@
 import { useEffect, useState } from "react";
-import { Confg,Confg20,Spdf, Spdf20 } from "../../../Const";
+import { Confg,Confg40,Spdf, Spdf40 } from "../../../Const";
 import { useAppContext } from "../../../UseContext";
 import ConEnergy from "./ConEnergy";
 import EnergyDrop from "./EnergyDrop";  
 import SpdfMid from "./SpdfMid";
-export default function InputEnergy({count}){
-  const OList=Confg20.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1)
-  const OSpdf=Spdf20.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1)
-    const data=OList[count]     
-    const dataSpdf=OSpdf[count]  
+import SpdfMid2 from "./SpdfMid2";
+export default function InputEnergy2({count}){
+  const OList=Confg40.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1)
+  const OSpdf=Spdf40.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1)
+    const data=OList[count]    
     const counter=parseInt(OList[count][0] )
+    const dataSpdf=OSpdf[count]  
     const Datum=dataSpdf[3].split(",")[0]
     const Data=Datum.split(" ")
     const context=useAppContext()
@@ -29,7 +30,7 @@ export default function InputEnergy({count}){
             <div className={`h-[15%]  text-center mt-4 ${MaxSize?"text-[1rem]":"text-[1.2rem]"}`}>{data[2]}</div>
             </div>
             <div className=" w-full   bg-[#660029] pb-2">
-              <SpdfMid count={counter-1} />
+              <SpdfMid2 count={counter-1} />
             </div>
             <div>{MaxSize?<button onTouchStart={()=>dispatch({type:"ONOFF",payload:true})} onTouchEnd={()=>dispatch({type:"ONOFF",payload:false})} className={`bg-green-400 text-white w-full font-bold  rounded p-1 border-4 border-white ${MaxSize?"text-[0.8rem]":"text-[1.2rem]"}`}  >check configuration</button>:
             <button onMouseDown={()=>dispatch({type:"ONOFF",payload:true})} onMouseUp={()=>dispatch({type:"ONOFF",payload:false})} className={`bg-green-400 text-white w-full font-bold  rounded p-1 border-4 border-white ${MaxSize?"text-[0.8rem]":"text-[1.2rem]"}`}  >check configuration</button>}</div>

@@ -8,7 +8,7 @@ import Sound from "../Sound";
 import GridBlockArrangement from "./Gridbox";
 import SliderArrage from "./SliderArangement";
 import useSWR from 'swr'
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useSession } from 'next-auth/react';
 import { useRouter } from "next/router"
 import UpdateScore from "../../../update";
@@ -27,6 +27,13 @@ export default function ElementArrange(){
     const ElemSym=Array.from(new Set(state.drop3))
     const [wtch,setWtch]=useState(false)
 
+    
+    const size =useWindowSize();
+    const MaxSize=(size.height/size.width)<0.75 && size.width<1025
+     const marg=size.width<1300?true:false
+    const Wdth=size.width>500  && size.height>1000
+    const Truth=size.width<1000
+    
    const TwentyNames =DataFamily.map((x)=>x[2]).slice(0,20)
    const checkTwenty=TwentyNames.every((x)=>ElemSym.includes(x))
    const TwentySym =DataFamily.map((x)=>x[1]).slice(0,20)
@@ -47,17 +54,14 @@ export default function ElementArrange(){
       if(router.route==="/Games/Arrange"){
         dispatch({type:`TIMER`,payload:[0,false]})
       }
+      dispatch({ type:"MATCHDROPEMPTY",  payload:[] })
+          console.log("RUE")
       
-      
-    },[])
-   
+    },[size])
+  
        const checkSpdf=checkTwenty && checkSym && state.fitELement==="Twenty" || checkForty && checkFortySym && state.fitELement==="Forty" || checkFull && checkFullSym && state.fitELement==="full"
       
-       const size =useWindowSize();
-  const MaxSize=(size.height/size.width)<0.75 && size.width<1025
-   const marg=size.width<1300?true:false
-  const Wdth=size.width>500  && size.height>1000
-  const Truth=size.width<1000
+     
      
     return(
         <div className={`${size.width<550?"":""}`}>
@@ -99,7 +103,7 @@ export default function ElementArrange(){
 
        	<div className={`w-full ${MaxSize?"h-[67vh]":"h-[80vh]"}  lg:mt-12`}><GridBlockArrangement /></div>
          <div className={` h-[17vh] flex`}>
-         <div className=" basis-[15%]">{status==="authenticated" && checkSpdf?<div className="w-full mt-[0.9rem]  relative z-1 "><UpdateScore status={state.PeriodFlip} type="arrange" name={data.user.name} /></div>:<div></div>}</div>
+         <div className=" basis-[15%]">{status==="authenticated"?<div className="w-full mt-[0.9rem]  relative z-1 "><UpdateScore status={state.fitELement} type="arrange" name={data.user.name} /></div>:<div></div>}</div>
             <div className=" basis-[80%]  ">
             <div className={` w-full ${MaxSize?"h-[2rem]":"h-[4rem]"}`}><SliderArrage /></div>
                 <div className="flex  justify-between bg-cyan-400 ">
