@@ -4,13 +4,13 @@ import { useSession } from 'next-auth/react';
 export default function ScoreData2({datum,data}) {
   
    const MapData=datum.data.map((x,i)=>{
-    const Arrange=(1/((x.Games.Arrange.fst)/3000000)) +( 1/(x.Games.Arrange.scd/10000000 ))+ (1/(x.Games.Arrange.thd/20000000));
-    const Elem=(1/(x.Games.ElementFit.fst/2000000)) + (1/(x.Games.ElementFit.scd/4500000)) + (1/(x.Games.ElementFit.thd/10000000));
-    const Ener=(1/(x.Games.EnergyLevel.fst/4500000)) +(1/(x.Games.EnergyLevel.scd/10000000) )+(1/(x.Games.EnergyLevel.thd/30000000));
-    const Con=(1/(x.Games.Configuration.fst/10000000))+ (1/(x.Games.Configuration.scd/20000000)) + (1/(x.Games.Configuration.thd/50000000));
-    const fam=1/(x.Games.Family.pos/10000000)
-    const blck=1/(x.Games.Block.pos/10000000)
-    const trend=1/(x.Games.Trend.pos / 3000000)
+    const Arrange=(1/((x.Games.Arrange.fst===0?3000000:x.Games.Arrange.fst)/3000000)) +( 1/((x.Games.Arrange.scd===0?10000000:x.Games.Arrange.scd)/10000000 ))+ (1/((x.Games.Arrange.thd===0?20000000:x.Games.Arrange.thd)/20000000));
+    const Elem=(1/((x.Games.ElementFit.fst===0?2000000:x.Games.ElementFit.fst)/2000000)) + (1/((x.Games.ElementFit.scd===0?4500000:x.Games.ElementFit.scd)/4500000)) + (1/((x.Games.ElementFit.thd===0?10000000:x.Games.ElementFit.thd)/10000000));
+    const Ener=(1/((x.Games.EnergyLevel.fst===0?4500000:x.Games.EnergyLevel.fst)/4500000)) +(1/((x.Games.EnergyLevel.scd===0?10000000:x.Games.EnergyLevel.scd)/10000000) )+(1/((x.Games.EnergyLevel.thd===0?30000000:x.Games.EnergyLevel.thd)/30000000));
+    const Con=(1/((x.Games.Configuration.fst===0?10000000:x.Games.Configuration.fst)/10000000))+ (1/((x.Games.Configuration.scd===0?20000000:x.Games.Configuration.scd)/20000000)) + (1/((x.Games.Configuration.thd===0?50000000:x.Games.Configuration.thd)/50000000));
+    const fam=1/((x.Games.Family.pos===0?10000000:x.Games.Family.pos)/10000000)
+    const blck=1/((x.Games.Block.pos===0?10000000:x.Games.Block.pos)/10000000)
+    const trend=1/((x.Games.Trend.pos===0?3000000:x.Games.Trend.pos) / 3000000)
     const sum=Math.round(Arrange+Elem+Ener+Con+fam+blck+trend)
      return [x.name,sum]
 })
@@ -118,7 +118,7 @@ export default function ScoreData2({datum,data}) {
         <div className="flex flex-col relative z-3">
         <div className={`  border-white ${MaxSize?"text-[0.6rem] border-2":"text-[0.8rem] p-1 border-1"}  font-bold bg-[#b30047] text-white text-center`} >Overall best position</div>
         <div className={`${swtch==="0"?"":"hidden"} ${MaxSize?"":"h-[2rem]"} mr-1 ml-1 `}>
-        <div className={`flex ${MaxSize?"text-[0.7rem]":""}`}><span className="w-full  flex justify-between text-black font-bold text-[0.7rem]">{SortMap[0][1]-197000000}<span className="pr-1"><span className="font-bold">pos</span>:{SortMap[0][2]}</span></span></div>
+        <div className={`flex ${MaxSize?"text-[0.7rem]":""}`}><span className="w-full  flex justify-between text-black font-bold text-[0.7rem]">{SortMap[0][1]}<span className="pr-1"><span className="font-bold">pos</span>:{SortMap[0][2]}</span></span></div>
         </div>
         </div>
 

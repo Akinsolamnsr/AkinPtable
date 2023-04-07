@@ -103,7 +103,7 @@ export default function ElementArrange(){
 
        	<div className={`w-full ${MaxSize?"h-[67vh]":"h-[80vh]"}  lg:mt-12`}><GridBlockArrangement /></div>
          <div className={` h-[17vh] flex`}>
-         <div className=" basis-[15%]">{status==="authenticated"?<div className="w-full mt-[0.9rem]  relative z-1 "><UpdateScore status={state.fitELement} type="arrange" name={data.user.name} /></div>:<div></div>}</div>
+         <div className=" basis-[15%]">{status==="authenticated" && checkSpdf?<div className="w-full mt-[0.9rem]  relative z-1 "><UpdateScore status={state.fitELement} type="arrange" name={data.user.name} /></div>:<div></div>}</div>
             <div className=" basis-[80%]  ">
             <div className={` w-full ${MaxSize?"h-[2rem]":"h-[4rem]"}`}><SliderArrage /></div>
                 <div className="flex  justify-between bg-cyan-400 ">
