@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react"
 import { useSession } from 'next-auth/react';
 
-export default function ScoreData2({datum}) {
-    const {data} =useSession()
+export default function ScoreData2({datum,data}) {
+  
    const MapData=datum.data.map((x,i)=>{
     const Arrange=(1/((x.Games.Arrange.fst)/3000000)) +( 1/(x.Games.Arrange.scd/10000000 ))+ (1/(x.Games.Arrange.thd/20000000));
     const Elem=(1/(x.Games.ElementFit.fst/2000000)) + (1/(x.Games.ElementFit.scd/4500000)) + (1/(x.Games.ElementFit.thd/10000000));
@@ -110,9 +110,10 @@ export default function ScoreData2({datum}) {
     
       return pad(hrs) + ':' + pad(mins) + ':' + pad(secs) + '.' + pad(ms, 3);
     }
-
+      const Reload=User[0]?.name?true:false
   return (
-    <div  className="w-full h-full  flex flex-col shadow-xl">
+    <>
+    {Reload?<><div  className="w-full h-full  flex flex-col shadow-xl">
           <span className={`${MaxSize?"text-[0.7rem]":""}`}>Welcome <span className="font-bold text-gray-700">{User[0].name}</span></span>
         <div className="flex flex-col relative z-3">
         <div className={`  border-white ${MaxSize?"text-[0.6rem] border-2":"text-[0.8rem] p-1 border-1"}  font-bold bg-[#b30047] text-white text-center`} >Overall best position</div>
@@ -187,7 +188,8 @@ export default function ScoreData2({datum}) {
         </div>
 
         
-     </div>
+     </div></>:<div className="text-[2rem] font-bold text-center">Refersh Browser to load data</div>}
+    </>
   )
 }
 
