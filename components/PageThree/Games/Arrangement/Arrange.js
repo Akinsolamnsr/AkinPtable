@@ -39,16 +39,16 @@ export default function ElementArrange(){
    const TwentySym =DataFamily.map((x)=>x[1]).slice(0,20)
    const checkSym=TwentySym.every((x)=>ElemName.includes(x))
 
-   const FortyNames =List.map((x)=>x[2]).slice(0,40)
+   const FortyNames =DataFamily.map((x)=>x[2]).slice(0,40)
    const checkForty=FortyNames.every((x)=>ElemSym.includes(x))
-   const FortySym =List.map((x)=>x[1]).slice(0,40)
+   const FortySym =DataFamily.map((x)=>x[1]).slice(0,40)
    const checkFortySym=FortySym.every((x)=>ElemName.includes(x))
    
-   const FullNames =List.map((x)=>x[2])
+   const FullNames =DataFamily.map((x)=>x[2])
    const checkFull=FullNames.every((x)=>ElemSym.includes(x))
-   const FullSym =List.map((x)=>x[1])
+   const FullSym =DataFamily.map((x)=>x[1])
    const checkFullSym=FullSym.every((x)=>ElemName.includes(x))
-   
+   console.log(FullSym)
     useEffect(()=>{
       
       if(router.route==="/Games/Arrange"){
@@ -109,7 +109,7 @@ export default function ElementArrange(){
                 <div className="flex  justify-between bg-cyan-400 ">
              <button onClick={()=>{dispatch({ type:"FITELEMENT",  payload:"Twenty" });setSwtch("1")}} value="1" className={`${swtch==="1"?` bg-white ${MaxSize?"pl-4 pr-4 text-[0.7rem] p-1":"pl-8 pr-8 p-2"} rounded-full font-bold text-cyan-700 border-cyan-400 border-2`:`font-bold text-white ${MaxSize?"pl-4 pr-4 text-[0.7rem]":"pl-8 pr-8 p-2"}`}`} >First Twenty</button>
              <button onClick={()=>{dispatch({ type:"FITELEMENT",  payload:"Forty" });setSwtch("2")}} value="2"  className={`${swtch==="2"?` bg-white ${MaxSize?"pl-4 pr-4 text-[0.7rem] p-1":"pl-8 pr-8 p-2"} rounded-full font-bold text-cyan-700 border-cyan-400 border-2`:`font-bold text-white ${MaxSize?"pl-4 pr-4 text-[0.7rem]":"pl-8 pr-8 p-2"}`}`}>First Forty</button>
-             <button onClick={()=>{dispatch({ type:"FITELEMENT",  payload:"Full" });setSwtch("3")}} value="3"   className={`${swtch==="3"?` bg-white ${MaxSize?"pl-4 pr-4 text-[0.7rem] p-1":"pl-8 pr-8 p-2"} rounded-full font-bold text-cyan-700 border-cyan-400 border-2`:`font-bold text-white ${MaxSize?"pl-4 pr-4 text-[0.7rem]":"pl-8 pr-8 p-2"}`}`}>Periodic table</button>
+             <button onClick={()=>{dispatch({ type:"FITELEMENT",  payload:"full" });setSwtch("3")}} value="3"   className={`${swtch==="3"?` bg-white ${MaxSize?"pl-4 pr-4 text-[0.7rem] p-1":"pl-8 pr-8 p-2"} rounded-full font-bold text-cyan-700 border-cyan-400 border-2`:`font-bold text-white ${MaxSize?"pl-4 pr-4 text-[0.7rem]":"pl-8 pr-8 p-2"}`}`}>Periodic table</button>
                 </div>
             </div>
             <div className=" basis-[25%]">

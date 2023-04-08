@@ -29,10 +29,10 @@ export default function DragDndA2(prop){
   }))
   const Block=data[3].split(',')[0]  
     return(
-        <div className={`${Index?"hidden":""} inline-flex flex-col p-1  ${isDragging?"hidden":""} hover:cursor-pointer ${MaxSize?" h-4":"h-8" } mt-2
+        <div className={`font-bold ${Index?"hidden":""} inline-flex flex-col p-1  ${isDragging?"hidden":""} hover:cursor-pointer ${MaxSize?" h-4":"h-8" } mt-2
         ${Block==="s"?"text-[#002933] bg-[#99ebff]":`${Block==="p"?"text-[#660029] bg-[#ff80b3]":`${Block==="d"?"text-[#004d1a] bg-[#80ffaa]":"text-[#330033] bg-[#ff80ff]"}`}`}
         `} ref={drag}>
-        <div className={`text-center  ${MaxSize?"text-[0.5rem]":"text-[1rem]"}`}>{data[2]}</div>
+        <div className={`text-center  ${MaxSize?"text-[0.5rem]":"text-[1rem]"}`}>{data[state.check?0:2]}</div>
         </div>
         )
 }

@@ -4,7 +4,7 @@ import { DragPreviewImage,useDrag } from 'react-dnd'
 import { useAppContext } from '../../../UseContext'
 
 export default function DragDndA(prop){
-  const context=useAppContext()
+  const context=useAppContext()   
 
   const size =useWindowSize();
   const MaxSize=(size.height/size.width)<0.75 && size.width<1025
@@ -13,8 +13,8 @@ export default function DragDndA(prop){
 
   const {state}=context
   
-  const {data,Index}=prop
-  
+  const {data,Index,Index2}=prop
+  console.log(Index2)
   const [{ isDragging }, drag, dragPreview] = useDrag(() => ({
 		// "type" is required. It is used by the "accept" specification of drop targets.
     type:data[1],
@@ -29,11 +29,12 @@ export default function DragDndA(prop){
     })
   }))
   const Block=data[3].split(',')[0]  
+  
     return(
-        <div className={`${Index?"hidden":""} inline-flex flex-col  ml-1 ${MaxSize?"w-4 h-4":"w-8 h-8"}  shadow-lg ${isDragging?"hidden":""} hover:cursor-pointer
+        <div className={`font-bold ${Index?`hidden`:""} inline-flex flex-col  ml-1 ${MaxSize?"w-4 h-4":"w-12 h-12"}  shadow-lg ${isDragging?"hidden":""} hover:cursor-pointer
         ${Block==="s"?"text-[#002933] bg-[#99ebff]":`${Block==="p"?"text-[#660029] bg-[#ff80b3]":`${Block==="d"?"text-[#004d1a] bg-[#80ffaa]":"text-[#330033] bg-[#ff80ff]"}`}`}
         `} ref={drag}>
-        <div className={`text-center ${MaxSize?"text-[0.5rem]":"text-[1rem]"}`}>{data[1]}</div>
+        <div className={`text-center ${MaxSize?"text-[0.5rem]":"text-[1.5rem]"}`}>{data[state.check?0:1]}</div>
         </div>
         )
 }

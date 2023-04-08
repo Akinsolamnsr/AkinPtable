@@ -15,17 +15,18 @@ export default function SliderArrage(){
     const size =useWindowSize();
   const MaxSize=(size.height/size.width)<0.75 && size.width<1025
     const arrayList=Array.from(setList)
-      const TwentyList=List.slice(0,20)
-      const FortyList=List.slice(0,40)
-     
+  
+   
     if(state.fitELement==="Twenty"){
       return(
         <div className={` ${MaxSize?"w-[20rem]":"w-[40rem]"} h-full overflow-x-auto overflow-y-hidden `}>
     
-     <div className="w-[45rem] h-full flex flex-wrap mt-2">
+     <div className="w-[60rem] h-full flex flex-wrap mt-2">
      {
    List20.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1).map((x,i)=>{
     const Stat=arrayList.indexOf(x[1]) >-1
+   
+    
 return(
   <div key={`ArrangeSlider1${i}`} className={`inline-flex `}><DragDndA {...{data:x,Index:Stat}}  /></div>
 )

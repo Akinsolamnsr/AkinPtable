@@ -26,7 +26,7 @@ if(state.fitELement==="Twenty"){
         
         return(
             <div key={`fitGrid${i}`} className={`   m-1 flex justify-between ${MaxSize?"w-[5rem] h-4":"w-36 h-8"}`}>
-            <span className="text-[0.8rem] font-bold text-white">{x[0]}</span>
+            <span className="text-[1rem] font-bold text-black">{x[0]}</span>
             <div className={` h-full bg-white ${MaxSize?"w-12":"w-24 "}`}><MyDropTargetFit accept={x[2]} /></div>
             <div className={` h-full bg-white text-center ml-[0.2rem] ${MaxSize?"w-4":"w-8"}`} ><MyDropTargetFit2 accept={x[1]} /></div>
             </div>
@@ -43,7 +43,7 @@ if(state.fitELement==="Forty"){
         
         return(
             <div key={`fitGrid55${i}`} className={`   m-1 flex justify-between ${MaxSize?"w-[5rem] h-4":"w-36 h-8"}`}>
-            <span className="text-[0.8rem] font-bold text-white">{x[0]}</span>
+            <span className="text-[1rem] font-bold text-black">{x[0]}</span>
             <div className={` h-full bg-white ${MaxSize?"w-12":"w-24 "}`}><MyDropTargetFit accept={x[2]} /></div>
             <div className={` h-full bg-white text-center ml-[0.2rem] ${MaxSize?"w-4":"w-8"}`} ><MyDropTargetFit2 accept={x[1]} /></div>
             </div>
@@ -56,12 +56,12 @@ if(state.fitELement==="Forty"){
 else{
     return(
         <div className="w-full bg-red-100 h-full flex flex-wrap overflow-auto bg-gradient-to-r from-cyan-500 to-blue-500">
-            <div className="w-full ">{MaxSize?<button className={`w-full bg-cyan-700 border-2 border-cyan-300 rounded-full p-1 font-bold text-white  ${MaxSize?"text-[0.6rem]":""}`} onTouchStart={()=>dispatch({type:"CHECK",payload:true})} onTouchEnd={()=>dispatch({type:"CHECK",payload:false})} >check element</button>:<button className={`w-full bg-cyan-700 border-2 border-cyan-300 rounded-full p-1 font-bold text-white  ${MaxSize?"text-[0.6rem]":""}`} onMouseDown={()=>dispatch({type:"CHECK",payload:true})} onMouseUp={()=>dispatch({type:"CHECK",payload:false})} >check element</button>}</div>
+            <div className="w-full sticky top-0">{MaxSize?<button className={`w-full bg-cyan-700 border-2 border-cyan-300 rounded-full p-1 font-bold text-white   ${MaxSize?"text-[0.6rem]":""}`} onTouchStart={()=>dispatch({type:"CHECK",payload:true})} onTouchEnd={()=>dispatch({type:"CHECK",payload:false})} >check element</button>:<button className={`w-full bg-cyan-700 border-2 border-cyan-300 rounded-full p-1 font-bold text-white  ${MaxSize?"text-[0.6rem]":""}`} onMouseDown={()=>dispatch({type:"CHECK",payload:true})} onMouseUp={()=>dispatch({type:"CHECK",payload:false})} >check element</button>}</div>
         {List.sort((a,b)=> parseInt(a[0])-parseInt(b[0])).map((x,i)=>{
         
             return(
               <div key={`fitGrid99${i}`} className={`   m-1 flex justify-between ${MaxSize?"w-[5rem] h-4":"w-36 h-8"}`}>
-              <span className="text-[0.8rem] font-bold text-white">{x[0]}</span>
+              <span className="text-[1rem] font-bold text-black">{x[0]}</span>
               <div className={` h-full bg-white ${MaxSize?"w-12":"w-24 "}`}><MyDropTargetFit accept={x[2]} /></div>
               <div className={` h-full bg-white text-center ml-[0.2rem] ${MaxSize?"w-4":"w-8"}`} ><MyDropTargetFit2 accept={x[1]} /></div>
               </div>

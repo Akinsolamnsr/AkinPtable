@@ -77,7 +77,7 @@ function user(state, action) {
               case"CHECK":
               return {...state,check:action.payload}
               case "DROP3":
-                const temp4=action.payload
+                const temp4=[...action.payload]
                 state.drop3.push(...temp4)
                 return  {...state}
               case "DROP4":
