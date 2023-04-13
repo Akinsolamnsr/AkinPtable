@@ -26,12 +26,13 @@ export default function ConTrend(){
     const {state,dispatch}=context 
     const OList=Confg20.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1)
     const OList2=Confg40.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1)
+    const OList3=Confg.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1)
     const Fst20=OList[count-1]?OList[count-1]:""
     const Fst202=OList[count+1]?OList[count+1]:""
     const Fst40=OList[count2-1]?OList2[count2-1]:""
     const Fst402=OList[count2+1]?OList2[count2+1]:""
-    const data1=Confg[count3-1]?Confg[count3-1]:""
-    const data2=Confg[count3+1]?Confg[count3+1]:""  
+    const data1=OList3[count3-1]?OList3[count3-1]:""
+    const data2=OList3[count3+1]?OList3[count3+1]:""  
     if(state.config==="Twenty"){
       const length=19
       return(
@@ -43,7 +44,7 @@ export default function ConTrend(){
           <div className={` text-center ${MaxSize?"text-[2.5rem]":"text-[5rem]"}`}>{Fst20[1]}</div>
           <div className="font-bold text-[1rem] text-center">{Fst20[2]}</div>
           </div>
-         </div>
+         </div>      
 
          <div className={`w-1/3  ${MaxSize?"h-[12.5rem]":"h-[25rem]"}`}>
         <div className="h-full"><ConList count={count} stat="Twenty" /></div>

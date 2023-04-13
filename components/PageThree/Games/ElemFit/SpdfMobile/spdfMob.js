@@ -13,6 +13,7 @@ import Image from 'next/image'
 import Fireworks from "@fireworks-js/react";
 import SpdfDropMobile from "./SpdfDropMob";
 import SpdfSlideMobile from "./SpdfSlide";
+import UpdateScore from "../../../../update";
 
 
 
@@ -91,7 +92,7 @@ export default function SpdfMobile(){
  <div className="basis-[70%]  flex  flex-col overflow-auto bg-cyan-700">
  <SpdfSlideMobile />
  </div>
- 
+ <div className=" basis-[15%] relative" style={{zIndex:5}}>{status==="authenticated" && checkSpdf?<div className={`w-full mt-[0.9rem]  relative z-1 ${MaxSize?"scale-[80%] -mt-4":""}`}><UpdateScore status={state.PeriodFlip} type="Block" name={data.user.name} /></div>:<div></div>}</div>
  <div className="basis-[30%]">
  <StopWatch  set={checkSpdf}  ind={6}/>
  </div>

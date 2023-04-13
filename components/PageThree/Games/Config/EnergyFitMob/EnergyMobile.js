@@ -32,9 +32,9 @@ export default function EnergyFitMobile(){
   const setList=new Set(state.matchDrop)
     const arrayList=Array.from(setList)
     
-  const  checkTwenty=TrueBox.slice(0,20).every((x)=>x===true)
-  const  checkForty=TrueBox.slice(0,20).every((x)=>x===true)
-  const  checkFull=TrueBox.every((x)=>x===true)
+  const  checkTwenty=TrueBox.slice(0,20).every((x)=>x===true)  && state.moben==="Twenty"
+  const  checkForty=TrueBox.slice(0,40).every((x)=>x===true)   && state.moben==="Forty"
+  const  checkFull=TrueBox.every((x)=>x===true)  && state.moben==="Full"
   const checkSpdf=checkTwenty || checkForty || checkFull
   function refreshPage() {
     window.location.reload(false);
@@ -91,14 +91,14 @@ export default function EnergyFitMobile(){
        {/*Horizontal element selector box box*/}
       <div className="basis-[85%]  overflow-auto ">
         <button onTouchStart={()=>dispatch({ type:"ARRANGEMOBILECHECK",  payload:true })} onTouchEnd={()=>dispatch({ type:"ARRANGEMOBILECHECK",  payload:false })}      className="w-full bg-blue-700 rounded-full text-white font-bold border-4 border-pink-200 sticky top-0 h-8 ">check Energy Level</button>
-         <div className={` w-full h-full ${state.timer[2]?"":"hidden"}`}>
+         <div className={` w-full h-full ${state.timer[2]?"":"hidden"} ${checkSpdf?"hidden":""}`}>
            <SwitchMob />
          </div>
       </div>
     {/* start, select, reset game in that order*/}
 <div className="basis-[15%]  flex ">
     <div className="basis-[20%]">
-    <div className=" basis-[15%]">{status==="authenticated" && checkSpdf?<div className="w-full mt-[0.9rem]  relative z-1 "><UpdateSore status={state.mobA20} type="Energy" name={data.user.name} /></div>:<div></div>}</div>
+    <div className=" basis-[15%] absolute -mt-36 absolute" style={{zIndex:5}}>{status==="authenticated" && checkSpdf?<div className="w-full mt-[0.9rem]  relative z-1 "><UpdateSore status={state.mobA20} type="Energy" name={data.user.name} /></div>:<div></div>}</div>
     </div>
     <div className="basis-[80%] bg-blue-200 overflow-auto">
     <div className="basis-[70%]  flex  bg-cyan-400">

@@ -13,8 +13,8 @@ export default function DragDndA(prop){
 
   const {state}=context
   
-  const {data,Index,Index2}=prop
-  console.log(Index2)
+  const {data,Index}=prop
+ 
   const [{ isDragging }, drag, dragPreview] = useDrag(() => ({
 		// "type" is required. It is used by the "accept" specification of drop targets.
     type:data[1],

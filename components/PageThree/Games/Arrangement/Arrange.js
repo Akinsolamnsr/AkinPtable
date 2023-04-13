@@ -13,6 +13,7 @@ import { useSession } from 'next-auth/react';
 import { useRouter } from "next/router"
 import UpdateScore from "../../../update";
 import { DataFamily, List } from "../../../Const";
+import { NameElement, symbolElement } from "../../../SpdfFull";
 
 export default function ElementArrange(){
  
@@ -26,6 +27,8 @@ export default function ElementArrange(){
     const ElemName=Array.from(new Set(state.drop4))
     const ElemSym=Array.from(new Set(state.drop3))
     const [wtch,setWtch]=useState(false)
+   console.log(ElemName)
+   console.log(ElemSym)
 
     
     const size =useWindowSize();
@@ -45,10 +48,10 @@ export default function ElementArrange(){
    const checkFortySym=FortySym.every((x)=>ElemName.includes(x))
    
    const FullNames =DataFamily.map((x)=>x[2])
-   const checkFull=FullNames.every((x)=>ElemSym.includes(x))
+   const checkFull=NameElement.every((x)=>ElemSym.includes(x))
    const FullSym =DataFamily.map((x)=>x[1])
-   const checkFullSym=FullSym.every((x)=>ElemName.includes(x))
-   console.log(FullSym)
+   const checkFullSym=symbolElement.every((x)=>ElemName.includes(x))
+   
     useEffect(()=>{
       
       if(router.route==="/Games/Arrange"){

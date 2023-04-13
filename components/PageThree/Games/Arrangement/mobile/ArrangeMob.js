@@ -16,6 +16,7 @@ import Fireworks from "@fireworks-js/react";
 import UpdateScore from "../../../../update";
 import UpdateScoreMobile from "../../../../updateMod";
 import { NextSeo } from 'next-seo';
+import { FullElement } from "../../../../SpdfFull";
 
 
 export default function ArragementMobile(){
@@ -33,9 +34,10 @@ export default function ArragementMobile(){
 
   const setList=new Set(state.matchDrop)
     const arrayList=Array.from(setList)
-  const  checkTwenty=ArrangeTwenty.every((x)=>arrayList.includes(x))
-  const  checkForty=ArrangeForty.every((x)=>arrayList.includes(x))
-  const  checkFull=ArrangeFull.every((x)=>arrayList.includes(x))
+  const  checkTwenty=ArrangeTwenty.every((x)=>arrayList.includes(x)) && state.mobA20==="Twenty"
+  const  checkForty=ArrangeForty.every((x)=>arrayList.includes(x)) && state.mobA20==="Forty"
+  const  checkFull=FullElement.every((x)=>arrayList.includes(x)) && state.mobA20==="Full"
+  console.log(ArrangeForty.every((x)=>arrayList.includes(x))) 
   const checkSpdf=checkTwenty || checkForty || checkFull
 
   const size =useWindowSize();
@@ -57,7 +59,7 @@ export default function ArragementMobile(){
 
 
       
-console.log(state.matchDrop)
+
     return (
    <div className=" flex w-screen  h-[100%]">
       <NextSeo
@@ -108,7 +110,7 @@ console.log(state.matchDrop)
     {/* start, select, reset game in that order*/}
 <div className="basis-[15%]  flex">
     <div className="basis-[20%]">
-    <div className=" basis-[15%]">{status==="authenticated" && checkSpdf?<div className="w-full mt-[0.9rem]  relative z-1 "><UpdateSore status={state.mobA20} type="arrange" name={data.user.name} /></div>:<div></div>}</div>
+    <div className=" basis-[15%] relative" style={{zIndex:5}}>  {status==="authenticated" && checkSpdf?<div className="w-full mt-[0.9rem]  relative z-1 "><UpdateSore status={state.mobA20} type="arrange" name={data.user.name} /></div>:<div></div>}</div>
     </div>
     <div className="basis-[80%] bg-blue-200 overflow-auto"><HorizontalArrangeMobile /></div>
 

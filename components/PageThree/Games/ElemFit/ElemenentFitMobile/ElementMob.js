@@ -101,11 +101,11 @@ export default function ArragementMobile(){
     <button onClick={()=>dispatch({ type:"MOBA40",  payload:"Forty" })}  className={`text-center  w-full font-bold text-white ${state.mobA40==="Forty"?"bg-blue-600 border-2 border-cyan-200 rounded-full":""}`}>Forty</button>
    
     <button onClick={()=>dispatch({ type:"MOBA40",  payload:"Full" })}  className={`text-center  w-full font-bold text-white ${state.mobA40==="Full"?"bg-blue-600 border-2 border-cyan-200 rounded-full":""}`}>Full</button>
-    <div className="basis-[15%]">{status==="authenticated" && checkSpdf ?<div className="w-full mt-[0.9rem]  relative z-1 "><UpdateScore status={state.mobA40} type="ElementFit" name={data.user.name} /></div>:<div></div>}</div>
+    <div className="basis-[15%] relative" style={{zIndex:5}}>{status==="authenticated" && checkSpdf ?<div className="w-full mt-[0.9rem]  relative z-1 "><UpdateScore status={state.mobA40} type="ElementFit" name={data.user.name} /></div>:<div></div>}</div>
  </div>
 
  </div>
- 
+
  <div className="basis-[30%]">
  <StopWatch  set={checkSpdf}  ind={5}/>
  </div>

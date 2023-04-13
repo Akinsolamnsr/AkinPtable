@@ -24,7 +24,7 @@ export default function ConfGridMob3(){
                  <button onClick={()=>setCount(prev=>prev<=0?0:count-1)} className="border-4 border-white bg-green-700 text-white font-bold basis-[50%]">Prev</button>
                  <button onClick={()=>setCount(prev=>prev>=length?length:count+1)} className="border-4 border-white bg-green-700 text-white font-bold basis-[50%]">Next</button>
                 </div>
-                <div className="basis-[80%] "><SpdfMidMob count={counter-1} /></div>
+                <div className="basis-[80%] "><SpdfMidMob count={counter-1} counter={count} /></div>
                 <div className="absolute text-[2rem] -ml-8 font-bold">{count+1}</div>
             </div>
         </div>

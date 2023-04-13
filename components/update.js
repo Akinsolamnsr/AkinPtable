@@ -20,6 +20,7 @@ const UpdateScore = ({status,type,name}) => {
   const Post=async()=>{
     try {
   const user = await trigger({timeUpdate:state.timeUpdate,status,type,name})
+  console.log("user")
   setUser(user)
 } catch (error) {
   console.log(error)

@@ -22,34 +22,34 @@ return(
    <>
    {
     limit==="Twenty"?(
-        <div className=" h-12 w-[280%] flex flex-wrap">
+        <div className=" h-12 w-[348%] flex flex-wrap">
          {
             List20.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1).map((x,i)=>{
                 const Stat=arrayList.indexOf(x[1]) >-1
                 return(
-                    <button key={`SldTwenty${i}`} onClick={()=>dispatch({ type:"ARRANGEMOBILEMATCH3",  payload:x[1] })}   className={`w-12 h-12 bg-gray-200 shadow-xl mt-2 ml-4 border-4 rounded-full text-center font-bold text-[1.5rem] ${state.arrangeMobileMatch3===x[1]?"border-black text-black opacity-25":"border-cyan-200 text-cyan-700"}  ${Stat?"hidden":""}`}>{state.arrangeMobbileCheck3?x[0]:x[1]}</button>
+                    <button key={`SldTwenty${i}`} onClick={()=>dispatch({ type:"ARRANGEMOBILEMATCH3",  payload:x[1] })}   className={`w-12 h-12 bg-gray-200 shadow-xl mt-2 ml-8 border-4 rounded-full text-center font-bold text-[1.5rem] ${state.arrangeMobileMatch3===x[1]?"border-black text-black opacity-25":"border-cyan-200 text-cyan-700"}  ${Stat?"hidden":""}`}>{state.arrangeMobbileCheck3?x[0]:<div className="flex flex-col"><span>{x[1]}</span><span className="text-[0.8rem] -mt-2">{x[2]}</span></div>}</button>
                 )
             })
          }
         </div>
     ):limit==="Forty"?(
-        <div className=" h-12 w-[410%] flex flex-wrap">
+        <div className=" h-12 w-[700%] flex flex-wrap">
          {
             List40.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1).map((x,i)=>{
                 const Stat=arrayList.indexOf(x[1]) >-1
                 return(
-                    <button key={`SldForty${i}`} onClick={()=>dispatch({ type:"ARRANGEMOBILEMATCH3",  payload:x[1] })}   className={`w-12 h-12 bg-gray-100 shadow-xl mt-2 ml-4 border-4 rounded-full text-center font-bold text-[1.5rem] ${state.arrangeMobileMatch3===x[1]?"border-black text-black opacity-25":"border-pink-200 text-pink-700"}  ${Stat?"hidden":""}`}>{state.arrangeMobbileCheck3?x[0]:x[1]}</button>
+                    <button key={`SldForty${i}`} onClick={()=>dispatch({ type:"ARRANGEMOBILEMATCH3",  payload:x[1] })}   className={`w-12 h-12 bg-gray-100 shadow-xl mt-2 ml-8 border-4 rounded-full text-center font-bold text-[1.5rem] ${state.arrangeMobileMatch3===x[1]?"border-black text-black opacity-25":"border-pink-200 text-pink-700"}  ${Stat?"hidden":""}`}>{state.arrangeMobbileCheck3?x[0]:<div className="flex flex-col"><span>{x[1]}</span><span className="text-[0.8rem] -mt-2">{x[2]}</span></div>}</button>
                 )
             })
          }
         </div>
     ):(
-        <div className=" h-12 w-[2400%] flex flex-wrap">
+        <div className=" h-12 w-[2050%] flex flex-wrap">
          {
             List.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1).map((x,i)=>{
                 const Stat=arrayList.indexOf(x[1]) >-1
                 return(
-                    <button key={`HorTwenty${i}`} onClick={()=>dispatch({ type:"ARRANGEMOBILEMATCH3",  payload:x[1] })}   className={`w-12 h-12 bg-gray-100 shadow-xl mt-2 ml-4 border-4 rounded-full text-center font-bold text-[1.5rem] ${state.arrangeMobileMatch3===x[1]?"border-black text-black opacity-25":"border-green-200 text-green-700"}  ${Stat?"hidden":""}`}>{state.arrangeMobbileCheck3?x[0]:x[1]}</button>
+                    <button key={`HorTwenty${i}`} onClick={()=>dispatch({ type:"ARRANGEMOBILEMATCH3",  payload:x[1] })}   className={`w-12 h-12 bg-gray-100 shadow-xl mt-2 ml-8 border-4 rounded-full text-center font-bold text-[1.5rem] ${state.arrangeMobileMatch3===x[1]?"border-black text-black opacity-25":"border-green-200 text-green-700"}  ${Stat?"hidden":""}`}>{state.arrangeMobbileCheck3?x[0]:<div className="flex flex-col"><span>{x[1]}</span><span className="text-[0.8rem] -mt-2">{x[2]}</span></div>}</button>
                 )
             })
          }

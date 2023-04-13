@@ -35,10 +35,10 @@ export default function ConfigMobile(){
   const setList=new Set(state.matchDrop)
     const arrayList=Array.from(setList)
     
-  const  checkTwenty=TrueBoxes.slice(0,20).every((x)=>x===true)
+  const  checkTwenty=state.spdf20f && state.moben==="Twenty"
   
-  const  checkForty=TrueBoxes.slice(0,40).every((x)=>x===true)
-  const  checkFull=TrueBoxes.every((x)=>x===true)
+  const  checkForty=TrueBoxes.slice(0,40).every((x)=>x===true)  && state.moben==="Forty"
+  const  checkFull=TrueBoxes.every((x)=>x===true)  && state.moben==="Full"
   const checkSpdf=checkTwenty || checkForty || checkFull
   
     const {status,data} =useSession()
@@ -92,7 +92,7 @@ export default function ConfigMobile(){
       <div className="basis-[85%]  overflow-auto ">
         <button onTouchStart={()=>dispatch({ type:"CLICKMOB",  payload:true })} onTouchEnd={()=>dispatch({ type:"CLICKMOB",  payload:false })}      className="w-full bg-blue-700 rounded-full text-white font-bold border-4 border-pink-200 sticky top-0 h-8 ">click</button>
          <div className="w-full h-full flex flex-col">
-           <div className="basis-[80%]  flex">
+           <div className={`basis-[80%]  flex ${checkSpdf?"hidden":""}`}>
             {state.moben==="Twenty"?<ConfGridMob />:state.moben==="Forty"?<ConfGridMob2 />:<ConfGridMob3 />}
            </div>
            <div className="basis-[20%] bg-green-100  flex justify-center"><MobClickConfig /></div>
@@ -101,7 +101,7 @@ export default function ConfigMobile(){
     {/* start, select, reset game in that order*/}
 <div className="basis-[15%]  flex ">
     <div className="basis-[20%]">
-    <div className=" basis-[15%]">{status==="authenticated" && checkSpdf?<div className="w-full mt-[0.9rem]  relative z-1 "><UpdateSore status={state.mobA20} type="Configure" name={data.user.name} /></div>:<div></div>}</div>
+    <div className=" basis-[15%] absolute ">{status==="authenticated" && checkSpdf?<div className="w-full mt-[0.9rem]  relative z-1 "><UpdateSore status={state.mobA20} type="Configure" name={data.user.name} /></div>:<div></div>}</div>
     </div>
     <div className="basis-[80%] bg-blue-200 overflow-auto">
     <div className="basis-[70%]  flex  bg-cyan-400">

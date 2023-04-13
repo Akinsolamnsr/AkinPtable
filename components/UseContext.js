@@ -171,6 +171,8 @@ function user(state, action) {
                           return {...state,mobAFull:action.payload}
               case  "MOBEN":
                           return {...state,moben:action.payload}
+              case  "SPDF20F":
+                            return {...state,spdf20f:action.payload}
     default:
       return state;
   }
@@ -183,6 +185,7 @@ const combineReducers = (...reducers) => (state, action) => {
 };
 export function AppWrapper({ children }) {
   let sharedState = {
+    spdf20f:false,
     moben:"Twenty",
     mobClick:false,
     blockDropFit:[],
@@ -226,7 +229,7 @@ export function AppWrapper({ children }) {
     drag:"Full",
     spdf:[],
     drop2:[],
-    config:"",
+    config:"Full",
     double:[],
     spdfConfig:"",
     spdfBox:[],

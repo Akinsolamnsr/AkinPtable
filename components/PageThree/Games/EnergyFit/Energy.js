@@ -23,6 +23,7 @@ export default function Energy(){
      const marg=size.width<1300?true:false
     const Wdth=size.width>500 && size.height>1000
     const newList=Twnnty.indexOf(state.spdfUpdate)
+  console.log(state.EnergyLevel)
     const newList2=forty.indexOf(state.spdfUpdate)
     const newList3=Full.indexOf(state.spdfUpdate)
     if(newList>-1){

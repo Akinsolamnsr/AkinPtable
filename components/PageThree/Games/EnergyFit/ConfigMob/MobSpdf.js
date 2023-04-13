@@ -1,18 +1,20 @@
 import { useEffect, useMemo, useReducer, useState } from "react";
-import { disp, Spdf, spdfRaw } from "../../../../Const";
+import { Confg20, disp, Spdf, Spdf20, spdfRaw, spdfRaw20 } from "../../../../Const";
 import { SpdfList, SpdfNumber, TrueBoxes} from "../../../../ConsttSpdf.js";
 import { useAppContext } from "../../../../UseContext";
 
 
 
 
-export default function SpdfMidMob({count}){
+export default function SpdfMidMob({count,counter}){
     const context=useAppContext()
     const {dispatch,state}=context
     const [click, setClick] = useState("");
     const [stat, setStat] = useState(false);
     const names=[]
-    const SpdfItem=Spdf[count][3].split(",")[0].split(' ')
+    const OList=Spdf20.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1)
+    const SpdfItem=OList[counter][3].split(",")[0].split(' ')
+    const  checkTwenty=TrueBoxes.slice(0,20).every((x)=>x===true) && state.moben==="Twenty"
     const init={...SpdfNumber} 
     const reducer=(state,action)=>{
         let newState
@@ -75,6 +77,7 @@ const ConfigList2 = ["1s¹,1","1s²,2","2s¹,3","2s²,4","2p¹,5","2p²,6","2p³
     return(
         <div className={` w-full h-full flex flex-wrap `} >
         {names}
+        <button onClick={()=> dispatch({ type:"SPDF20F",  payload:true })} className={`${checkTwenty?"":"hidden"} absolute bg-green-700 font-bold text-white p-1 pt-4 pb-4 mt-[30%]`}>Click to complete</button>
         </div>    
         )
 }   

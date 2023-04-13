@@ -91,7 +91,7 @@ export default function FamilyMobile(){
  <div className="basis-[70%]  flex  flex-col overflow-auto bg-cyan-700">
  <FamilySlideMobile />
  </div>
- 
+ <div className=" basis-[15%] absolute -mt-24" style={{zIndex:5}}>{status==="authenticated" && checkSpdf?<div className={`w-full mt-[0.9rem]  relative z-1 ${MaxSize?"scale-[80%] -mt-4":""}`}><UpdateScore status={state.PeriodFlip} type="family" name={data.user.name} /></div>:<div></div>}</div>
  <div className="basis-[30%]">
  <StopWatch  set={checkSpdf}  ind={6}/>
  </div>

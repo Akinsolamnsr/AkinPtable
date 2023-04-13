@@ -1,18 +1,52 @@
-import { useMemo, useState } from "react";
-import { Spdf, spdfRaw, spdfRaw20 } from "../../../Const"
-import { Numb2 } from "../../../ConsttSpdf";
-import { useAppContext } from "../../../UseContext";
-
-import SpdfDrop from "./SpdfDrop"
+import { useEffect, useMemo, useReducer, useState } from "react";
+import { Confg20, disp, Spdf, spdfRaw, spdfRaw20 } from "../../../../Const";
+import { SpdfList, SpdfNumber, TrueBoxes} from "../../../../ConsttSpdf.js";
+import { useAppContext } from "../../../../UseContext";
 
 
 
-export default function SpdfMid({count}){
+
+export default function SpdfMidMob({count,counter}){
     const context=useAppContext()
     const {dispatch,state}=context
+    const [click, setClick] = useState("");
+    const [stat, setStat] = useState(false);
     const names=[]
-    const SortRaw=spdfRaw20.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1)
+    const OList=Spdf.sort((a,b)=> a[1] === b[1] ? 0 : a[1] < b[1] ? -1 : 1)
+    const SpdfItem=OList[counter][3].split(",")[0].split(' ')
+    const init={...SpdfNumber} 
+    const  checkFull=TrueBoxes.every((x)=>x===true) && state.moben==="Twenty"
+    const reducer=(state,action)=>{
+        let newState
+          switch(action.type){
+            case count:
+               
+            let temp=state[count]
+              let valTemp=[...temp,...action.payload]
+              state[count].push(...valTemp)
+             
+          newState={...state}
+             break;
+             default:
+             throw new Error()
+          }
+          return newState
+       }
+       const[spdfData,dispatched]=useReducer(reducer,init)
 
+    useEffect(()=>{
+        if(state.ConfigMobileMatch===state.ConfigMobileMatch1[count] && click!==""){
+            dispatched({type:count,payload:[state.ConfigMobileMatch]})
+         
+        }
+         
+         
+    },[state.ConfigMobileMatch,click])
+
+    if(SpdfItem.every((x)=>Array.from(new Set(spdfData[count])).includes(x))){
+          TrueBoxes[count]=true
+    }
+   
     const ConfigList = ["1s¹,1","1s²,2","2s¹,3","2s²,4","2p¹,5","2p²,6","2p³,7","2p⁴,8","2p⁵,9","2p⁶,10",
     "3s¹,11","3s²,12","3p¹,13","3p²,14","3p³,15","3p⁴,16","3p⁵,17","3p⁶,18","3d¹,19","3d²,20","3d¹,21","3d²,22","3d³,23","3d⁴,24","3d⁵,25","3d⁶,26","3d⁷,27","3d⁸,28","3d⁹,29","3d¹⁰,30",
     "4s¹,31","4s²,32","4p¹,33","4p²,34","4p³,35","4p⁴,36","4p⁵,37","4p⁶,38","4d¹,39","4d²,40","4d¹,41","4d²,42","4d³,43","4d⁴,44","4d⁵,45","4d⁶,46","4d⁷,47","4d⁸,48","4d⁹,49","4d¹⁰,50",
@@ -33,13 +67,17 @@ const ConfigList2 = ["1s¹,1","1s²,2","2s¹,3","2s²,4","2p¹,5","2p²,6","2p³
 "7p¹,112","7p²,113","7p³,114","7p⁴,115","7p⁵,116","7p⁶,117",
 ];
     ConfigList2.forEach((data,i,x) => {
-        const pos1=spdfRaw[count]
-        names.push(<span key={`spdfMid${i}4s`} className={`${SortRaw[count].includes(i)?"":"hidden"}`}><SpdfDrop accept={data} count={count} cont={x[count]} pos={pos1} numb={`${i}`} /></span>)
+        const fig=data.split(",")[0]
+        const fig2=data.split(",")[1]
+        names.push(<button onClick={()=>{setClick(fig);dispatch({ type:"CONFIGMOBILEMATCH1",  payload:[fig,count] })}} key={`spdfMid${i}12s`} className={`${spdfRaw[count].includes(i)?"":"hidden"} ${spdfData[count].includes(fig)?"bg-pink-700":""} ${fig===click?`border-2 border-red-300`:``} w-12 h-12  ml-2 text-center font-bold text-[1.2rem] shadow-xl border-2 border-black`}>< ><span className={`${spdfData[count].includes(fig)?"text-white":`${state.mobClick?"text-gray-400":"hidden"}`}`}>{fig}</span></></button>)
       })
-      
+     
+     
+    
     return(
         <div className={` w-full h-full flex flex-wrap `} >
         {names}
-        </div>
+        <button onClick={()=> dispatch({ type:"SPDF20F",  payload:true })} className={`${checkFull?"":"hidden"} absolute bg-green-700 font-bold text-white p-1 pt-4 pb-4 mt-[30%]`}>Click to complete</button>
+        </div>    
         )
-}
+}   

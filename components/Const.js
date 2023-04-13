@@ -153,7 +153,7 @@ export const TrueDrop=[]
     ["5","B","Boron","p,E1","Metalloid"],["6","C","Carbon","p,E2","Other non metals"],["7","N","Nitrogen","p,E4","Other non metals"],["8","O","Oxygen","p,E4","Other non metals"],
     ["9","F","Fluorine","p,E5","Halogen"],["10","Ne","Neon ","p,E6","Noble gas"],["11","Na","Sodium","s,A5","Alkaline metal"],["12","Mg","Magnesium","s,A6","Alkaline earth metal"],
     ["13","Al","Aluminium","p,E7","Post-transition metal"],["14","Si","Silicon","p,E8","Metalloid"],["15","P","Phosphorus","p,E9","Other non metals"],["16","S","Sulfur","p,E10","Other non metals"],
-    ["17","Cl","Chlorine","p,E11","Halogen"],["18","Ar","Argon","p,E12","Noble gas"],["19","K","Potassium","s,A7","Alkaline metal"],["20","Ca","Calcium","s,A8","Alkaline earth metal"],
+    ["17","Cl","Chlorine","p,E11","Halogen"],["18","Ar","Argon","p,E12","Noble gas"],["19","K","Potassium","s,A7","Alkaline metal"],
     ["20","Ca","Calcium","s,A8","Alkaline earth metal"],["21","Sc","Scandium","d,C1","Transition metal"],["22","Ti","Titanium","d,C2","Transition metal"],["23","V","Vanadium","d,C3","Transition metal"],
     ["24","Cr","Chromium","d,C4","Transition metal"],["25","Mn","Manganese","d,C5","Transition metal"],["26","Fe","Iron","d,C6","Transition metal"],["27","Co","Cobalt","d,C7","Transition metal"],
     ["28","Ni","Nickel","d,C8","Transition metal"],["29","Cu","Copper","d,C9","Transition metal"],["30","Zn","Zinc","d,C10","Transition metal"],["31","Ga","Gallium","p,D1","Post-transition metal"],
@@ -282,7 +282,7 @@ export const TrueDrop=[]
     ["1","H","Hydrogen","1s¹","",[0]],["2","He","Helium","1s²","",[1]],["3","Li","Lithium","1s² 2s¹,[He] 2s¹","1s2 2s1",[1, 2]],["4","Be","Beryllium","1s² 2s²,[He] 2s²","1s2 2s2",[1, 3]],["5","B","Boron","1s² 2s² 2p¹,[He] 2s² 2p¹","1s2 2s2 2p1",[1, 3, 4]],
     ["6","C","Carbon","1s² 2s² 2p²,[He] 2s² 2p²","1s2 2s2 2p2",[1, 3, 5]],["7","N","Nitrogen","1s² 2s² 2p³,[He] 2s² 2p³","1s2 2s2 2p3",[1, 3, 6]],["8","O","Oxygen","1s² 2s² 2p⁴,[He] 2s² 2p⁴","1s2 2s3 2p4",[1, 3, 7]],["9","F","Fluorine","1s² 2s² 2p⁵","1s2 2s2 2p5",[1, 3, 8]],
     ["10","Ne","Neon ","1s² 2s² 2p⁶","1s2 2s2 2p6",[1, 3, 9]],["11","Na","Sodium","1s² 2s² 2p⁶ 3s¹,[Ne] 3s¹","s,A5",[1, 3, 9, 10]],["12","Mg","Magnesium","1s² 2s² 2p⁶ 3s²,[Ne]3s2","s,A6",[1, 3, 9, 11]],["13","Al","Aluminium","1s² 2s² 2p⁶ 3s² 3p¹,[Ne] 3s² 3p¹","p,E7",[1, 3, 9, 11, 12]],["14","Si","Silicon","1s² 2s² 2p⁶ 3s² 3p²,[Ne] 3s² 3p²","p,E8",[1, 3, 9, 11, 13]],["15","P","Phosphorus","1s² 2s² 2p⁶ 3s² 3p³,[Ne] 3s² 3p³","p,E9",[1, 3, 9, 11, 14]],
-    ["16","S","Sulfur","1s² 2s² 2p⁶ 3s² 3p⁴,[Ne] 3s² 3p⁴","p,E10",[1, 3, 9, 11, 15]],["17","Cl","Chlorine","1s² 2s² 2p⁶ 3s² 3p⁵,[Ne]3s23p5","p,E11",[1, 3, 9, 11, 16]],["18","Ar","Argon","1s² 2s² 2p⁶ 3s² 3p⁶,[Ne] 3s² 3p⁶","p,E12",[1, 3, 9, 11, 17]],["19","K","Potassium","1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹,[Ar]4s1","s,A7",[1, 3, 9, 11, 17, 30]],["20","Ca","Calcium","1s² 2s² 2p⁶ 3s² 3p⁶ 4s²,[Ar] 4s²","s,A8",[1, 3, 9, 11, 17, 31]]
+    ["16","S","Sulfur","1s² 2s² 2p⁶ 3s² 3p⁴,[Ne] 3s² 3p⁴","p,E10",[1, 3, 9, 11, 15]],["17","Cl","Chlorine","1s² 2s² 2p⁶ 3s² 3p⁵,[Ne]3s23p5","p,E11",[1, 3, 9, 11, 16]],["18","Ar","Argon","1s² 2s² 2p⁶ 3s² 3p⁶,[Ne] 3s² 3p⁶","p,E12",[1, 3, 9, 11, 17]],["19","K","Potassium","1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹,[Ar]4s1","s,A7",[1, 3, 9, 11, 17, 30]],["20","Ca","Calcium","1s² 2s² 2p⁶ 3s² 3p⁶ 4s²,[Ar] 4s²","s,A8",[1, 3, 9, 11, 17, 31]],
   ]
 
   export const Spdf40=[

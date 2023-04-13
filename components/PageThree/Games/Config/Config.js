@@ -15,7 +15,7 @@ export default function Config(){
     const context=useAppContext()
     const {dispatch,state}=context 
     const Confi=Array.from(new Set(state.double))
-    const [swtch,setSwtch]=useState(false)
+    const [swtch,setSwtch]=useState("3")
        
     const size =useWindowSize();
     const MaxSize=(size.height/size.width)<0.75 && size.width<1025
