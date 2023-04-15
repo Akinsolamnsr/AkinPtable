@@ -108,7 +108,7 @@ export default function Energy(){
      <button onClick={()=>{dispatch({ type:"CONFIG",  payload:"Full" });setSwtch("3")}} value="3"   className={`${swtch==="3"?` bg-white ${MaxSize?"pl-4 pr-4 text-[0.7rem] p-1":"pl-8 pr-8 p-2"} rounded-full font-bold text-cyan-700 border-cyan-400 border-2`:`font-bold text-white ${MaxSize?"pl-4 pr-4 text-[0.7rem]":"pl-8 pr-8 p-2"}`}`}>Periodic table</button>
         </div>
     </div>
-    <div className=" basis-[20%]">
+    <div className=" basis-[20%] relatve" style={{zIndex:5}}>
         <StopWatch set={checkConfi} timeStatus="TIMER3" ind={3}  />
 
     </div>

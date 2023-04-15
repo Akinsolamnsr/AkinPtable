@@ -1,17 +1,14 @@
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
-import { useAppContext } from '../UseContext';
-import Ptables from './PTable';
-import PropBoxTwo from './propBox';
-import ListPage from './List';
 import gamePic from "../../public/images/Game.svg"
 import homePic from "../../public/images/Atom.svg"
 import PropPic from "../../public/images/PropNew.svg"
 import AboutPic from "../../public/images/pages-svgrepo-com.svg"
 import { useRouter } from 'next/router';
 import Image from 'next/image';
+import { useAppContext } from '../UseContext';
 
-export default function AppSizeScreen() {
+export default function AboutAppSizeScreen() {
   const router = useRouter();
   const context=useAppContext()
   const {dispatch,state}=context
@@ -26,7 +23,7 @@ export default function AppSizeScreen() {
         <div className=''>
           <span className='text-[2rem] text-white font-bold bg-cyan-500 '>A</span><span className='text-cyan-500 font-bold'>table</span>
         </div>
-        <div className={`w-2/3 sm:w-1/3 flex justify-between h-full `}>
+        <div className='w-2/3 sm:w-1/3 flex justify-between h-full '>
         
            <span className='hover:text-cyan-500 flex items-center'>
            {size.width<550?(<><Link href="/"><a><Image src={homePic} alt="pics" width="25" heigth="25" /></a></Link></>):(<><Image src={homePic} alt="pics" width="25" heigth="25" /><span className={` h-full pl-[1.5rem] pr-[1.2rem] -ml-[1.5rem] flex items-center   ${router.pathname == "/" ? "border-b-4 border-cyan-700 bg-gray-100" : ""}`}><Link href="/"> Home</Link></span></>)}
@@ -44,9 +41,8 @@ export default function AppSizeScreen() {
         </div>
         <span className='w-12'></span>
       </div>
-      <div className={`  h-screen w-[90%] ml-[5%] order-1 md:order-2 flex  ${size.width< 500?"flex-col":`${Wdth?"flex-col":"flex-row"}`}`}>
-      <div className={`${size.width< 500?"w-full h-[67%] overflow-auto":`${Wdth?"w-full h-[70%] overflow-auto":`${MaxSize?"w-[70%] h-full overflow-auto":`${size.width<1300?"w-[70%] h-full overflow-auto":`w-[79%] scale-[85%] -mt-[4rem] h-full  ${state.slide?"overflow-auto":""}`}`}`}`} `}>{state.switch? <Ptables />:<ListPage />}</div> 
-      <div className={`${size.width< 500?"w-full h-[33%]":`${Wdth?"w-full h-[30%]":`${MaxSize?"w-[30%] h-full":`${size.width<1300?"w-[30%] h-full":"w-[25%] h-full"}`}`}`} `}><PropBoxTwo /></div> 
+      <div className={`text-[5rem]`}>
+      COMMING SOON
         </div>
     </div>
   );;''

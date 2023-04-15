@@ -11,6 +11,15 @@ export default function Screen(){
   return(
    <div className="h-screen overflow-auto ">
  <div className={`flex flex-wrap `}>
+ <div className={`${MaxSize?"w-48 h-48 ml-12 mb-8":""}`}>
+      <GameLink href="/Games/Block">   
+      <div className='w-48 h-48 border-2 bg-[#ffe6ff]  flex justify-center items-center flex-col text-gray-600   border-cyan-300 ml-12 mt-12   shadow-xl rounded  '>
+          <span className="text-[2rem]">Fit</span>
+          <span className="font-bold">Element</span>
+          <span className="font-bold">{MaxSize || TabSize || size.width<550?<>Click n Click</>:<>Drag n Drop</>}  Game</span>
+        </div>
+      </GameLink>
+      </div>
       <div className={`${MaxSize?"w-48 h-48 ":""}`}>
       <GameLink href="/Games/Arrange">
         <div className='w-48 h-48 border-2 bg-[#fff0e6]  flex justify-center items-center flex-col text-gray-600   border-cyan-300 ml-12 mt-12   shadow-xl rounded  '>
@@ -20,15 +29,7 @@ export default function Screen(){
         </div>
       </GameLink>
       </div>
-      <div className={`${MaxSize?"w-48 h-48 ml-12 mb-8":""}`}>
-      <GameLink href="/Games/Block">   
-      <div className='w-48 h-48 border-2 bg-[#ffe6ff]  flex justify-center items-center flex-col text-gray-600   border-cyan-300 ml-12 mt-12   shadow-xl rounded  '>
-          <span className="text-[2rem]">Fit</span>
-          <span className="font-bold">Element</span>
-          <span className="font-bold">{MaxSize || TabSize || size.width<550?<>Click n Click</>:<>Drag n Drop</>}  Game</span>
-        </div>
-      </GameLink>
-      </div>
+      
       <div className={`${MaxSize?"w-48 h-48 ml-12 mb-8":""}`} >
       <GameLink href="/Games/Configuration"> 
       <div className='w-48 h-48 border-2 bg-[#ffe6f0]  flex justify-center items-center flex-col text-gray-600   border-cyan-300  ml-12 mt-12   shadow-xl rounded  '>

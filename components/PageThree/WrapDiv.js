@@ -6,6 +6,7 @@ import { useAppContext } from '../UseContext';
 import gamePic from "../../public/images/Game.svg"
 import homePic from "../../public/images/Atom.svg"
 import PropPic from "../../public/images/PropNew.svg"
+import AboutPic from "../../public/images/pages-svgrepo-com.svg"
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 
@@ -49,6 +50,9 @@ export default function WrapDiv({children}) {
            </span>
            <span className='hover:text-cyan-500 flex items-center'>
            {size.width<550?(<><Link href="/Games"><a><Image src={gamePic} alt="pics" width="25" heigth="25" /></a></Link></>):(<><Image src={gamePic} alt="pics" width="25" heigth="25" /><span className={`h-full  flex items-center pl-[1.5rem] pr-[1.2rem] -ml-[1.5rem] ${router.pathname == "/Games" ? "border-b-4 border-cyan-700 bg-gray-100" : ""}`}><Link href="/Games">Games</Link></span></>)}
+           </span>
+           <span className='hover:text-cyan-500 flex items-center'>
+           {size.width<550?(<><Link href="/About"><a><Image src={AboutPic} alt="pics" width="25" heigth="25" /></a></Link></>):(<><Image src={AboutPic} alt="pics" width="25" heigth="25" /><span className={`h-full  flex items-center pl-[1.5rem] pr-[1.2rem] -ml-[1.5rem] ${router.pathname == "/About" ? "border-b-4 border-cyan-700 bg-gray-100" : ""}`}><Link href="/About">About</Link></span></>)}
            </span>
            <span><button className={`h-12 bg-cyan-700 pl-4 pr-4 text-[0.8rem] font-bold text-white ${router.route==="/"?"":"hidden" }`} onClick={Resize}>{state.status?<span>{size.width<550?<>F</>:<>Full Table</>}</span>:<span>{size.width<550?<>20</>:<>First 20 Element</>}</span>}</button></span>
         </div>
